@@ -13,12 +13,12 @@ on:
 
 env:
   # The "Advanced Engineering Electives" page - paste the URL or bare ID.
-  ROOT_PAGE_ID: "PASTE-YOUR-ROOT-PAGE-URL-OR-ID-HERE"
+  ROOT_PAGE_ID: "https://app.notion.com/p/Advanced-Engineering-Electives-384ec788f8408017aa6ee987a3e84299"
   # Optional - defaults to the root page's own title if left blank.
-  SITE_TITLE: ""
+  SITE_TITLE: "Avenues Advanced Robotics Engineering Course"
   # Blank for a user/org Pages site (<username>.github.io). For a project
   # site (any other repo name), set this to "/<repo-name>".
-  BASE_PATH: ""
+  BASE_PATH: "/Advanced-Engineering"
 
 permissions:
   contents: read
