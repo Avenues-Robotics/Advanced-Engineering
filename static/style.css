@@ -156,6 +156,91 @@ html, body {
   color: var(--ink-soft);
 }
 
+/* --- Notion content blocks ------------------------------------------- */
+
+.content h4 { font-size: 1rem; margin-top: 1.5rem; }
+.content h1.page-title { margin-bottom: 1rem; }
+.content hr { border: 0; border-top: 1px solid var(--line); margin: 1.75rem 0; }
+
+.content ul, .content ol { margin: 0.6rem 0; padding-left: 1.6rem; }
+.content li { margin: 0.25rem 0; }
+.content li > .block-children { margin-left: 0; }
+
+/* Children nested under a paragraph/heading/quote (Notion's indented blocks) */
+.block-children { margin-left: 1.5rem; }
+.block-children > p:first-child { margin-top: 0.4rem; }
+
+.empty-block { height: 0.9rem; }
+
+.content ul.task-list { list-style: none; padding-left: 0.2rem; }
+.content li.task input { margin-right: 0.45rem; vertical-align: -1px; }
+
+.content blockquote + blockquote { margin-top: -0.4rem; }
+.content blockquote p { margin: 0.35rem 0; }
+
+/* Callouts */
+.callout {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  border-radius: 8px;
+  background: #f1f1ef;
+}
+.callout-icon { flex: none; font-size: 1.2rem; line-height: 1.5; }
+.callout-body { flex: 1; min-width: 0; }
+.callout-body > :first-child { margin-top: 0; }
+.callout-body > :last-child { margin-bottom: 0; }
+.callout .callout { margin: 0.75rem 0; }
+
+/* Toggles (<details>) */
+details.toggle > summary,
+details.toggle-heading > summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+details.toggle > summary { padding: 0.15rem 0; }
+details.toggle-heading > summary > :is(h1, h2, h3, h4) { display: inline; }
+details.toggle > .block-children,
+details.toggle-heading > .block-children { margin-top: 0.4rem; }
+
+/* Columns */
+.columns { display: flex; gap: 2rem; margin: 1rem 0; }
+.column { min-width: 0; }
+.column > :first-child { margin-top: 0; }
+
+/* Tables */
+.table-wrap { overflow-x: auto; margin: 1.2rem 0; }
+.table-wrap table { margin: 0; }
+.table-wrap.fit table { width: 100%; }
+.content table th { background: var(--bg-sidebar); font-weight: 600; }
+
+/* Media / embeds */
+figure.media { margin: 1.25rem 0; }
+figure.media img, figure.media video { max-width: 100%; height: auto; border-radius: 6px; }
+figure.media audio { width: 100%; }
+figure.media figcaption { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.4rem; }
+.embed-16x9 { position: relative; aspect-ratio: 16 / 9; }
+.embed-16x9 iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 6px; }
+
+.page-link { margin: 0.5rem 0; }
+.page-link a::before { content: "\1F4C4\00a0"; }
+.mention { font-weight: 500; }
+span.math, pre.math { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+/* Notion inline colors: text and background */
+.u { text-decoration: underline; }
+.c-gray   { color: #787774; }  .c-gray_bg   { background: #f1f1ef; }
+.c-brown  { color: #9f6b53; }  .c-brown_bg  { background: #f4eeee; }
+.c-orange { color: #d9730d; }  .c-orange_bg { background: #fbecdd; }
+.c-yellow { color: #cb912f; }  .c-yellow_bg { background: #fbf3db; }
+.c-green  { color: #448361; }  .c-green_bg  { background: #edf3ec; }
+.c-blue   { color: #337ea9; }  .c-blue_bg   { background: #e7f3f8; }
+.c-purple { color: #9065b0; }  .c-purple_bg { background: #f6f3f9; }
+.c-pink   { color: #c14c8a; }  .c-pink_bg   { background: #faf1f5; }
+.c-red    { color: #d44c47; }  .c-red_bg    { background: #fdebec; }
+span[class*="_bg"] { border-radius: 3px; padding: 0 0.2em; }
+
 .breadcrumb {
   font-size: 0.82rem;
   color: var(--ink-soft);
@@ -198,4 +283,6 @@ html, body {
     cursor: pointer;
   }
   .content-wrap { padding: 1.5rem 1.25rem 4rem; }
+  .columns { flex-direction: column; gap: 0; }
+  .column { flex: none !important; }
 }

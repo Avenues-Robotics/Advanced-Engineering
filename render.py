@@ -15,11 +15,9 @@ import re
 import shutil
 from pathlib import Path
 
-import markdown as md
-
+from notion_api import strip_dashes
+from notion_md import PageResolver, notion_markdown_to_html
 from walker import Node
-
-_MD_EXTENSIONS = ["extra", "sane_lists", "toc"]
 
 
 def slugify(text: str) -> str:
@@ -112,8 +110,42 @@ def _breadcrumb(path_titles: list[str]) -> str:
     return f'<p class="breadcrumb">{crumbs}</p>'
 
 
-def _markdown_to_html(source: str) -> str:
-    return md.markdown(source, extensions=_MD_EXTENSIONS)
+def _make_page_resolver(root: Node, slugs: dict[str, str], base_path: str) -> PageResolver:
+    """Maps a Notion page id to (site href or None, title) so mentions and
+    page links in the content point at the generated site."""
+    by_id: dict[str, Node] = {}
+
+    def index(node: Node) -> None:
+        by_id[strip_dashes(node.id).lower()] = node
+        for child in node.children:
+            index(child)
+
+    index(root)
+
+    def resolve(page_id: str) -> tuple[str | None, str | None]:
+        node = by_id.get(page_id)
+        if node is None:
+            return None, None
+        if node.kind in ("page", "database_row") and node.is_published:
+            return f"{base_path}/{slugs[node.id]}/", node.title
+        return None, node.title
+
+    return resolve
+
+
+def _page_body_html(source: str, title: str, resolver: PageResolver) -> str:
+    """Notion's markdown export omits the page title, but Notion shows it as
+    the page's H1; add it unless the content already opens with that heading."""
+    if not source.strip():
+        body = "<p><em>(No content.)</em></p>"
+    else:
+        body = notion_markdown_to_html(source, resolver)
+    opens_with_title = re.match(r"<h1[^>]*>(.*?)</h1>", body, re.S)
+    if opens_with_title:
+        heading_text = html.unescape(re.sub(r"<[^>]+>", "", opens_with_title.group(1)))
+        if heading_text.strip().lower() == title.strip().lower():
+            return body
+    return f'<h1 class="page-title">{html.escape(title)}</h1>{body}'
 
 
 def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
@@ -136,6 +168,7 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
         shutil.copytree(static_src, static_dst)
 
     slugs = assign_slugs(root)
+    resolver = _make_page_resolver(root, slugs, base_path)
     nav_root_html = "".join(
         _render_nav(c, slugs, current_id="", base_path=base_path) for c in root.children
     )
@@ -152,8 +185,7 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
         if node.kind in ("page", "database_row") and node.is_published:
             page_dir = output_dir / slugs[node.id]
             page_dir.mkdir(parents=True, exist_ok=True)
-            body_md = markdown_by_id.get(node.id, "")
-            body_html = _markdown_to_html(body_md) if body_md.strip() else "<p><em>(No content.)</em></p>"
+            body_html = _page_body_html(markdown_by_id.get(node.id, ""), node.title, resolver)
             nav_html = "".join(
                 _render_nav(c, slugs, current_id=node.id, base_path=base_path) for c in root.children
             )
@@ -181,8 +213,7 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
     # Home page: the root page's own content if it's published, otherwise a
     # generated landing page that just lists the top-level published sections.
     if root.is_published:
-        body_md = markdown_by_id.get(root.id, "")
-        body_html = _markdown_to_html(body_md) if body_md.strip() else "<p><em>(No content.)</em></p>"
+        body_html = _page_body_html(markdown_by_id.get(root.id, ""), root.title, resolver)
         source_url = root.public_url
     else:
         # Reuse the same nav-tree logic (not a flat list of direct children)

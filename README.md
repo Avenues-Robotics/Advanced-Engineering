@@ -186,5 +186,14 @@ either way.
   databases are walked the same way as regular sub-pages - publish a project
   or a reading the normal way in Notion and it'll appear on the site, nested
   under a "Projects" / "Content Library" section label.
+- **Notion formatting is converted by `notion_md.py`.** Notion's markdown
+  export isn't standard markdown (callouts, toggles, columns, colored text,
+  tab-nested blocks, etc.), so it has its own converter instead of a markdown
+  library. If a Notion block type renders wrong, that's the file to extend;
+  `python3 tests/test_notion_md.py` covers it offline.
+- **Images and files uploaded to Notion.** Notion serves those from temporary
+  signed URLs that expire after about an hour, so an uploaded image on the
+  generated site will break shortly after a build. Use external image URLs
+  (or embed links) for anything that needs to stay visible.
 - **The site never edits Notion.** This only reads. It can't publish or
   unpublish anything for you - that part still happens in Notion itself.
