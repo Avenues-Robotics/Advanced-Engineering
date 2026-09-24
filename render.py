@@ -150,13 +150,13 @@ def _make_page_resolver(root: Node, slugs: dict[str, str], base_path: str) -> Pa
     return resolve
 
 
-def _page_body_html(source: str, title: str, resolver: PageResolver) -> str:
+def _page_body_html(source: str, title: str, resolver: PageResolver, base_path: str) -> str:
     """Notion's markdown export omits the page title, but Notion shows it as
     the page's H1; add it unless the content already opens with that heading."""
     if not source.strip():
         body = "<p><em>(No content.)</em></p>"
     else:
-        body = notion_markdown_to_html(source, resolver)
+        body = notion_markdown_to_html(source, resolver, base_path)
     opens_with_title = re.match(r"<h1[^>]*>(.*?)</h1>", body, re.S)
     if opens_with_title:
         heading_text = html.unescape(re.sub(r"<[^>]+>", "", opens_with_title.group(1)))
@@ -202,7 +202,7 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
         if node.kind in ("page", "database_row") and node.is_published:
             page_dir = output_dir / slugs[node.id]
             page_dir.mkdir(parents=True, exist_ok=True)
-            body_html = _page_body_html(markdown_by_id.get(node.id, ""), node.title, resolver)
+            body_html = _page_body_html(markdown_by_id.get(node.id, ""), node.title, resolver, base_path)
             nav_html = "".join(
                 _render_nav(c, slugs, current_id=node.id, base_path=base_path) for c in root.children
             )
@@ -230,7 +230,7 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
     # Home page: the root page's own content if it's published, otherwise a
     # generated landing page that just lists the top-level published sections.
     if root.is_published:
-        body_html = _page_body_html(markdown_by_id.get(root.id, ""), root.title, resolver)
+        body_html = _page_body_html(markdown_by_id.get(root.id, ""), root.title, resolver, base_path)
         source_url = root.public_url
     else:
         # Reuse the same nav-tree logic (not a flat list of direct children)

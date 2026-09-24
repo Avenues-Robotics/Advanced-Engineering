@@ -154,6 +154,10 @@ def main() -> int:
           '<p class="page-link"><a href="/Advanced-Engineering/scs-course-outcomes/">' in out, out)
     check("link to a private Notion page is dropped to plain text", "notion.com" not in out and "secret" in out, out)
 
+    out = convert("[advanced sample](/p/3d0ec788f84080ff83d4c617cf7b6d1c?v=abc&pvs=25)", resolver)
+    check("relative Notion /p/<id> link resolves to the site page",
+          '<a href="/Advanced-Engineering/scs-course-outcomes/">advanced sample</a>' in out, out)
+
     # -- code, headings, safety ---------------------------------------------------------------------
     out = convert("```java\nif (a < b) { x[0] = 1; }\n```\n### Sub *heading* {color=\"blue\"}")
     check("code block is literal and escaped", "if (a &lt; b) { x[0] = 1; }" in out and 'class="language-java"' in out, out)

@@ -174,6 +174,28 @@ either way.
 
 ---
 
+## Trying formatting changes without rerunning the Action
+
+`snapshot/` holds a saved copy of the published content (the page tree plus
+Notion's markdown for each published page), so you can change `render.py`,
+`notion_md.py` or `static/style.css` and see the result in seconds:
+
+```
+python3 preview.py --serve      # rebuild into preview_site/ and serve at http://localhost:8000/
+```
+
+Refresh the snapshot after you edit content in Notion (needs your `.env`
+with `NOTION_TOKEN` and `ROOT_PAGE_ID`):
+
+```
+python3 preview.py --pull --serve
+```
+
+Before pushing, `python3 tests/test_notion_md.py`, `python3 tests/test_snapshot.py`
+and `python3 tests/run_self_test.py` should all pass.
+
+---
+
 ## Notes / gotchas
 
 - **Rate limits.** Notion allows roughly 3 requests/second; the script paces
@@ -191,9 +213,15 @@ either way.
   tab-nested blocks, etc.), so it has its own converter instead of a markdown
   library. If a Notion block type renders wrong, that's the file to extend;
   `python3 tests/test_notion_md.py` covers it offline.
-- **Images and files uploaded to Notion.** Notion serves those from temporary
-  signed URLs that expire after about an hour, so an uploaded image on the
-  generated site will break shortly after a build. Use external image URLs
-  (or embed links) for anything that needs to stay visible.
+- **Images and files uploaded to Notion.** Notion serves those from signed
+  URLs that expire after about 5 minutes, so the build (`media.py`) downloads
+  each one right after fetching the page and publishes it under `/media/`
+  on the site. If a download fails, the build prints a WARNING and that image
+  will be broken until the next successful build. Images are shown at their
+  natural size (up to the page width).
+- **Properties aren't rendered.** Only the page body is exported. Text that
+  lives in database properties (for example the Description / L1P / L2A
+  fields on each Outcome, or the file attached to "Sample 3-View Drawing")
+  isn't shown, so those pages come out empty.
 - **The site never edits Notion.** This only reads. It can't publish or
   unpublish anything for you - that part still happens in Notion itself.

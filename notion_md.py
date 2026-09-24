@@ -95,9 +95,17 @@ def _is_notion_host(url: str) -> bool:
 
 
 class _Ctx:
-    def __init__(self, resolve_page: PageResolver | None):
+    def __init__(self, resolve_page: PageResolver | None, base_path: str = ""):
         self._resolve_page = resolve_page
+        self.base_path = base_path
         self.heading_ids: set[str] = set()
+
+    def asset_url(self, url: str) -> str:
+        """`media/<file>` refers to a file saved alongside the site by media.py."""
+        url = url.strip()
+        if re.match(r"^media/[\w.-]+$", url):
+            return f"{self.base_path}/{url}"
+        return _safe_url(url)
 
     def resolve_page(self, page_id: str) -> tuple[str | None, str | None]:
         if self._resolve_page is None:
@@ -109,7 +117,10 @@ class _Ctx:
         links, or None when the target is a private Notion page (so we don't
         publish a dead/private link)."""
         url = url.strip()
-        if not _is_notion_host(url):
+        if url.startswith("media/"):
+            return self.asset_url(url)
+        relative_notion = re.match(r"^/(?:p/)?[0-9a-f]{32}(?:[?#]|$)", url, re.I)
+        if not relative_notion and not _is_notion_host(url):
             return _safe_url(url)
         page_id = _notion_id_from_url(url)
         if page_id:
@@ -423,8 +434,8 @@ def _youtube_id(url: str) -> str | None:
     return m.group(1) if m else None
 
 
-def _render_media(name: str, attrs: dict[str, str], caption_html: str) -> str:
-    src = _safe_url(attrs.get("src", ""))
+def _render_media(name: str, attrs: dict[str, str], caption_html: str, ctx: _Ctx) -> str:
+    src = ctx.asset_url(attrs.get("src", ""))
     cap = f"<figcaption>{caption_html}</figcaption>" if caption_html else ""
     if src == "#":
         return ""
@@ -551,7 +562,7 @@ def _render_tag(name: str, attrs: dict[str, str], inner: str | None,
         return f'<p class="page-link">{label}</p>'
 
     if name in ("video", "audio", "file", "pdf", "embed"):
-        return _render_media(name, attrs, render_inline((inner or "").strip(), ctx))
+        return _render_media(name, attrs, render_inline((inner or "").strip(), ctx), ctx)
 
     return ""  # database, folder, table_of_contents, meeting-notes, unknown
 
@@ -684,7 +695,7 @@ def render_blocks(lines: list[str], ctx: _Ctx) -> str:
         image = re.fullmatch(r"!\[((?:\\.|[^\]])*)\]\((\S+?)\)", text.strip())
         children, i = _take_children(lines, i + 1)
         if image:
-            src = _safe_url(image.group(2))
+            src = ctx.asset_url(image.group(2))
             caption = render_inline(image.group(1), ctx)
             alt = _esc(_plain_text(caption))
             cap = f"<figcaption>{caption}</figcaption>" if caption else ""
@@ -697,7 +708,8 @@ def render_blocks(lines: list[str], ctx: _Ctx) -> str:
     return "".join(out)
 
 
-def notion_markdown_to_html(source: str, resolve_page: PageResolver | None = None) -> str:
-    ctx = _Ctx(resolve_page)
+def notion_markdown_to_html(source: str, resolve_page: PageResolver | None = None,
+                            base_path: str = "") -> str:
+    ctx = _Ctx(resolve_page, base_path)
     lines = source.replace("\r\n", "\n").replace("\r", "\n").split("\n")
     return render_blocks(lines, ctx)

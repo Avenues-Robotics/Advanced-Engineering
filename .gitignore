@@ -2,4 +2,6 @@
 __pycache__/
 *.pyc
 site/
+preview_site/
 .venv/
+.media_cache/

@@ -1,0 +1,343 @@
+{
+  "id": "root",
+  "title": "Advanced Engineering Electives",
+  "kind": "page",
+  "public_url": null,
+  "children": [
+    {
+      "title": "Program Overview",
+      "children": [],
+      "id": "3aaec788-f840-8090-9aa8-effbe2412984",
+      "kind": "page",
+      "public_url": "https://storm-cairnsmore-9bc.notion.site/Program-Overview-3aaec788f84080909aa8effbe2412984"
+    },
+    {
+      "title": "Reflections and Engineering Notebook",
+      "children": [
+        {
+          "title": "Initial Reflection",
+          "children": [],
+          "id": "3d7ec788-f840-8034-be9f-f91d6e054ee9",
+          "kind": "page",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Initial-Reflection-3d7ec788f8408034be9ff91d6e054ee9"
+        },
+        {
+          "title": "Bi-weekly Reflection",
+          "children": [],
+          "id": "3d7ec788-f840-8036-a848-d702de28664e",
+          "kind": "page",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Bi-weekly-Reflection-3d7ec788f8408036a848d702de28664e"
+        }
+      ],
+      "id": "3d7ec788-f840-80cd-88c4-d35dffddbc78",
+      "kind": "page",
+      "public_url": "https://storm-cairnsmore-9bc.notion.site/Reflections-and-Engineering-Notebook-3d7ec788f84080cd88c4d35dffddbc78"
+    },
+    {
+      "title": "Outcomes",
+      "children": [
+        {
+          "title": "Conceptual Design",
+          "children": [],
+          "id": "3d1ec788-f840-8145-8965-fc97ac9f917e",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Conceptual-Design-3d1ec788f84081458965fc97ac9f917e"
+        },
+        {
+          "title": "Documentation",
+          "children": [],
+          "id": "3d1ec788-f840-81be-85a4-e43b730896f6",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Documentation-3d1ec788f84081be85a4e43b730896f6"
+        },
+        {
+          "title": "Iteration",
+          "children": [],
+          "id": "3d1ec788-f840-81cb-a7ea-e9643df0cd44",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Iteration-3d1ec788f84081cba7eae9643df0cd44"
+        },
+        {
+          "title": "3cfec788-f840-8064-a69c-e3c70bb6234b",
+          "children": [],
+          "id": "3cfec788-f840-8064-a69c-e3c70bb6234b",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/3cfec788f8408064a69ce3c70bb6234b"
+        },
+        {
+          "title": "Feedback Control",
+          "children": [],
+          "id": "3cfec788-f840-815d-b2f6-c1ee71b63859",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Feedback-Control-3cfec788f840815db2f6c1ee71b63859"
+        },
+        {
+          "title": "3cfec788-f840-80e5-a973-ed8249341c6f",
+          "children": [],
+          "id": "3cfec788-f840-80e5-a973-ed8249341c6f",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/3cfec788f84080e5a973ed8249341c6f"
+        },
+        {
+          "title": "Software Implementation",
+          "children": [],
+          "id": "3cfec788-f840-812a-bfa6-ce5ad29e57fd",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Software-Implementation-3cfec788f840812abfa6ce5ad29e57fd"
+        },
+        {
+          "title": "Software Architecture",
+          "children": [],
+          "id": "3cfec788-f840-8170-8fdb-db05102776ff",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Software-Architecture-3cfec788f84081708fdbdb05102776ff"
+        },
+        {
+          "title": "Electronics",
+          "children": [],
+          "id": "3cfec788-f840-81b6-8492-f7ee882d1b55",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Electronics-3cfec788f84081b68492f7ee882d1b55"
+        },
+        {
+          "title": "Technical Communication",
+          "children": [],
+          "id": "375ec788-f840-8054-9a25-ec6e0b4cbeab",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Technical-Communication-375ec788f84080549a25ec6e0b4cbeab"
+        },
+        {
+          "title": "Testing",
+          "children": [],
+          "id": "375ec788-f840-80c1-909f-e9ca04951656",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Testing-375ec788f84080c1909fe9ca04951656"
+        },
+        {
+          "title": "Mechanics",
+          "children": [],
+          "id": "375ec788-f840-80e7-a299-d4153f1f68b1",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Mechanics-375ec788f84080e7a299d4153f1f68b1"
+        },
+        {
+          "title": "Fabrication",
+          "children": [],
+          "id": "375ec788-f840-8058-9985-f184965deb65",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Fabrication-375ec788f84080589985f184965deb65"
+        },
+        {
+          "title": "Detailed Design",
+          "children": [],
+          "id": "375ec788-f840-803a-9851-debb82a8b256",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Detailed-Design-375ec788f840803a9851debb82a8b256"
+        },
+        {
+          "title": "Requirements",
+          "children": [],
+          "id": "375ec788-f840-807d-9257-cc9e3f3a72aa",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Requirements-375ec788f840807d9257cc9e3f3a72aa"
+        }
+      ],
+      "id": "section-outcomes",
+      "kind": "database",
+      "public_url": null
+    },
+    {
+      "title": "Activities",
+      "children": [
+        {
+          "title": "OnShape Tutorial 1 - 24-01-01 TIER 1 PART",
+          "children": [],
+          "id": "375ec788-f840-818b-8c69-e9075d261be8",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-1-24-01-01-TIER-1-PART-375ec788f840818b8c69e9075d261be8"
+        },
+        {
+          "title": "OnShape Tutorial 2 - 25-01-01 T42",
+          "children": [],
+          "id": "375ec788-f840-81d9-8765-e52eb45e2074",
+          "kind": "database_row",
+          "public_url": null
+        },
+        {
+          "title": "Onshape Tutorial 3 - 25-01-02 Phone Stand",
+          "children": [],
+          "id": "375ec788-f840-81c2-9709-d94e10b47f7f",
+          "kind": "database_row",
+          "public_url": null
+        },
+        {
+          "title": "OnShape Tutorial 4 with 3D Printer Export - Hollow Box",
+          "children": [],
+          "id": "37dec788-f840-80ad-87d8-db85a47e9a6b",
+          "kind": "database_row",
+          "public_url": null
+        },
+        {
+          "title": "OnShape Tutorial 5 - Using Revolve",
+          "children": [],
+          "id": "37dec788-f840-8001-8e77-e9619cffe06d",
+          "kind": "database_row",
+          "public_url": null
+        },
+        {
+          "title": "OnShape Tutorial 6 - Assembling Multiple Parts",
+          "children": [],
+          "id": "37dec788-f840-80d9-a2d3-f1c2dcc5b2ac",
+          "kind": "database_row",
+          "public_url": null
+        },
+        {
+          "title": "OnShape Tutorial 7 - Stirling Engine",
+          "children": [],
+          "id": "37dec788-f840-8085-825a-d2fe501a0d1d",
+          "kind": "database_row",
+          "public_url": null
+        },
+        {
+          "title": "OnShape Tutorial 8 - Creating an Assembly with the FTC Parts Library",
+          "children": [],
+          "id": "37dec788-f840-809f-a840-cc5fdba93249",
+          "kind": "database_row",
+          "public_url": null
+        },
+        {
+          "title": "OnShape Exercise 9 - Putting it all together",
+          "children": [],
+          "id": "37dec788-f840-804f-b98b-d1e7c6eff66a",
+          "kind": "database_row",
+          "public_url": null
+        }
+      ],
+      "id": "section-activities",
+      "kind": "database",
+      "public_url": null
+    },
+    {
+      "title": "Content Library",
+      "children": [
+        {
+          "title": "Sample Project 1: Sub-system Requirements Document (Part 2) [Advanced] for Autonomous Navigation",
+          "children": [],
+          "id": "3dcec788-f840-814b-9e18-dadd1884ecd6",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-Advanced-for-Autonomous-Navigation-3dcec788f840814b9e18dadd1884ecd6"
+        },
+        {
+          "title": "Sample Project 1: Sub-system Requirements Document (Part 2) for Software",
+          "children": [],
+          "id": "3dcec788-f840-8116-b1dd-dcc4e45d56d3",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-for-Software-3dcec788f8408116b1dddcc4e45d56d3"
+        },
+        {
+          "title": "Sample Project 1: Sub-system Requirements Document (Part 2) for Autonomous Navigation",
+          "children": [],
+          "id": "3dcec788-f840-8190-9237-f17165e79cd5",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-for-Autonomous-Navigation-3dcec788f84081909237f17165e79cd5"
+        },
+        {
+          "title": "Sample 3-View Drawing ",
+          "children": [],
+          "id": "3abec788-f840-8069-82aa-df99106b9420",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-3-View-Drawing-3abec788f840806982aadf99106b9420"
+        },
+        {
+          "title": "OnShape CAD Tutorials",
+          "children": [],
+          "id": "3abec788-f840-80f9-b90d-e05f7e00f336",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-CAD-Tutorials-3abec788f84080f9b90de05f7e00f336"
+        },
+        {
+          "title": "Comparing Design Concepts: Pugh Matrix",
+          "children": [],
+          "id": "385ec788-f840-8087-b8cb-dd5494b8a000",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Comparing-Design-Concepts-Pugh-Matrix-385ec788f8408087b8cbdd5494b8a000"
+        },
+        {
+          "title": "Prior Art Research Notes Template",
+          "children": [],
+          "id": "385ec788-f840-80c4-adf9-c3e8d5376c3a",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Prior-Art-Research-Notes-Template-385ec788f84080c4adf9c3e8d5376c3a"
+        },
+        {
+          "title": "Engineering Requirements",
+          "children": [],
+          "id": "37aec788-f840-803c-93b6-cafe71b1cac5",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Engineering-Requirements-37aec788f840803c93b6cafe71b1cac5"
+        },
+        {
+          "title": "Sample Project 1: Sub-system Requirements Document (Part 2) [Advanced]",
+          "children": [],
+          "id": "379ec788-f840-8033-a79e-dfe5894f23c2",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-Advanced-379ec788f8408033a79edfe5894f23c2"
+        },
+        {
+          "title": "Sample Project 1: Sub-system Requirements Document (Part 2) [Proficient]",
+          "children": [],
+          "id": "379ec788-f840-802a-aee3-d8244886ca5b",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-Proficient-379ec788f840802aaee3d8244886ca5b"
+        },
+        {
+          "title": "Sample Project 1: Team Requirements Document (Part 1)",
+          "children": [],
+          "id": "379ec788-f840-8066-8f3d-ede8894975ae",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Team-Requirements-Document-Part-1-379ec788f84080668f3dede8894975ae"
+        }
+      ],
+      "id": "section-content-library",
+      "kind": "database",
+      "public_url": null
+    },
+    {
+      "title": "Courses",
+      "children": [
+        {
+          "title": "Mechanical Engineering 1",
+          "children": [],
+          "id": "375ec788-f840-8028-899e-c637746a7d05",
+          "kind": "page",
+          "public_url": null
+        },
+        {
+          "title": "Software and Control Systems 1",
+          "children": [
+            {
+              "title": "SCS Course Outcomes",
+              "children": [],
+              "id": "3d0ec788-f840-80ff-83d4-c617cf7b6d1c",
+              "kind": "page",
+              "public_url": "https://storm-cairnsmore-9bc.notion.site/SCS-Course-Outcomes-3d0ec788f84080ff83d4c617cf7b6d1c"
+            },
+            {
+              "title": "Course Overview",
+              "children": [],
+              "id": "3d6ec788-f840-8099-bcb8-d86a31dd4163",
+              "kind": "page",
+              "public_url": "https://storm-cairnsmore-9bc.notion.site/Course-Overview-3d6ec788f8408099bcb8d86a31dd4163"
+            }
+          ],
+          "id": "3d0ec788-f840-809c-bdb5-fb9d32e0d49b",
+          "kind": "page",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Software-and-Control-Systems-1-3d0ec788f840809cbdb5fb9d32e0d49b"
+        }
+      ],
+      "id": "3dcec788-f840-8004-b39d-d4aa7e0b1336",
+      "kind": "page",
+      "public_url": "https://storm-cairnsmore-9bc.notion.site/Courses-3dcec788f8408004b39dd4aa7e0b1336"
+    }
+  ]
+}

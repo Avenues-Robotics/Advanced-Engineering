@@ -30,11 +30,13 @@ import sys
 import subprocess
 from pathlib import Path
 
+from media import copy_media, localize
 from notion_api import NotionClient, extract_id_from_url
 from walker import Node, build_tree
 from render import render_site
 
 PROJECT_ROOT = Path(__file__).resolve().parent
+MEDIA_DIR = PROJECT_ROOT / ".media_cache"
 
 
 def load_env_file(path: Path) -> None:
@@ -154,7 +156,7 @@ def main() -> None:
         to_fetch.append(root)
     for node in to_fetch:
         result = client.get_page_markdown(node.id)
-        markdown_by_id[node.id] = result.get("markdown", "")
+        markdown_by_id[node.id] = localize(result.get("markdown", ""), MEDIA_DIR)
         if result.get("truncated"):
             print(f"  NOTE: '{node.title}' was truncated by the Notion API (very long page).")
 
@@ -168,6 +170,9 @@ def main() -> None:
         base_path=base_path,
     )
     print("\n".join(log))
+    media_count = copy_media(MEDIA_DIR, output_dir)
+    if media_count:
+        print(f"  copied {media_count} image/file(s) into {output_dir / 'media'}")
 
     if args.deploy:
         print(f"\nDeploying {output_dir} ...")
