@@ -48,11 +48,18 @@ def assign_slugs(root: Node) -> dict[str, str]:
     return slugs
 
 
-def _render_nav(node: Node, slugs: dict[str, str], current_id: str, base_path: str) -> str:
+def _contains(node: Node, node_id: str) -> bool:
+    return node.id == node_id or any(_contains(c, node_id) for c in node.children)
+
+
+def _render_nav(node: Node, slugs: dict[str, str], current_id: str, base_path: str,
+                collapsible: bool = True) -> str:
     if not node.any_published():
         return ""
 
-    child_html = "".join(_render_nav(c, slugs, current_id, base_path) for c in node.children)
+    child_html = "".join(
+        _render_nav(c, slugs, current_id, base_path, collapsible) for c in node.children
+    )
     title = html.escape(node.title)
 
     if node.kind in ("page", "database_row") and node.is_published:
@@ -61,9 +68,18 @@ def _render_nav(node: Node, slugs: dict[str, str], current_id: str, base_path: s
     else:
         label = f'<span class="nav-label">{title}</span>'
 
-    if child_html:
+    if not child_html:
+        return f"<li>{label}</li>"
+    if not collapsible:
         return f"<li>{label}<ul>{child_html}</ul></li>"
-    return f"<li>{label}</li>"
+
+    # Sections stay open when they contain the page being viewed; nav.js
+    # additionally re-opens whatever the reader had expanded on earlier pages.
+    open_attr = " open" if current_id and _contains(node, current_id) else ""
+    return (
+        f'<li><details data-key="{slugs[node.id]}"{open_attr}>'
+        f"<summary>{label}</summary><ul>{child_html}</ul></details></li>"
+    )
 
 
 def _page_shell(*, site_title: str, page_title: str, nav_html: str, body_html: str,
@@ -98,6 +114,7 @@ def _page_shell(*, site_title: str, page_title: str, nav_html: str, body_html: s
     </div>
   </main>
 </div>
+<script src="{base_path}/static/nav.js" defer></script>
 </body>
 </html>
 """
@@ -220,7 +237,11 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
         # so a top-level page that isn't itself published, but has a
         # published descendant, shows as a label with its real children
         # nested underneath rather than a dead link.
-        body_html = f"<h1>{html.escape(site_title)}</h1><ul>{nav_root_html}</ul>"
+        landing_list_html = "".join(
+            _render_nav(c, slugs, current_id="", base_path=base_path, collapsible=False)
+            for c in root.children
+        )
+        body_html = f"<h1>{html.escape(site_title)}</h1><ul>{landing_list_html}</ul>"
         source_url = None
 
     home_html = _page_shell(
