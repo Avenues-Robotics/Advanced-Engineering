@@ -381,6 +381,28 @@
       "public_url": "https://storm-cairnsmore-9bc.notion.site/Courses-3dcec788f8408004b39dd4aa7e0b1336",
       "children": [
         {
+          "id": "375ec788-f840-8028-899e-c637746a7d05",
+          "title": "Mechanical Engineering 1",
+          "kind": "page",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Mechanical-Engineering-1-375ec788f8408028899ec637746a7d05",
+          "children": [
+            {
+              "id": "3d0ec788-f840-802e-83ae-cff0a9138bad",
+              "title": "ME1 Course Outcomes",
+              "kind": "page",
+              "public_url": "https://storm-cairnsmore-9bc.notion.site/ME1-Course-Outcomes-3d0ec788f840802e83aecff0a9138bad",
+              "children": []
+            },
+            {
+              "id": "3d1ec788-f840-80dc-8dd3-d434d60bdc19",
+              "title": "Unit 1 - Requirements",
+              "kind": "page",
+              "public_url": null,
+              "children": []
+            }
+          ]
+        },
+        {
           "id": "3d0ec788-f840-809c-bdb5-fb9d32e0d49b",
           "title": "Software and Control Systems 1",
           "kind": "page",

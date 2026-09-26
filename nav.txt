@@ -12,7 +12,8 @@
 # build log warns about each one so you can add it here.
 
 Program Overview
-Courses
+
+[Courses]
   Software and Control Systems 1
     SCS Course Outcomes
   Mechanical Engineering 1
@@ -94,18 +95,8 @@ Testing
 # Rewritten by every build - edits below here are replaced. To add one
 # of these pages to the site, move its line up into the outline above.
 
-# in Activities:
-OnShape Tutorial 1 - 24-01-01 TIER 1 PART
-OnShape Tutorial 2 - 25-01-01 T42
-Onshape Tutorial 3 - 25-01-02 Phone Stand
-OnShape Tutorial 4 with 3D Printer Export - Hollow Box
-OnShape Tutorial 5 - Using Revolve
-OnShape Tutorial 6 - Assembling Multiple Parts
-OnShape Tutorial 7 - Stirling Engine
-OnShape Tutorial 8 - Creating an Assembly with the FTC Parts Library
-OnShape Exercise 9 - Putting it all together
+# in Advanced Engineering Electives:
+Courses
 
-
-
-
-
+# in Mechanical Engineering 1:
+ME1 Course Outcomes

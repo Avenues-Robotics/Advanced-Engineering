@@ -16,6 +16,7 @@ page) - the same inputs build_site.py feeds to render.py.
 from __future__ import annotations
 
 import argparse
+import errno
 import functools
 import http.server
 import json
@@ -123,7 +124,16 @@ def build(snapshot_dir: Path, output_dir: Path, nav_file: Path = NAV_FILE) -> No
 
 def serve(directory: Path, port: int) -> None:
     handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(directory))
-    with http.server.ThreadingHTTPServer(("127.0.0.1", port), handler) as server:
+    try:
+        server = http.server.ThreadingHTTPServer(("127.0.0.1", port), handler)
+    except OSError as e:
+        if e.errno != errno.EADDRINUSE:
+            raise
+        sys.exit(f"Port {port} is already in use - probably an earlier `preview.py --serve` that's "
+                 f"still running. It serves the same folder, so just refresh "
+                 f"http://localhost:{port}/ to see this build, or stop it with Ctrl+C in its "
+                 f"terminal (or pass --port to use another port).")
+    with server:
         print(f"Serving {directory} at http://localhost:{port}/  (Ctrl+C to stop)")
         try:
             server.serve_forever()
