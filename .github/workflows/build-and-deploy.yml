@@ -21,7 +21,7 @@ env:
   BASE_PATH: "/Advanced-Engineering"
 
 permissions:
-  contents: read
+  contents: write   # to commit the unlisted-pages list at the bottom of nav.txt
   pages: write
   id-token: write
 
@@ -53,6 +53,22 @@ jobs:
         # for the local-script workflow (see README). This workflow deploys
         # via actions/deploy-pages below instead, so the generated HTML
         # never gets committed to the repo's history.
+
+      - name: Commit the updated unlisted-pages list in nav.txt
+        # The build rewrites the list of published-but-unlisted pages at the
+        # bottom of nav.txt; save it back to the repo so it shows up there.
+        # A failure here (e.g. nav.txt edited mid-run) never blocks the deploy.
+        continue-on-error: true
+        run: |
+          if git diff --quiet -- nav.txt; then
+            echo "nav.txt unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update unlisted pages in nav.txt" -- nav.txt
+          git pull --rebase
+          git push
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

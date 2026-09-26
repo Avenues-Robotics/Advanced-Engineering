@@ -27,12 +27,17 @@ def slugify(text: str) -> str:
     return text or "page"
 
 
-def assign_slugs(root: Node) -> dict[str, str]:
-    """Map node id -> unique url slug (folder name), walking the whole tree."""
-    used: set[str] = set()
-    slugs: dict[str, str] = {}
+def assign_slugs(root: Node, existing: dict[str, str] | None = None) -> dict[str, str]:
+    """Map node id -> unique url slug (folder name), walking the whole tree.
+    Ids already in `existing` keep their slug."""
+    slugs: dict[str, str] = dict(existing or {})
+    used: set[str] = set(slugs.values())
 
     def visit(node: Node) -> None:
+        if node.id in slugs:
+            for child in node.children:
+                visit(child)
+            return
         base = slugify(node.title)
         slug = base
         i = 2
@@ -48,6 +53,12 @@ def assign_slugs(root: Node) -> dict[str, str]:
     return slugs
 
 
+def _find(node: Node, node_id: str) -> Node | None:
+    if node.id == node_id:
+        return node
+    return next((f for c in node.children if (f := _find(c, node_id))), None)
+
+
 def _contains(node: Node, node_id: str) -> bool:
     return node.id == node_id or any(_contains(c, node_id) for c in node.children)
 
@@ -60,7 +71,7 @@ def _render_nav(node: Node, slugs: dict[str, str], current_id: str, base_path: s
     child_html = "".join(
         _render_nav(c, slugs, current_id, base_path, collapsible) for c in node.children
     )
-    title = html.escape(node.title)
+    title = html.escape(node.sidebar_title)
 
     if node.kind in ("page", "database_row") and node.is_published:
         cls = " active" if node.id == current_id else ""
@@ -166,7 +177,8 @@ def _page_body_html(source: str, title: str, resolver: PageResolver, base_path: 
 
 
 def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
-                 site_title: str, project_root: Path, base_path: str = "") -> list[str]:
+                 site_title: str, project_root: Path, base_path: str = "",
+                 slugs: dict[str, str] | None = None, home_id: str | None = None) -> list[str]:
     """
     Writes the static site into output_dir. Returns a list of human-readable
     log lines describing what was written / skipped, for --dry-run style
@@ -184,7 +196,7 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
     if static_src.exists():
         shutil.copytree(static_src, static_dst)
 
-    slugs = assign_slugs(root)
+    slugs = assign_slugs(root, existing=slugs)
     resolver = _make_page_resolver(root, slugs, base_path)
     nav_root_html = "".join(
         _render_nav(c, slugs, current_id="", base_path=base_path) for c in root.children
@@ -222,14 +234,23 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
             log.append(f"  (section only, not itself published) {node.title}")
 
         for child in node.children:
-            walk_and_write(child, path_titles + [node.title])
+            walk_and_write(child, path_titles + [node.sidebar_title])
 
     for child in root.children:
         walk_and_write(child, [root.title])
 
-    # Home page: the root page's own content if it's published, otherwise a
+    # Home page: the chosen home page's content (also kept at its own URL),
+    # else the root page's own content if it's published, otherwise a
     # generated landing page that just lists the top-level published sections.
-    if root.is_published:
+    home = _find(root, home_id) if home_id else None
+    home_nav_html = nav_root_html
+    if home is not None:
+        body_html = _page_body_html(markdown_by_id.get(home.id, ""), home.title, resolver, base_path)
+        source_url = home.public_url
+        home_nav_html = "".join(
+            _render_nav(c, slugs, current_id=home.id, base_path=base_path) for c in root.children
+        )
+    elif root.is_published:
         body_html = _page_body_html(markdown_by_id.get(root.id, ""), root.title, resolver, base_path)
         source_url = root.public_url
     else:
@@ -247,7 +268,7 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
     home_html = _page_shell(
         site_title=site_title,
         page_title=site_title,
-        nav_html=nav_root_html,
+        nav_html=home_nav_html,
         body_html=body_html,
         breadcrumb_html="",
         source_public_url=source_url,

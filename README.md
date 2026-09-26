@@ -20,6 +20,47 @@ under it (e.g. "Reflections and Engineering Notebook" over "Initial
 Reflection") still shows up in the sidebar as a plain section label, just so
 its published child is reachable, but it never gets its own page.
 
+## Organizing the sidebar: `nav.txt`
+
+Notion decides *what's* on the site and what each page says; `nav.txt`
+decides *where* it sits in the sidebar. It's a plain outline of page
+titles - reorder lines to reorder pages, indent to nest:
+
+```
+Program Overview
+[Start Here]                         a section label that isn't a Notion page
+  Course Overview
+Content Library
+  Sample Project 1: Team Requirements Document (Part 1) | Part 1: Team Requirements
+                                     ...shown in the sidebar as "Part 1: Team Requirements"
+  Content Library > Software Architecture
+                                     "Parent > Title" when two pages share a title
+[Hidden]
+  Sample 3-View Drawing              published in Notion, but kept off the site
+```
+
+The full syntax is in the comment at the top of the file. A few things to
+know:
+
+- **The first page listed is the home page** (Program Overview, as shipped).
+  It's also still reachable at its own URL.
+- **Newly published pages stay off the site until you add them.** Every
+  build rewrites a list at the bottom of `nav.txt` of pages that are
+  published in Notion but not in the outline (grouped by where they live in
+  Notion) and prints a `NOTE` / yellow Actions warning for each. To add one,
+  move its line up into the outline. The GitHub Action commits that list
+  back to the repo, so `git pull` before editing `nav.txt` locally.
+- **Renaming a page in Notion** means updating its line in `nav.txt`. Until
+  you do, the build warns twice (old title not found, new title not listed)
+  and the page is left off the site.
+- **URLs don't change** when you move or rename things in `nav.txt`; they're
+  based on the Notion title.
+- Try changes locally with `python3 preview.py --serve`, then commit
+  `nav.txt` so the GitHub Action uses it too.
+- Delete `nav.txt` to go back to Notion's own order, or run
+  `python3 preview.py --write-nav` to create a fresh one from the current
+  Notion order.
+
 ## Two ways to run this
 
 **Option A: GitHub Actions (recommended).** The rebuild runs on GitHub's
@@ -191,8 +232,8 @@ with `NOTION_TOKEN` and `ROOT_PAGE_ID`):
 python3 preview.py --pull --serve
 ```
 
-Before pushing, `python3 tests/test_notion_md.py`, `python3 tests/test_snapshot.py`
-and `python3 tests/run_self_test.py` should all pass.
+Before pushing, `python3 tests/test_notion_md.py`, `python3 tests/test_layout.py`,
+`python3 tests/test_snapshot.py` and `python3 tests/run_self_test.py` should all pass.
 
 ---
 

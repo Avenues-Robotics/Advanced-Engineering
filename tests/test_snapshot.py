@@ -41,7 +41,7 @@ def main() -> int:
         check("markdown for a published page survives",
               markdown["overview"] == client.markdown["overview"])
 
-        build(tmp / "snap", tmp / "out")
+        build(tmp / "snap", tmp / "out", nav_file=tmp / "no-nav.txt")
         check("snapshot builds a site", (tmp / "out" / "program-overview" / "index.html").exists())
 
         # The committed snapshot must stay loadable and buildable.

@@ -22,6 +22,11 @@ class Node:
     kind: str  # "page" | "database" | "database_row"
     public_url: str | None
     children: list["Node"] = field(default_factory=list)
+    nav_title: str | None = None  # sidebar-only name, set from nav.txt
+
+    @property
+    def sidebar_title(self) -> str:
+        return self.nav_title or self.title
 
     @property
     def is_published(self) -> bool:

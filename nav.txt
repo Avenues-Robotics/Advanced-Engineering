@@ -1,0 +1,102 @@
+# Site navigation. Controls the order and grouping of the sidebar; page
+# content still comes from Notion on every build.
+#
+#   Page Title                  a Notion page or database, by title
+#   [Section Name]              a plain label that isn't a Notion page
+#   Page Title | Sidebar Name   show a page under a different name
+#   Parent > Page Title         when two pages share a title
+#   [Hidden]                    anything indented under this is left off the site
+#
+# Indent (2 spaces) to nest. The first page listed is the site's home page.
+# Pages published in Notion but not listed here are left off the site; the
+# build log warns about each one so you can add it here.
+
+Program Overview
+Courses
+  Software and Control Systems 1
+    SCS Course Outcomes
+  Mechanical Engineering 1
+
+Outcomes
+  [Joint]
+    Requirements
+    Testing
+    Iteration
+    Documentation
+    Technical Communication
+  [ME]
+    Conceptual Design
+    Detailed Design
+    Fabrication
+    Mechanics
+  [SCS]
+    Electronics
+    Outcomes > Software Architecture
+    Software Implementation
+    Feedback Control
+
+Projects
+  Project 1: Engineering Requirements
+  [ME]
+    Project 2: Subsystem Conceptual Design
+    Project 3: Subsystem Detailed Design
+  [SCS]
+    Project 2: System Architecture
+    SCS Project 4: Subsystem Software Implementation
+    SCS Project 3: Autonomous Drivetrain
+
+Content Library
+  [Readings]
+    Engineering Requirements
+    Project Management for FTC
+    [ME Specific]
+      Comparing Design Concepts: Pugh Matrix
+    [SCS Specific]
+      Engineering Requirements
+      Content Library > Software Architecture
+  [Activities and Tutorials]
+    [ME]
+      OnShape CAD Tutorials
+      Sample 3-View Drawing
+    [SCS]
+  [Templates]
+    Prior Art Research Notes Template
+  [Exemplars]
+    [Sample Project 1: Requirements]
+      Sample Project 1: Team Requirements Document (Part 1) | Part 1: Team Requirements
+      Sample Project 1: Sub-system Requirements Document (Part 2) [Proficient] | Part 2: Sub-system [Proficient]
+      Sample Project 1: Sub-system Requirements Document (Part 2) [Advanced] | Part 2: Sub-system [Advanced]
+      Sample Project 1: Sub-system Requirements Document (Part 2) for Software | Part 2: Software
+      Sample Project 1: Sub-system Requirements Document (Part 2) for Autonomous Navigation | Part 2: Autonomous Navigation
+      Sample Project 1: Sub-system Requirements Document (Part 2) [Advanced] for Autonomous Navigation | Part 2: Autonomous Navigation [Advanced]
+    [Sample SCS Project 2: Architecture]
+      Sample SCS Project 2: System Architecture Design Plan [Proficient] | Design Plan [Proficient]
+      Sample SCS Project 2: System Architecture Design Plan [Advanced] | Design Plan [Advanced]
+
+Reflections and Engineering Notebook
+  Initial Reflection
+  Bi-weekly Reflection
+Testing
+  Iteration
+  Documentation
+  Technical Communication
+
+# ==== Published in Notion, not in the sidebar yet ====
+# Rewritten by every build - edits below here are replaced. To add one
+# of these pages to the site, move its line up into the outline above.
+
+# in Activities:
+OnShape Tutorial 1 - 24-01-01 TIER 1 PART
+OnShape Tutorial 2 - 25-01-01 T42
+Onshape Tutorial 3 - 25-01-02 Phone Stand
+OnShape Tutorial 4 with 3D Printer Export - Hollow Box
+OnShape Tutorial 5 - Using Revolve
+OnShape Tutorial 6 - Assembling Multiple Parts
+OnShape Tutorial 7 - Stirling Engine
+OnShape Tutorial 8 - Creating an Assembly with the FTC Parts Library
+OnShape Exercise 9 - Putting it all together
+
+
+
+
+

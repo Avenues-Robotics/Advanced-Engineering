@@ -7,6 +7,7 @@ Usage:
     python3 preview.py                # rebuild ./preview_site from snapshot/
     python3 preview.py --serve        # rebuild, then serve at http://localhost:8000/
     python3 preview.py --pull         # refresh snapshot/ from Notion first (needs NOTION_TOKEN)
+    python3 preview.py --write-nav    # create nav.txt from the snapshot's current Notion order
 
 The snapshot is snapshot/tree.json (the page tree with publish status) plus
 snapshot/markdown/<page-id>.md (Notion's markdown export for each published
@@ -24,6 +25,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
+from layout import layout_from_tree, organize
 from media import copy_media, localize
 from notion_api import strip_dashes
 from render import render_site
@@ -32,6 +34,7 @@ from walker import Node
 PROJECT_ROOT = Path(__file__).resolve().parent
 SNAPSHOT_DIR = PROJECT_ROOT / "snapshot"
 OUTPUT_DIR = PROJECT_ROOT / "preview_site"
+NAV_FILE = PROJECT_ROOT / "nav.txt"
 
 
 def _node_from_dict(d: dict) -> Node:
@@ -108,10 +111,12 @@ def pull_from_notion(snapshot_dir: Path) -> None:
     print(f"Saved snapshot of {len(to_fetch)} published page(s) to {snapshot_dir}")
 
 
-def build(snapshot_dir: Path, output_dir: Path) -> None:
+def build(snapshot_dir: Path, output_dir: Path, nav_file: Path = NAV_FILE) -> None:
     root, markdown_by_id, site_title = load_snapshot(snapshot_dir)
+    root, slugs, home_id = organize(root, nav_file)
     log = render_site(root=root, markdown_by_id=markdown_by_id, output_dir=output_dir,
-                      site_title=site_title, project_root=PROJECT_ROOT, base_path="")
+                      site_title=site_title, project_root=PROJECT_ROOT, base_path="",
+                      slugs=slugs, home_id=home_id)
     print(log[0])
     copy_media(snapshot_dir / "media", output_dir)
 
@@ -131,7 +136,17 @@ def main() -> None:
     parser.add_argument("--pull", action="store_true", help="Refresh snapshot/ from Notion before building.")
     parser.add_argument("--serve", action="store_true", help="Serve the built site locally afterwards.")
     parser.add_argument("--port", type=int, default=8000)
+    parser.add_argument("--write-nav", action="store_true",
+                        help="Create nav.txt from the snapshot's current Notion order, then exit.")
     args = parser.parse_args()
+
+    if args.write_nav:
+        if NAV_FILE.exists():
+            sys.exit(f"{NAV_FILE.name} already exists - delete it first to regenerate it.")
+        root, _, _ = load_snapshot(SNAPSHOT_DIR)
+        NAV_FILE.write_text(layout_from_tree(root), encoding="utf-8")
+        print(f"Wrote {NAV_FILE.name}. Rearrange its lines, then run: python3 preview.py --serve")
+        return
 
     if args.pull:
         pull_from_notion(SNAPSHOT_DIR)

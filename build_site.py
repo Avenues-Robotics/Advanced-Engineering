@@ -30,6 +30,7 @@ import sys
 import subprocess
 from pathlib import Path
 
+from layout import organize
 from media import copy_media, localize
 from notion_api import NotionClient, extract_id_from_url
 from walker import Node, build_tree
@@ -59,7 +60,7 @@ def collect_publish_report(node: Node, depth: int = 0, lines: list[str] | None =
     if lines is None:
         lines = []
     indent = "  " * depth
-    if node.kind == "database":
+    if node.kind in ("database", "section"):
         mark = "[section]"
     else:
         mark = "[PUBLISHED]" if node.is_published else "[-]"
@@ -135,7 +136,7 @@ def main() -> None:
     client = NotionClient(token)
 
     print(f"Walking Notion tree from root page {root_page_id} ...")
-    root = build_tree(client, root_page_id)
+    root, slugs, home_id = organize(build_tree(client, root_page_id), PROJECT_ROOT / "nav.txt")
 
     site_title = os.environ.get("SITE_TITLE") or root.title
 
@@ -152,7 +153,7 @@ def main() -> None:
     print("\nFetching markdown for published pages ...")
     markdown_by_id: dict[str, str] = {}
     to_fetch = list(publishable)
-    if root.is_published:
+    if root.is_published and not home_id:
         to_fetch.append(root)
     for node in to_fetch:
         result = client.get_page_markdown(node.id)
@@ -168,6 +169,8 @@ def main() -> None:
         site_title=site_title,
         project_root=PROJECT_ROOT,
         base_path=base_path,
+        slugs=slugs,
+        home_id=home_id,
     )
     print("\n".join(log))
     media_count = copy_media(MEDIA_DIR, output_dir)

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 292" width="892" height="292">
+<rect x="0" y="0" width="892" height="292" rx="12" fill="#ffffff" stroke="#d9d2c4" stroke-width="1.5"/>
+
+<style>
+  .box-label { font-size: 13px; font-weight: 700; fill: #24211c; font-family: -apple-system, sans-serif; }
+  .box-sub { font-size: 10.5px; fill: #5b564c; font-family: -apple-system, sans-serif; }
+  .edge-label { font-size: 10.5px; fill: #5b564c; font-family: -apple-system, sans-serif; }
+  .cls-name { font-size: 12.5px; font-weight: 700; fill: #24211c; font-family: -apple-system, sans-serif; }
+  .cls-stereo { font-size: 9.5px; font-style: italic; fill: #5b564c; font-family: -apple-system, sans-serif; }
+  .cls-line { font-size: 10.5px; fill: #24211c; font-family: "SF Mono", Consolas, monospace; }
+  .guard { font-size: 10px; fill: #a3402a; font-family: "SF Mono", Consolas, monospace; }
+  .entry { font-size: 9.5px; fill: #5b564c; font-style: italic; font-family: -apple-system, sans-serif; }
+  rect.node { fill: #fffdf8; stroke: #c9bfa9; stroke-width: 1.3; }
+  rect.opmode { fill: #f1e3d8; stroke: #a3402a; stroke-width: 1.3; }
+  rect.state { fill: #fffdf8; stroke: #c9bfa9; stroke-width: 1.3; }
+  rect.cls { fill: #fffdf8; stroke: #c9bfa9; stroke-width: 1.3; }
+  rect.iface { fill: #eef2ec; stroke: #7c9473; stroke-width: 1.3; }
+  line.divider { stroke: #c9bfa9; stroke-width: 1; }
+  text { font-family: -apple-system, sans-serif; }
+</style>
+
+<g transform="translate(16,16)">
+<defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g color="#5b564c">
+    <circle cx="420" cy="14" r="5" fill="currentColor"></circle>
+    <path d="M420,19 L420,40" fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#a1)"></path>
+
+    <rect class="state" x="350" y="40" width="140" height="54" rx="27"></rect>
+    <text x="420" y="62" text-anchor="middle" class="cls-name">HOME</text>
+    <text x="420" y="78" text-anchor="middle" class="entry">entry / motor power off</text>
+
+    <rect class="state" x="130" y="190" width="180" height="54" rx="27"></rect>
+    <text x="220" y="212" text-anchor="middle" class="cls-name">MOVING</text>
+    <text x="220" y="228" text-anchor="middle" class="entry">entry / closed-loop toward target</text>
+
+    <rect class="state" x="550" y="190" width="200" height="54" rx="27"></rect>
+    <text x="650" y="212" text-anchor="middle" class="cls-name">AT_TARGET</text>
+    <text x="650" y="228" text-anchor="middle" class="entry">entry / holds against gravity</text>
+
+    <path d="M370,94 L235,190" fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#a1)"></path>
+    <text x="290" y="140" text-anchor="middle" class="guard">[setTarget(h)]</text>
+
+    <path d="M310,214 L550,214" fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#a1)"></path>
+    <text x="430" y="204" text-anchor="middle" class="guard">[position == target]</text>
+
+    <path d="M650,190 C650,120 470,110 460,150" fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#a1)"></path>
+    <text x="600" y="130" text-anchor="middle" class="guard">[setTarget(newH)]</text>
+  </g>
+
+</g>
+</svg>
