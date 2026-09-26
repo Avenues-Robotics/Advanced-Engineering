@@ -57,6 +57,15 @@ Content Library
   [Activities and Tutorials]
     [ME]
       OnShape CAD Tutorials
+        OnShape Tutorial 1 - 24-01-01 TIER 1 PART
+        OnShape Tutorial 2 - 25-01-01 T42
+        Onshape Tutorial 3 - 25-01-02 Phone Stand
+        OnShape Tutorial 4 with 3D Printer Export - Hollow Box
+        OnShape Tutorial 5 - Using Revolve
+        OnShape Tutorial 6 - Assembling Multiple Parts
+        OnShape Tutorial 7 - Stirling Engine
+        OnShape Tutorial 8 - Creating an Assembly with the FTC Parts Library
+        OnShape Exercise 9 - Putting it all together
       Sample 3-View Drawing
     [SCS]
   [Templates]
