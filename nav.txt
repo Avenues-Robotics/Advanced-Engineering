@@ -17,6 +17,7 @@ Program Overview
   Software and Control Systems 1
     SCS Course Outcomes
   Mechanical Engineering 1
+    
 
 Outcomes
   [Joint]
@@ -83,13 +84,11 @@ Content Library
       Sample SCS Project 2: System Architecture Design Plan [Proficient] | Design Plan [Proficient]
       Sample SCS Project 2: System Architecture Design Plan [Advanced] | Design Plan [Advanced]
 
-Reflections and Engineering Notebook
+[Reflection]
+  Reflections and Engineering Notebook
   Initial Reflection
   Bi-weekly Reflection
-Testing
-  Iteration
-  Documentation
-  Technical Communication
+
 
 # ==== Published in Notion, not in the sidebar yet ====
 # Rewritten by every build - edits below here are replaced. To add one
@@ -99,4 +98,5 @@ Testing
 Courses
 
 # in Mechanical Engineering 1:
-ME1 Course Outcomes
+
+Unit 1 - Requirements
