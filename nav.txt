@@ -89,14 +89,9 @@ Content Library
   Initial Reflection
   Bi-weekly Reflection
 
-
 # ==== Published in Notion, not in the sidebar yet ====
 # Rewritten by every build - edits below here are replaced. To add one
 # of these pages to the site, move its line up into the outline above.
 
-# in Advanced Engineering Electives:
-Courses
-
 # in Mechanical Engineering 1:
-
-Unit 1 - Requirements
+ME1 Course Outcomes
