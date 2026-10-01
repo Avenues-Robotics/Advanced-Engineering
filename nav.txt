@@ -114,6 +114,7 @@ FTC Java 6 - Optional: Complete FTCSIM Movement
 FTC Java 2 - FTCSIM Movement 2 - Rearward
 FTC Java 3 - FTCSIM Movement 3 - Half Moon
 FTC Java 8 - FTCSIM Sensors 4 - Pattern
+OnShape Tutorial 8 - Creating an Assembly with the FRC Design App
 
 # in Mechanical Engineering 1:
 ME1 Course Outcomes
