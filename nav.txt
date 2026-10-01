@@ -116,6 +116,5 @@ FTC Java 2 - FTCSIM Movement 2 - Rearward
 FTC Java 3 - FTCSIM Movement 3 - Half Moon
 FTC Java 8 - FTCSIM Sensors 4 - Pattern
 
-
 # in Mechanical Engineering 1:
 ME1 Course Outcomes
