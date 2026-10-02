@@ -104,8 +104,7 @@ def main() -> int:
     overview_html = (out_dir / "program-overview" / "index.html").read_text(encoding="utf-8")
     check("rendered markdown became real HTML (h1) on the Program Overview page",
           "<h1" in overview_html and ">Program Overview</h1>" in overview_html)
-    check("Program Overview page links back to the Notion source",
-          "view in Notion" in overview_html)
+    check("pages have no Notion source footer", "view in Notion" not in overview_html)
 
     eng_reqs_html = (out_dir / "engineering-requirements" / "index.html").read_text(encoding="utf-8")
     check("database row page rendered its own markdown",
