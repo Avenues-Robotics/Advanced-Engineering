@@ -37,6 +37,8 @@ Content Library
                                      "Parent > Title" when two pages share a title
 [Hidden]
   Sample 3-View Drawing              published in Notion, but kept off the site
+[Linked Only]
+  OnShape Tutorial 1                 on the site (links to it work), but not in the sidebar
 ```
 
 The full syntax is in the comment at the top of the file. A few things to
@@ -50,6 +52,10 @@ know:
   Notion) and prints a `NOTE` / yellow Actions warning for each. To add one,
   move its line up into the outline. The GitHub Action commits that list
   back to the repo, so `git pull` before editing `nav.txt` locally.
+- **Links only work to pages that are on the site.** A link to a page that's
+  left off (unlisted or `[Hidden]`) shows as plain text. To keep a page out
+  of the sidebar but still reachable from the pages that link to it, list it
+  under `[Linked Only]`.
 - **Renaming a page in Notion** means updating its line in `nav.txt`. Until
   you do, the build warns twice (old title not found, new title not listed)
   and the page is left off the site.

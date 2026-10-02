@@ -140,16 +140,16 @@
       "children": [
         {
           "id": "3cfec788-f840-80a4-a718-ee0816c02e08",
-          "title": "SCS Project 4: Subsystem Software Implementation",
+          "title": "Project 4: Subsystem Software Implementation",
           "kind": "database_row",
-          "public_url": "https://storm-cairnsmore-9bc.notion.site/SCS-Project-4-Subsystem-Software-Implementation-3cfec788f84080a4a718ee0816c02e08",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-4-Subsystem-Software-Implementation-3cfec788f84080a4a718ee0816c02e08",
           "children": []
         },
         {
           "id": "3cfec788-f840-80cf-9062-efdbb053ef87",
-          "title": "SCS Project 3: Autonomous Drivetrain ",
+          "title": "Project 3: Intro to FTC Java",
           "kind": "database_row",
-          "public_url": "https://storm-cairnsmore-9bc.notion.site/SCS-Project-3-Autonomous-Drivetrain-3cfec788f84080cf9062efdbb053ef87",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-3-Intro-to-FTC-Java-3cfec788f84080cf9062efdbb053ef87",
           "children": []
         },
         {
@@ -197,6 +197,118 @@
       "public_url": null,
       "children": [
         {
+          "id": "3e8ec788-f840-8055-99ff-d3877ba78428",
+          "title": "FTC Java 16 - Leave and Park Autonomous OpMode",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-16-Leave-and-Park-Autonomous-OpMode-3e8ec788f840805599ffd3877ba78428",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-8139-9dc1-f7606f6040f7",
+          "title": "FTC Java 13 - Connect Android Studio to a Robot",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-13-Connect-Android-Studio-to-a-Robot-3e8ec788f84081399dc1f7606f6040f7",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-816a-b007-f144b15f5ad5",
+          "title": "FTC Java 15 - Create a Drive Class to ABSTRACT Drive Functionality",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-15-Create-a-Drive-Class-to-ABSTRACT-Drive-Functionality-3e8ec788f840816ab007f144b15f5ad5",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-8186-a69f-c23ff76868d7",
+          "title": "FTC Java 12 - Set-up Android Studio",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-12-Set-up-Android-Studio-3e8ec788f8408186a69fc23ff76868d7",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-81b3-8e90-c27cc2e5866d",
+          "title": "FTC Java 9 - FTCSIM Sensors 7 - Distance Sense",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-9-FTCSIM-Sensors-7-Distance-Sense-3e8ec788f84081b38e90c27cc2e5866d",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-81bf-b04f-c5fa0e9c07fe",
+          "title": "FTC Java 14 - Your First Java OpMode - Drive Train Testing",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-14-Your-First-Java-OpMode-Drive-Train-Testing-3e8ec788f84081bfb04fc5fa0e9c07fe",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-81dd-b1c7-c299928934bd",
+          "title": "FTC Java 10 - FTCSIM Sensors 10 - Multisense",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-10-FTCSIM-Sensors-10-Multisense-3e8ec788f84081ddb1c7c299928934bd",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-81f7-9729-d311098c89ac",
+          "title": "FTC Java 11 - Configure a Test Bot",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-11-Configure-a-Test-Bot-3e8ec788f84081f79729d311098c89ac",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-812e-bbe4-e261eb7fc853",
+          "title": "FTC Java 5 - FTCSIM Movement 5 - L",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-5-FTCSIM-Movement-5-L-3e8ec788f840812ebbe4e261eb7fc853",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-8135-befa-ef3887177c29",
+          "title": "FTC Java 1 - FTCSIM Movement 1 - Line",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-1-FTCSIM-Movement-1-Line-3e8ec788f8408135befaef3887177c29",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-8152-9a91-c6dd0093f1de",
+          "title": "FTC Java 4 - FTCSIM Movement 4 - Arch",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-4-FTCSIM-Movement-4-Arch-3e8ec788f84081529a91c6dd0093f1de",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-8172-91df-f6dac05c5f63",
+          "title": "FTC Java 7 - FTCSIM Sensors 1 - Color Sense",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-7-FTCSIM-Sensors-1-Color-Sense-3e8ec788f840817291dff6dac05c5f63",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-8173-960c-ee8eb026cfad",
+          "title": "FTC Java 6 - Optional: Complete FTCSIM Movement",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-6-Optional-Complete-FTCSIM-Movement-3e8ec788f8408173960cee8eb026cfad",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-8183-b265-ee679ae2462a",
+          "title": "FTC Java 2 - FTCSIM Movement 2 - Rearward",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-2-FTCSIM-Movement-2-Rearward-3e8ec788f8408183b265ee679ae2462a",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-819a-9006-c46c674f7447",
+          "title": "FTC Java 3 - FTCSIM Movement 3 - Half Moon",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-3-FTCSIM-Movement-3-Half-Moon-3e8ec788f840819a9006c46c674f7447",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-81a7-80f9-d1acb990de03",
+          "title": "FTC Java 8 - FTCSIM Sensors 4 - Pattern",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-8-FTCSIM-Sensors-4-Pattern-3e8ec788f84081a780f9d1acb990de03",
+          "children": []
+        },
+        {
           "id": "37dec788-f840-804f-b98b-d1e7c6eff66a",
           "title": "OnShape Exercise 9 - Putting it all together",
           "kind": "database_row",
@@ -226,9 +338,9 @@
         },
         {
           "id": "37dec788-f840-809f-a840-cc5fdba93249",
-          "title": "OnShape Tutorial 8 - Creating an Assembly with the FTC Parts Library",
+          "title": "OnShape Tutorial 8 - Creating an Assembly with the FRC Design App",
           "kind": "database_row",
-          "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-8-Creating-an-Assembly-with-the-FTC-Parts-Library-37dec788f840809fa840cc5fdba93249",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-8-Creating-an-Assembly-with-the-FRC-Design-App-37dec788f840809fa840cc5fdba93249",
           "children": []
         },
         {
@@ -267,6 +379,20 @@
       "kind": "database",
       "public_url": null,
       "children": [
+        {
+          "id": "3edec788-f840-8117-9511-d1ba37e08b63",
+          "title": "FTC Java - FTCSIM",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-FTCSIM-3edec788f84081179511d1ba37e08b63",
+          "children": []
+        },
+        {
+          "id": "3edec788-f840-819d-960d-eb588e736e0a",
+          "title": "FTC Java - Getting Started on a Robot",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-Getting-Started-on-a-Robot-3edec788f840819d960deb588e736e0a",
+          "children": []
+        },
         {
           "id": "3e5ec788-f840-8164-9622-dde7cda294aa",
           "title": "Software Architecture",
@@ -378,7 +504,7 @@
       "id": "3dcec788-f840-8004-b39d-d4aa7e0b1336",
       "title": "Courses",
       "kind": "page",
-      "public_url": "https://storm-cairnsmore-9bc.notion.site/Courses-3dcec788f8408004b39dd4aa7e0b1336",
+      "public_url": null,
       "children": [
         {
           "id": "375ec788-f840-8028-899e-c637746a7d05",
