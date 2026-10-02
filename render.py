@@ -65,7 +65,7 @@ def _contains(node: Node, node_id: str) -> bool:
 
 def _render_nav(node: Node, slugs: dict[str, str], current_id: str, base_path: str,
                 collapsible: bool = True) -> str:
-    if not node.any_published():
+    if not node.in_nav or not node.any_published():
         return ""
 
     child_html = "".join(

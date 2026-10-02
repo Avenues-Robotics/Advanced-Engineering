@@ -23,6 +23,7 @@ class Node:
     public_url: str | None
     children: list["Node"] = field(default_factory=list)
     nav_title: str | None = None  # sidebar-only name, set from nav.txt
+    in_nav: bool = True  # False for nav.txt's [Linked Only] pages: built, but not in the sidebar
 
     @property
     def sidebar_title(self) -> str:
