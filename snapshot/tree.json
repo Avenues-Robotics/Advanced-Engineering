@@ -197,6 +197,13 @@
       "public_url": null,
       "children": [
         {
+          "id": "3e8ec788-f840-8055-99ff-d3877ba78428",
+          "title": "FTC Java 16 - Leave and Park Autonomous OpMode",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-16-Leave-and-Park-Autonomous-OpMode-3e8ec788f840805599ffd3877ba78428",
+          "children": []
+        },
+        {
           "id": "3e8ec788-f840-8139-9dc1-f7606f6040f7",
           "title": "FTC Java 13 - Connect Android Studio to a Robot",
           "kind": "database_row",
@@ -331,9 +338,9 @@
         },
         {
           "id": "37dec788-f840-809f-a840-cc5fdba93249",
-          "title": "OnShape Tutorial 8 - Creating an Assembly with the FTC Parts Library",
+          "title": "OnShape Tutorial 8 - Creating an Assembly with the FRC Design App",
           "kind": "database_row",
-          "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-8-Creating-an-Assembly-with-the-FTC-Parts-Library-37dec788f840809fa840cc5fdba93249",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-8-Creating-an-Assembly-with-the-FRC-Design-App-37dec788f840809fa840cc5fdba93249",
           "children": []
         },
         {
@@ -372,6 +379,20 @@
       "kind": "database",
       "public_url": null,
       "children": [
+        {
+          "id": "3edec788-f840-8117-9511-d1ba37e08b63",
+          "title": "FTC Java - FTCSIM",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-FTCSIM-3edec788f84081179511d1ba37e08b63",
+          "children": []
+        },
+        {
+          "id": "3edec788-f840-819d-960d-eb588e736e0a",
+          "title": "FTC Java - Getting Started on a Robot",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-Getting-Started-on-a-Robot-3edec788f840819d960deb588e736e0a",
+          "children": []
+        },
         {
           "id": "3e5ec788-f840-8164-9622-dde7cda294aa",
           "title": "Software Architecture",

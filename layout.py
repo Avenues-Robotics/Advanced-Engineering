@@ -19,6 +19,8 @@ nav.txt syntax (one entry per line, indent to nest):
                                       "Parent > Title" when two pages share a title
     [Hidden]                          anything under this is left off the site
       Sample 3-View Drawing
+    [Linked Only]                     built and linkable, but not in the sidebar
+      OnShape Tutorial 1
     # a comment
 
 Titles match case-insensitively. A Notion page ID (or its URL) also works
@@ -36,6 +38,7 @@ from render import assign_slugs, slugify
 from walker import Node
 
 HIDDEN_LABEL = "hidden"
+LINKED_ONLY_LABEL = "linked only"
 UNLISTED_MARKER = "# ==== Published in Notion, not in the sidebar yet ===="
 _ID_RE = re.compile(r"([0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12})", re.I)
 
@@ -48,6 +51,8 @@ HEADER = """\
 #   Page Title | Sidebar Name   show a page under a different name
 #   Parent > Page Title         when two pages share a title
 #   [Hidden]                    anything indented under this is left off the site
+#   [Linked Only]               pages under this are on the site (so links to them
+#                               work) but not in the sidebar
 #
 # Indent (2 spaces) to nest. The first page listed is the site's home page.
 # Pages published in Notion but not listed here are left off the site; the
@@ -156,6 +161,7 @@ def apply_layout(root: Node, entries: list[Entry]) -> tuple[Node, list[str], lis
     notes: list[str] = []
     placed: dict[str, Node] = {}   # original id -> node in the new tree
     hidden: set[str] = set()
+    linked_only: list[Node] = []
     used_label_ids: set[str] = set()
 
     def label_node(text: str) -> Node:
@@ -170,6 +176,12 @@ def apply_layout(root: Node, entries: list[Entry]) -> tuple[Node, list[str], lis
         if entry.is_label and _norm(entry.text) == HIDDEN_LABEL:
             for child in entry.children:
                 build(child, in_hidden=True)
+            return []
+        if entry.is_label and _norm(entry.text) == LINKED_ONLY_LABEL:
+            for child in entry.children:
+                for node in build(child, in_hidden):
+                    _hide_from_nav(node)
+                    linked_only.append(node)
             return []
 
         if entry.is_label:
@@ -197,7 +209,7 @@ def apply_layout(root: Node, entries: list[Entry]) -> tuple[Node, list[str], lis
         return [node]
 
     new_root = Node(id=root.id, title=root.title, kind=root.kind, public_url=root.public_url)
-    new_root.children = [n for e in entries for n in build(e, in_hidden=False)]
+    new_root.children = [n for e in entries for n in build(e, in_hidden=False)] + linked_only
 
     # Anything Notion has published that nav.txt doesn't mention stays off
     # the site, with a note. Pages under a hidden page are hidden too.
@@ -215,6 +227,12 @@ def apply_layout(root: Node, entries: list[Entry]) -> tuple[Node, list[str], lis
 
     report_unlisted(root, root.title.strip())
     return new_root, notes, unlisted
+
+
+def _hide_from_nav(node: Node) -> None:
+    node.in_nav = False
+    for child in node.children:
+        _hide_from_nav(child)
 
 
 def unlisted_section(unlisted: list[tuple[str, str]]) -> str:
@@ -249,6 +267,8 @@ def update_unlisted_section(layout_path: Path, unlisted: list[tuple[str, str]]) 
 
 def first_page(node: Node) -> Node | None:
     for child in node.children:
+        if not child.in_nav:
+            continue
         if child.kind in ("page", "database_row") and child.is_published:
             return child
         found = first_page(child)
