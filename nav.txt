@@ -97,11 +97,8 @@ Projects
 # Rewritten by every build - edits below here are replaced. To add one
 # of these pages to the site, move its line up into the outline above.
 
-# in Projects:
-Project 4: Subsystem Software Implementation
-Project 3: Intro to FTC Java
-
 # in Activities:
+FTC Java 16 - Leave and Park Autonomous OpMode
 FTC Java 13 - Connect Android Studio to a Robot
 FTC Java 15 - Create a Drive Class to ABSTRACT Drive Functionality
 FTC Java 12 - Set-up Android Studio
@@ -117,3 +114,8 @@ FTC Java 6 - Optional: Complete FTCSIM Movement
 FTC Java 2 - FTCSIM Movement 2 - Rearward
 FTC Java 3 - FTCSIM Movement 3 - Half Moon
 FTC Java 8 - FTCSIM Sensors 4 - Pattern
+OnShape Tutorial 8 - Creating an Assembly with the FRC Design App
+
+# in Content Library:
+FTC Java - FTCSIM
+FTC Java - Getting Started on a Robot
