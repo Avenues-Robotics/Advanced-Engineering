@@ -6,6 +6,8 @@
 #   Page Title | Sidebar Name   show a page under a different name
 #   Parent > Page Title         when two pages share a title
 #   [Hidden]                    anything indented under this is left off the site
+#   [Linked Only]               pages under this are on the site (so links to them
+#                               work) but not in the sidebar
 #
 # Indent (2 spaces) to nest. The first page listed is the site's home page.
 # Pages published in Notion but not listed here are left off the site; the
@@ -44,8 +46,8 @@ Projects
     Project 3: Subsystem Detailed Design
   [SCS]
     Project 2: System Architecture
-    SCS Project 4: Subsystem Software Implementation
-    SCS Project 3: Autonomous Drivetrain
+    Project 3: Intro to FTC Java
+    Project 4: Subsystem Software Implementation
 
 [Reflection]
   Reflections and Engineering Notebook

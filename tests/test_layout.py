@@ -117,6 +117,15 @@ Software Architecture
     check("section labels aren't pages",
           new_root.children[0].kind == "section" and not new_root.children[0].is_published)
 
+    linked, notes, still_unlisted = apply_layout(root, parse_layout(nav + "[Linked Only]\n  Brand New Reading\n"))
+    linked_page = next(c for c in linked.children if c.id == "l-new")
+    check("[Linked Only] pages are built but kept out of the sidebar",
+          not linked_page.in_nav and linked_page.is_published
+          and ("Content Library", "Brand New Reading") not in still_unlisted
+          and not any("Brand New Reading" in n for n in notes))
+    check("[Linked Only] doesn't show as a sidebar section", "Linked Only" not in str(shape(linked)))
+    check("a [Linked Only] page is never the home page", first_page(linked).id == "ov")
+
     slugs = assign_slugs(new_root, existing=assign_slugs(root))
     check("renaming in nav.txt keeps the Notion-based URL", slugs["ov"] == "program-overview")
     check("section labels get slugs", slugs["section-start-here"] == "start-here")
