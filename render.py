@@ -84,24 +84,50 @@ def _render_nav(node: Node, slugs: dict[str, str], current_id: str, base_path: s
     if not collapsible:
         return f"<li>{label}<ul>{child_html}</ul></li>"
 
-    # Sections stay open when they contain the page being viewed; nav.js
-    # additionally re-opens whatever the reader had expanded on earlier pages.
+    # Only the sections containing the page being viewed start open, so
+    # opening a page elsewhere in the sidebar collapses the previous section.
     open_attr = " open" if current_id and _contains(node, current_id) else ""
     return (
-        f'<li><details data-key="{slugs[node.id]}"{open_attr}>'
+        f"<li><details{open_attr}>"
         f"<summary>{label}</summary><ul>{child_html}</ul></details></li>"
     )
 
 
+EMBED_ICON = (
+    '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" '
+    'stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+    '<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>'
+)
+
+
+def _embed_controls(embed_href: str, page_title: str) -> str:
+    """The </> button beside the breadcrumbs and the dialog it opens, which
+    shows an <iframe> snippet (built in embed.js, since the full URL depends
+    on where the site is hosted) for pasting into Canvas or similar."""
+    return f"""<button class="embed-btn" type="button" title="Embed this page" aria-label="Embed this page"
+        data-embed="{html.escape(embed_href)}" data-title="{html.escape(page_title)}">{EMBED_ICON}</button>
+      <dialog class="embed-dialog">
+        <form method="dialog">
+          <h2>Embed this page</h2>
+          <p>Paste this into the HTML editor of a Canvas page (or anywhere that accepts an iframe).</p>
+          <textarea readonly rows="4"></textarea>
+          <label>Height <input type="number" min="200" step="50" value="800"> px</label>
+          <div class="embed-actions">
+            <button type="button" class="embed-copy">Copy code</button>
+            <button value="close">Close</button>
+          </div>
+        </form>
+      </dialog>"""
+
+
 def _page_shell(*, site_title: str, page_title: str, nav_html: str, body_html: str,
-                 breadcrumb_html: str, source_public_url: str | None, base_path: str) -> str:
-    footer = ""
-    if source_public_url:
-        footer = (
-            '<p class="unpublished-note">Sourced from the published Notion page '
-            f'(<a href="{html.escape(source_public_url)}">view in Notion</a>). '
-            "Regenerate this site after publishing changes there.</p>"
-        )
+                 breadcrumb_html: str, base_path: str, embed_href: str | None = None) -> str:
+    page_bar = ""
+    if embed_href:
+        page_bar = (f'<div class="page-bar">{breadcrumb_html or "<span></span>"}'
+                    f"{_embed_controls(embed_href, page_title)}</div>")
+        breadcrumb_html = ""
+    script = f'<script src="{base_path}/static/embed.js" defer></script>' if embed_href else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -111,21 +137,47 @@ def _page_shell(*, site_title: str, page_title: str, nav_html: str, body_html: s
 <link rel="stylesheet" href="{base_path}/static/style.css">
 </head>
 <body>
-<button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">Menu</button>
+<header class="site-header">
+  <a class="site-title" href="{base_path}/">
+    <img class="site-logo" src="{base_path}/static/logo.png" alt="">
+    <span>{html.escape(site_title)}</span>
+  </a>
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">Menu</button>
+</header>
 <div class="layout">
   <aside class="sidebar">
-    <a class="site-title" href="{base_path}/">{html.escape(site_title)}</a>
     <nav><ul>{nav_html}</ul></nav>
   </aside>
   <main class="content-wrap">
     <div class="content">
+      {page_bar}
       {breadcrumb_html}
       {body_html}
-      {footer}
     </div>
   </main>
 </div>
-<script src="{base_path}/static/nav.js" defer></script>
+{script}
+</body>
+</html>
+"""
+
+
+def _embed_shell(*, page_title: str, body_html: str, base_path: str) -> str:
+    """Just the page content, for showing inside an iframe on another site.
+    Links open in a new tab rather than inside the frame."""
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(page_title)}</title>
+<base target="_blank">
+<link rel="stylesheet" href="{base_path}/static/style.css">
+</head>
+<body class="embed">
+<div class="content">
+{body_html}
+</div>
 </body>
 </html>
 """
@@ -224,10 +276,15 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
                 nav_html=nav_html,
                 body_html=body_html,
                 breadcrumb_html=_breadcrumb(path_titles + [node.title]),
-                source_public_url=node.public_url,
                 base_path=base_path,
+                embed_href=f"{base_path}/{slugs[node.id]}/embed/",
             )
             (page_dir / "index.html").write_text(page_html, encoding="utf-8")
+            (page_dir / "embed").mkdir()
+            (page_dir / "embed" / "index.html").write_text(
+                _embed_shell(page_title=node.title, body_html=body_html, base_path=base_path),
+                encoding="utf-8",
+            )
             written += 1
             log.append(f"  wrote /{slugs[node.id]}/  <-  {node.title}")
         else:
@@ -237,22 +294,22 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
             walk_and_write(child, path_titles + [node.sidebar_title])
 
     for child in root.children:
-        walk_and_write(child, [root.title])
+        walk_and_write(child, [site_title])
 
     # Home page: the chosen home page's content (also kept at its own URL),
     # else the root page's own content if it's published, otherwise a
     # generated landing page that just lists the top-level published sections.
     home = _find(root, home_id) if home_id else None
     home_nav_html = nav_root_html
+    home_embed_href = None
     if home is not None:
+        home_embed_href = f"{base_path}/{slugs[home.id]}/embed/"
         body_html = _page_body_html(markdown_by_id.get(home.id, ""), home.title, resolver, base_path)
-        source_url = home.public_url
         home_nav_html = "".join(
             _render_nav(c, slugs, current_id=home.id, base_path=base_path) for c in root.children
         )
     elif root.is_published:
         body_html = _page_body_html(markdown_by_id.get(root.id, ""), root.title, resolver, base_path)
-        source_url = root.public_url
     else:
         # Reuse the same nav-tree logic (not a flat list of direct children)
         # so a top-level page that isn't itself published, but has a
@@ -263,7 +320,6 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
             for c in root.children
         )
         body_html = f"<h1>{html.escape(site_title)}</h1><ul>{landing_list_html}</ul>"
-        source_url = None
 
     home_html = _page_shell(
         site_title=site_title,
@@ -271,8 +327,8 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
         nav_html=home_nav_html,
         body_html=body_html,
         breadcrumb_html="",
-        source_public_url=source_url,
         base_path=base_path,
+        embed_href=home_embed_href,
     )
     (output_dir / "index.html").write_text(home_html, encoding="utf-8")
 
