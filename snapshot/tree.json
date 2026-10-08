@@ -380,6 +380,20 @@
       "public_url": null,
       "children": [
         {
+          "id": "3f3ec788-f840-813b-b42d-fccb7fa8975d",
+          "title": "Exemplar RFP: Automatic Pet Feeder",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Exemplar-RFP-Automatic-Pet-Feeder-3f3ec788f840813bb42dfccb7fa8975d",
+          "children": []
+        },
+        {
+          "id": "3f3ec788-f840-818b-87a0-c0784989daea",
+          "title": "Writing a Request for Proposal (RFP)",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Writing-a-Request-for-Proposal-RFP-3f3ec788f840818b87a0c0784989daea",
+          "children": []
+        },
+        {
           "id": "3edec788-f840-8117-9511-d1ba37e08b63",
           "title": "FTC Java - FTCSIM",
           "kind": "database_row",

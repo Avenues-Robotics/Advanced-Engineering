@@ -50,6 +50,7 @@ Projects
 
 [Readings]
   Engineering Requirements
+  Writing a Request for Proposal (RFP)
   Project Management for FTC
   [ME Specific]
     Comparing Design Concepts: Pugh Matrix
@@ -76,6 +77,7 @@ Projects
   [Sample SCS Project 2: Architecture]
     Sample SCS Project 2: System Architecture Design Plan [Proficient] | Design Plan [Proficient]
     Sample SCS Project 2: System Architecture Design Plan [Advanced] | Design Plan [Advanced]
+  Exemplar RFP: Automatic Pet Feeder
 
 [Reflection]
   Reflections and Engineering Notebook
