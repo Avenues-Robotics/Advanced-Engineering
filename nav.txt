@@ -117,5 +117,7 @@ FTC Java 8 - FTCSIM Sensors 4 - Pattern
 OnShape Tutorial 8 - Creating an Assembly with the FRC Design App
 
 # in Content Library:
+Exemplar RFP: Automatic Pet Feeder
+Writing a Request for Proposal (RFP)
 FTC Java - FTCSIM
 FTC Java - Getting Started on a Robot
