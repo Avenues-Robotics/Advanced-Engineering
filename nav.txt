@@ -120,4 +120,9 @@ Projects
 # ==== Published in Notion, not in the sidebar yet ====
 # Rewritten by every build - edits below here are replaced. To add one
 # of these pages to the site, move its line up into the outline above.
-# (none)
+
+# in Activities:
+FTC Java 14 - Commit and Push Your Project to GitHub
+FTC Java 17 - Leave and Park Autonomous OpMode
+FTC Java 16 - Create a Drive Class to ABSTRACT Drive Functionality
+FTC Java 15 - Your First Java OpMode - Drive Train Testing
