@@ -122,7 +122,15 @@ Projects
 # of these pages to the site, move its line up into the outline above.
 
 # in Activities:
+OnShape Tutorial 10 - Part Studio in Context
+OnShape Tutorial 9 - Mounting 3D Printed Parts with Screw Holes
+PID 3 - PID Based Rotation
+PID 1 - Write a PIDF Class
+PID 2 - Distance Sensor PID Controller
 FTC Java 14 - Commit and Push Your Project to GitHub
 FTC Java 17 - Leave and Park Autonomous OpMode
 FTC Java 16 - Create a Drive Class to ABSTRACT Drive Functionality
 FTC Java 15 - Your First Java OpMode - Drive Train Testing
+
+# in Content Library:
+Intro to Control Theory
