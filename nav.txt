@@ -130,4 +130,5 @@ PID 2 - Distance Sensor PID Controller
 OnShape Exercise 9 - Putting it all together
 
 # in Content Library:
+Tuning a PIDF Controller
 Intro to Control Theory
