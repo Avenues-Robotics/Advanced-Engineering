@@ -57,6 +57,8 @@ Projects
   [SCS Specific]
     Engineering Requirements
     Content Library > Software Architecture
+    Intro to Control Theory
+    Tuning a PIDF Controller
 [Activities and Tutorials]
   [ME]
     OnShape CAD Tutorials
@@ -130,5 +132,4 @@ PID 2 - Distance Sensor PID Controller
 OnShape Exercise 9 - Putting it all together
 
 # in Content Library:
-Tuning a PIDF Controller
-Intro to Control Theory
+
