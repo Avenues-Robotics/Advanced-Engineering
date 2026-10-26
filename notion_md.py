@@ -380,8 +380,15 @@ def _split_attrs(line: str) -> tuple[str, dict[str, str]]:
 
 
 def _dedent(lines: list[str]) -> list[str]:
-    if all(l.startswith("\t") for l in lines if l.strip()):
-        return [l[1:] if l.startswith("\t") else l for l in lines]
+    # Code inside a fence is left as-is (Notion doesn't indent it).
+    in_code, in_fence = [], False
+    for l in lines:
+        is_fence = l.strip().startswith("```")
+        in_code.append(in_fence and not is_fence)
+        if is_fence:
+            in_fence = not in_fence
+    if all(l.startswith("\t") for l, code in zip(lines, in_code) if l.strip() and not code):
+        return [l if code else l[1:] if l.startswith("\t") else l for l, code in zip(lines, in_code)]
     return lines
 
 
@@ -389,9 +396,17 @@ def _take_children(lines: list[str], i: int) -> tuple[list[str], int]:
     """Lines after `i` that are indented one level deeper, dedented by one tab."""
     n = len(lines)
     j, buf = i, []
+    in_fence = False
     while j < n:
         l = lines[j]
-        if l.startswith("\t"):
+        if in_fence and not l.strip().startswith("```"):
+            # Notion indents a nested code block's fences but not its code
+            # lines, so take those verbatim until the closing fence.
+            buf.append(l)
+            j += 1
+        elif l.startswith("\t"):
+            if l.strip().startswith("```"):
+                in_fence = not in_fence
             buf.append(l[1:])
             j += 1
         elif not l.strip():

@@ -163,6 +163,17 @@ def main() -> int:
     check("code block is literal and escaped", "if (a &lt; b) { x[0] = 1; }" in out and 'class="language-java"' in out, out)
     check("heading attribute list becomes a color class", 'class="c-blue"' in out and "{color" not in out, out)
 
+    # Notion indents a nested code block's fences but not its code lines.
+    nested = "2. **Code**\n\t- [ ] Javadoc\n\t\tA class Javadoc\n\t\t```java\n/**\n * @author Name\n */\n\t\t```\n\t- [ ] Comments\n3. Next"
+    out = convert(nested)
+    check("code block nested in a list keeps its code",
+          '<code class="language-java">/**\n * @author Name\n */</code>' in out, out)
+    check("list continues after a nested code block",
+          out.count("<li") == 4 and "```" not in out and '<ol start="2">' in out, out)
+    out = convert('<callout icon="💡">\n\tTip\n\t```\nx = 1\n\t```\n\t- item\n</callout>')
+    check("code block in a callout doesn't stop its contents being dedented",
+          "<pre><code>x = 1</code></pre>" in out and "<ul><li>item</li></ul>" in out, out)
+
     out = convert("<script>alert(1)</script> and [x](javascript:alert(1))")
     check("raw script tags are escaped", "<script>" not in out and "&lt;script&gt;" in out, out)
     check("javascript: links are neutralised", "javascript:" not in out.replace("&lt;", ""), out)
