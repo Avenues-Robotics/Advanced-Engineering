@@ -139,6 +139,13 @@
       "public_url": null,
       "children": [
         {
+          "id": "405ec788-f840-8159-b553-efc590483a71",
+          "title": "Project 6: Systematic Testing",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-6-Systematic-Testing-405ec788f8408159b553efc590483a71",
+          "children": []
+        },
+        {
           "id": "3cfec788-f840-80a4-a718-ee0816c02e08",
           "title": "Project 4: Subsystem Software Implementation",
           "kind": "database_row",
@@ -197,10 +204,52 @@
       "public_url": null,
       "children": [
         {
-          "id": "3e8ec788-f840-8055-99ff-d3877ba78428",
-          "title": "FTC Java 16 - Leave and Park Autonomous OpMode",
+          "id": "3ffec788-f840-802a-9835-e7c545930e51",
+          "title": "OnShape Tutorial 10 - Part Studio in Context",
           "kind": "database_row",
-          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-16-Leave-and-Park-Autonomous-OpMode-3e8ec788f840805599ffd3877ba78428",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-10-Part-Studio-in-Context-3ffec788f840802a9835e7c545930e51",
+          "children": []
+        },
+        {
+          "id": "3ffec788-f840-803b-8b35-d1b9f851a1b0",
+          "title": "OnShape Tutorial 9 - Mounting 3D Printed Parts with Screw Holes",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-9-Mounting-3D-Printed-Parts-with-Screw-Holes-3ffec788f840803b8b35d1b9f851a1b0",
+          "children": []
+        },
+        {
+          "id": "3f7ec788-f840-8178-9095-e18f85f4f665",
+          "title": "PID 3 - PID Based Rotation",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/PID-3-PID-Based-Rotation-3f7ec788f84081789095e18f85f4f665",
+          "children": []
+        },
+        {
+          "id": "3f7ec788-f840-81a4-9d5f-d27a55fd1924",
+          "title": "PID 1 - Write a PIDF Class",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/PID-1-Write-a-PIDF-Class-3f7ec788f84081a49d5fd27a55fd1924",
+          "children": []
+        },
+        {
+          "id": "3f7ec788-f840-81fa-ab16-e877666e71df",
+          "title": "PID 2 - Distance Sensor PID Controller",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/PID-2-Distance-Sensor-PID-Controller-3f7ec788f84081faab16e877666e71df",
+          "children": []
+        },
+        {
+          "id": "3f6ec788-f840-814c-880e-effd215a3bde",
+          "title": "FTC Java 14 - Commit and Push Your Project to GitHub",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-14-Commit-and-Push-Your-Project-to-GitHub-3f6ec788f840814c880eeffd215a3bde",
+          "children": []
+        },
+        {
+          "id": "3e8ec788-f840-8055-99ff-d3877ba78428",
+          "title": "FTC Java 17 - Leave and Park Autonomous OpMode",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-17-Leave-and-Park-Autonomous-OpMode-3e8ec788f840805599ffd3877ba78428",
           "children": []
         },
         {
@@ -212,9 +261,9 @@
         },
         {
           "id": "3e8ec788-f840-816a-b007-f144b15f5ad5",
-          "title": "FTC Java 15 - Create a Drive Class to ABSTRACT Drive Functionality",
+          "title": "FTC Java 16 - Create a Drive Class to ABSTRACT Drive Functionality",
           "kind": "database_row",
-          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-15-Create-a-Drive-Class-to-ABSTRACT-Drive-Functionality-3e8ec788f840816ab007f144b15f5ad5",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-16-Create-a-Drive-Class-to-ABSTRACT-Drive-Functionality-3e8ec788f840816ab007f144b15f5ad5",
           "children": []
         },
         {
@@ -233,9 +282,9 @@
         },
         {
           "id": "3e8ec788-f840-81bf-b04f-c5fa0e9c07fe",
-          "title": "FTC Java 14 - Your First Java OpMode - Drive Train Testing",
+          "title": "FTC Java 15 - Your First Java OpMode - Drive Train Testing",
           "kind": "database_row",
-          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-14-Your-First-Java-OpMode-Drive-Train-Testing-3e8ec788f84081bfb04fc5fa0e9c07fe",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-15-Your-First-Java-OpMode-Drive-Train-Testing-3e8ec788f84081bfb04fc5fa0e9c07fe",
           "children": []
         },
         {
@@ -379,6 +428,20 @@
       "kind": "database",
       "public_url": null,
       "children": [
+        {
+          "id": "401ec788-f840-81e3-8054-deaae6f6d54c",
+          "title": "Tuning a PIDF Controller",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Tuning-a-PIDF-Controller-401ec788f84081e38054deaae6f6d54c",
+          "children": []
+        },
+        {
+          "id": "3f7ec788-f840-81d0-a468-e7be52d79e62",
+          "title": "Intro to Control Theory",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Intro-to-Control-Theory-3f7ec788f84081d0a468e7be52d79e62",
+          "children": []
+        },
         {
           "id": "3f3ec788-f840-813b-b42d-fccb7fa8975d",
           "title": "Exemplar RFP: Automatic Pet Feeder",
