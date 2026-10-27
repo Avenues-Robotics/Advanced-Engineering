@@ -120,6 +120,22 @@ def _embed_controls(embed_href: str, page_title: str) -> str:
       </dialog>"""
 
 
+KATEX = "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist"
+
+
+def _math_tags(body_html: str, base_path: str) -> str:
+    """KaTeX (typesets the LaTeX in Notion equations), only on pages that have any."""
+    if 'class="math' not in body_html:
+        return ""
+    return (
+        f'<link rel="stylesheet" href="{KATEX}/katex.min.css" crossorigin="anonymous"'
+        ' integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+">\n'
+        f'<script src="{KATEX}/katex.min.js" defer crossorigin="anonymous"'
+        ' integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg"></script>\n'
+        f'<script src="{base_path}/static/math.js" defer></script>'
+    )
+
+
 def _page_shell(*, site_title: str, page_title: str, nav_html: str, body_html: str,
                  breadcrumb_html: str, base_path: str, embed_href: str | None = None) -> str:
     page_bar = ""
@@ -135,6 +151,7 @@ def _page_shell(*, site_title: str, page_title: str, nav_html: str, body_html: s
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(page_title)} · {html.escape(site_title)}</title>
 <link rel="stylesheet" href="{base_path}/static/style.css">
+{_math_tags(body_html, base_path)}
 </head>
 <body>
 <header class="site-header">
@@ -173,6 +190,7 @@ def _embed_shell(*, page_title: str, body_html: str, base_path: str) -> str:
 <title>{html.escape(page_title)}</title>
 <base target="_blank">
 <link rel="stylesheet" href="{base_path}/static/style.css">
+{_math_tags(body_html, base_path)}
 </head>
 <body class="embed">
 <div class="content">

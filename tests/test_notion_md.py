@@ -174,6 +174,33 @@ def main() -> int:
     check("code block in a callout doesn't stop its contents being dedented",
           "<pre><code>x = 1</code></pre>" in out and "<ul><li>item</li></ul>" in out, out)
 
+    # -- table of contents (Project pages) --------------------------------------
+    out = convert(
+        '<table_of_contents color="gray"/>\n'
+        "## Overview\n"
+        "### Tasks & **Deliverables**\n"
+        "## Overview\n"
+    )
+    check("table_of_contents lists headings that come after it",
+          '<nav class="toc c-gray"><ul>'
+          '<li class="toc-l1"><a href="#overview">Overview</a></li>'
+          '<li class="toc-l2"><a href="#tasks-deliverables">Tasks &amp; Deliverables</a></li>'
+          '<li class="toc-l1"><a href="#overview-2">Overview</a></li>'
+          "</ul></nav>" in out, out)
+    check("table_of_contents links match heading ids",
+          '<h2 id="overview">' in out and '<h3 id="tasks-deliverables">' in out, out)
+    out = convert("<table_of_contents/>\nJust text.")
+    check("table_of_contents with no headings renders nothing",
+          "toc" not in out and "\x00" not in out, out)
+
+    # -- equations (Intro to Control Theory) -----------------------------------
+    out = convert("model is $`K_{grav} \\cdot \\cos(\\theta)`$ here")
+    check("inline equation keeps its LaTeX for KaTeX",
+          '<span class="math">K_{grav} \\cdot \\cos(\\theta)</span>' in out, out)
+    out = convert("$$\n\\frac{a}{b} < c\n$$")
+    check("block equation is a display-math div, escaped",
+          '<div class="math math-display">\\frac{a}{b} &lt; c</div>' in out, out)
+
     out = convert("<script>alert(1)</script> and [x](javascript:alert(1))")
     check("raw script tags are escaped", "<script>" not in out and "&lt;script&gt;" in out, out)
     check("javascript: links are neutralised", "javascript:" not in out.replace("&lt;", ""), out)

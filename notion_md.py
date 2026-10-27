@@ -99,6 +99,7 @@ class _Ctx:
         self._resolve_page = resolve_page
         self.base_path = base_path
         self.heading_ids: set[str] = set()
+        self.headings: list[tuple[int, str, str]] = []  # (level, id, text) for table_of_contents
 
     def asset_url(self, url: str) -> str:
         """`media/<file>` refers to a file saved alongside the site by media.py."""
@@ -579,7 +580,12 @@ def _render_tag(name: str, attrs: dict[str, str], inner: str | None,
     if name in ("video", "audio", "file", "pdf", "embed"):
         return _render_media(name, attrs, render_inline((inner or "").strip(), ctx), ctx)
 
-    return ""  # database, folder, table_of_contents, meeting-notes, unknown
+    if name == "table_of_contents":
+        # Headings can come after the block, so leave a marker and fill it in
+        # once the whole page is rendered (see notion_markdown_to_html).
+        return f"\x00toc {color}\x00"
+
+    return ""  # database, folder, meeting-notes, unknown
 
 
 def _match_list_item(line: str) -> tuple[str, str, str, int] | None:
@@ -650,7 +656,7 @@ def render_blocks(lines: list[str], ctx: _Ctx) -> str:
                 buf.append(lines[j].strip())
                 j += 1
             i = j + 1
-            out.append(f'<pre class="math">{html.escape(chr(10).join(buf), quote=False)}</pre>')
+            out.append(f'<div class="math math-display">{html.escape(chr(10).join(buf), quote=False)}</div>')
             continue
 
         tag = _OPEN_RE.match(stripped)
@@ -690,6 +696,7 @@ def render_blocks(lines: list[str], ctx: _Ctx) -> str:
             text, attrs = _split_attrs(heading.group(2))
             inline_html = render_inline(text.strip(), ctx)
             hid = ctx.heading_id(_plain_text(inline_html))
+            ctx.headings.append((level, hid, _plain_text(inline_html)))
             children, i = _take_children(lines, i + 1)
             cls = _class_attr(_color_class(attrs.get("color")))
             h = f'<h{level} id="{hid}"{cls}>{inline_html}</h{level}>'
@@ -723,8 +730,20 @@ def render_blocks(lines: list[str], ctx: _Ctx) -> str:
     return "".join(out)
 
 
+def _render_toc(headings: list[tuple[int, str, str]], color: str) -> str:
+    if not headings:
+        return ""
+    top = min(level for level, _, _ in headings)
+    items = "".join(
+        f'<li class="toc-l{level - top + 1}"><a href="#{hid}">{_esc(text)}</a></li>'
+        for level, hid, text in headings
+    )
+    return f'<nav{_class_attr("toc", color)}><ul>{items}</ul></nav>'
+
+
 def notion_markdown_to_html(source: str, resolve_page: PageResolver | None = None,
                             base_path: str = "") -> str:
     ctx = _Ctx(resolve_page, base_path)
     lines = source.replace("\r\n", "\n").replace("\r", "\n").split("\n")
-    return render_blocks(lines, ctx)
+    out = render_blocks(lines, ctx)
+    return re.sub(r"\x00toc ([\w-]*)\x00", lambda m: _render_toc(ctx.headings, m.group(1)), out)
