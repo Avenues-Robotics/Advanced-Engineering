@@ -40,6 +40,7 @@ Outcomes
 
 Projects
   Project 1: Engineering Requirements
+  Project 6: Systematic Testing
   [ME]
     Project 2: Subsystem Conceptual Design
     Project 3: Subsystem Detailed Design
@@ -126,7 +127,7 @@ Projects
 # of these pages to the site, move its line up into the outline above.
 
 # in Projects:
-Project 6: Systematic Testing
+
 
 # in Activities:
 PID 3 - PID Based Rotation
