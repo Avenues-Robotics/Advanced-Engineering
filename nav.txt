@@ -126,9 +126,6 @@ Projects
 # Rewritten by every build - edits below here are replaced. To add one
 # of these pages to the site, move its line up into the outline above.
 
-# in Projects:
-
-
 # in Activities:
 PID 3 - PID Based Rotation
 PID 1 - Write a PIDF Class
