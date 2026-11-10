@@ -45,6 +45,7 @@ Projects
   [ME]
     Project 2: Subsystem Conceptual Design
     Project 3: Subsystem Detailed Design
+    Project 4: Subsystem Testing and Iteration
   [SCS]
     Project 2: System Architecture
     Project 3: Intro to FTC Java
@@ -128,7 +129,6 @@ Projects
 # of these pages to the site, move its line up into the outline above.
 
 # in Projects:
-Project 4: Subsystem Testing and Iteration
 
 # in Activities:
 PID 3 - PID Based Rotation
