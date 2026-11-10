@@ -127,8 +127,14 @@ Projects
 # Rewritten by every build - edits below here are replaced. To add one
 # of these pages to the site, move its line up into the outline above.
 
+# in Projects:
+Project 4: Subsystem Testing and Iteration
+
 # in Activities:
 PID 3 - PID Based Rotation
 PID 1 - Write a PIDF Class
 PID 2 - Distance Sensor PID Controller
 OnShape Exercise 9 - Putting it all together
+
+# in Content Library:
+Shooter Physics
