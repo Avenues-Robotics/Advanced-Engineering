@@ -138,18 +138,5 @@ Projects
 # Rewritten by every build - edits below here are replaced. To add one
 # of these pages to the site, move its line up into the outline above.
 
-# in Reflections and Engineering Notebook:
-Reflections and Engineering Notebook > Initial Reflection
-
-# in Projects:
-Project 7: Engineering Physics
-Projects > Project 2: System Architecture
-Projects > Project 2: Subsystem Conceptual Design
-
 # in Activities:
-
 OnShape Exercise 9 - Putting it all together
-
-# in Content Library:
-
-
