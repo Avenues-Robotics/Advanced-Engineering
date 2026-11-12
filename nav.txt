@@ -40,7 +40,7 @@ Outcomes
 
 Projects
   Project 1: Engineering Requirements
-  Project 6: Systematic Testing
+  Project 6: Engineering Experiment
   Project 7 - Engineering Physics
   [ME]
     Project 2: Subsystem Conceptual Design
@@ -132,8 +132,6 @@ Projects
 Reflections and Engineering Notebook > Initial Reflection
 
 # in Projects:
-Projects > Project 7 - Engineering Physics
-Project 6: Engineering Experiment
 Projects > Project 2: System Architecture
 Projects > Project 2: Subsystem Conceptual Design
 
