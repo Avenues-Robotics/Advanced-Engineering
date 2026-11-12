@@ -128,6 +128,15 @@ Projects
 # Rewritten by every build - edits below here are replaced. To add one
 # of these pages to the site, move its line up into the outline above.
 
+# in Reflections and Engineering Notebook:
+Reflections and Engineering Notebook > Initial Reflection
+
+# in Projects:
+Projects > Project 7 - Engineering Physics
+Project 6: Engineering Experiment
+Projects > Project 2: System Architecture
+Projects > Project 2: Subsystem Conceptual Design
+
 # in Activities:
 PID 3 - PID Based Rotation
 PID 1 - Write a PIDF Class
