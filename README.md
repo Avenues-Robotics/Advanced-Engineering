@@ -50,8 +50,9 @@ know:
   build rewrites a list at the bottom of `nav.txt` of pages that are
   published in Notion but not in the outline (grouped by where they live in
   Notion) and prints a `NOTE` / yellow Actions warning for each. To add one,
-  move its line up into the outline. The GitHub Action commits that list
-  back to the repo, so `git pull` before editing `nav.txt` locally.
+  move its line up into the outline. A GitHub Action run can commit that
+  list back to the repo; `publish.py` runs `git pull` first so you pick that
+  up, but `git pull` yourself before hand-editing `nav.txt` too.
 - **Links only work to pages that are on the site.** A link to a page that's
   left off (unlisted or `[Hidden]`) shows as plain text. To keep a page out
   of the sidebar but still reachable from the pages that link to it, list it
@@ -102,19 +103,21 @@ needs the GitHub CLI (`gh auth login` once).
 
 ## Two ways to run this
 
-**Option A: GitHub Actions (recommended).** The rebuild runs on GitHub's
-servers, triggered by a "Run workflow" button in your repo's Actions tab
-(reachable from your phone, no computer or Python install needed after
-setup) and optionally on a schedule too. Nothing lives on your machine.
+**Option A: GitHub Actions (recommended - this is how the site runs now).**
+The build and deploy run on GitHub's servers. Start one with the "Run
+workflow" button in your repo's Actions tab (reachable from your phone, no
+computer needed), with `python3 publish.py` from your computer (see
+[Updating the site from your computer](#updating-the-site-from-your-computer-publishpy)),
+or on a schedule.
 
-**Option B: run it locally.** A script you run yourself with Python
-installed, using `run_mac.command` / `run_windows.bat` as the "button."
-Useful if you'd rather not put your Notion token into GitHub at all, or want
-to see the build output before it goes anywhere.
+**Option B: build and push the HTML yourself.** `build_site.py` builds the
+site on your computer and pushes the generated HTML to a separate Pages
+repo, using `run_mac.command` / `run_windows.bat` as the "button." Only
+useful if you'd rather not put your Notion token into GitHub at all; it
+doesn't use `snapshot/` or `publish.py`.
 
-Both read the same `build_site.py` / `walker.py` / `render.py` - pick one,
-or set up both if you want a local dry-run option alongside the automated
-one.
+Both use the same `walker.py` / `layout.py` / `render.py`, so the site looks
+the same either way.
 
 ---
 
@@ -189,13 +192,18 @@ Commit and push that change.
 ### 8a. Run it
 
 Repo → Actions tab → "Build and deploy site from Notion" → "Run workflow".
-That's the button. It builds the site (only currently-published Notion
-pages) and deploys it straight to GitHub Pages, no git history of generated
-HTML, no local Python required.
+That's the button. Pick a source:
 
-Check the run's logs if anything looks off - the build step prints the same
-`[PUBLISHED]` / `[-]` / `[section]` tree the local dry-run does, so you can
-see exactly what got included.
+- **notion** (default) - pulls every currently-published page from Notion,
+  builds the site and deploys it straight to GitHub Pages, then commits the
+  refreshed `snapshot/` and `nav.txt` back to the repo.
+- **snapshot** - skips Notion and builds from the `snapshot/` and `nav.txt`
+  already in the repo. This is what `python3 publish.py deploy` starts.
+
+Either way there's no git history of generated HTML and no local Python
+required. Check the run's logs if anything looks off: the build prints a
+`NOTE` (a yellow warning on GitHub) for anything in `nav.txt` that didn't
+line up and for each published page that isn't in it.
 
 ### Optional: rebuild on a schedule
 
@@ -268,8 +276,12 @@ Refresh the snapshot after you edit content in Notion (needs your `.env`
 with `NOTION_TOKEN` and `ROOT_PAGE_ID`):
 
 ```
-python3 preview.py --pull --serve
+python3 publish.py pull --serve                  # everything
+python3 publish.py pull "<notion link>" --serve  # just one page and its sub-pages
 ```
+
+None of these put anything live; add `--deploy` (or run
+`python3 publish.py deploy` afterwards) when you're happy with it.
 
 Before pushing, `python3 tests/test_notion_md.py`, `python3 tests/test_layout.py`,
 `python3 tests/test_snapshot.py` and `python3 tests/run_self_test.py` should all pass.
