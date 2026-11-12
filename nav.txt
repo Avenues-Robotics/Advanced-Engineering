@@ -41,7 +41,7 @@ Outcomes
 Projects
   Project 1: Engineering Requirements
   Project 6: Engineering Experiment
-  Project 7 - Engineering Physics
+  Project 7: Engineering Physics
   [ME]
     Project 2: Subsystem Conceptual Design
     Project 3: Subsystem Detailed Design
@@ -59,10 +59,11 @@ Projects
   [ME Specific]
     Comparing Design Concepts: Pugh Matrix
   [SCS Specific]
-    Engineering Requirements
     Content Library > Software Architecture
     Intro to Control Theory
     Tuning a PIDF Controller
+    Logging and Graphing Robot Data with Panels
+  
 [Activities and Tutorials]
   [ME]
     OnShape CAD Tutorials
@@ -70,6 +71,14 @@ Projects
   [SCS]
     FTC Java - FTCSIM
     FTC Java - Getting Started on a Robot
+    [PIDs]
+      PID 1 - Write a PIDF Class
+      PID 2 - Distance Sensor PID Controller
+      PID 3 - PID Based Rotation
+  [Engineering Physics]
+    Shooter Physics
+
+
 [Templates]
   Prior Art Research Notes Template
 [Exemplars]
@@ -138,11 +147,9 @@ Projects > Project 2: System Architecture
 Projects > Project 2: Subsystem Conceptual Design
 
 # in Activities:
-PID 3 - PID Based Rotation
-PID 1 - Write a PIDF Class
-PID 2 - Distance Sensor PID Controller
+
 OnShape Exercise 9 - Putting it all together
 
 # in Content Library:
-Logging and Graphing Robot Data with Panels
-Shooter Physics
+
+
