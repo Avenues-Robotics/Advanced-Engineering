@@ -122,9 +122,9 @@ class _Index:
 
     def line_for(self, node: Node) -> str:
         """How to refer to `node` in nav.txt: its title, or "Parent > Title"
-        if another page has the same title."""
+        if another page on the site has the same title."""
         name = node.title.strip()
-        if len(self.by_title[_norm(node.title)]) > 1:
+        if len(_on_site(self.by_title[_norm(node.title)])) > 1:
             name = f"{self.parent[node.id].title.strip()} > {name}"
         return name
 
@@ -140,12 +140,21 @@ class _Index:
             n for n in self.by_title.get(parts[-1], [])
             if _ends_with_path([_norm(a.title) for a in self.ancestors(n)], parts[:-1])
         ]
+        if len(candidates) > 1:
+            # Unpublished pages never reach the site, so a same-named one
+            # (e.g. a row in a tracker database) doesn't make a title ambiguous.
+            candidates = _on_site(candidates) or candidates
         if len(candidates) == 1:
             return candidates[0], None
         if not candidates:
             return None, "no Notion page with that title"
         where = ", ".join(f'"{self.ancestors(n)[0].title} > {n.title}"' for n in candidates)
         return None, f"more than one page has that title - write one of {where}"
+
+
+def _on_site(nodes: list[Node]) -> list[Node]:
+    """The ones that are published, or have something published under them."""
+    return [n for n in nodes if n.any_published()]
 
 
 def _ends_with_path(ancestor_titles: list[str], wanted_parents: list[str]) -> bool:

@@ -46,6 +46,10 @@ def fixture() -> Node:
         page("courses", "Courses",
              page("scs", "Software and Control Systems 1", page("scs-new", "Week 1"))),
         page("draft", "Draft", published=False),
+        page("tracker", "Student Work Tracker",
+             page("t-req", "Requirements", kind="database_row", published=False),
+             page("t-arch", "Software Architecture", kind="database_row", published=False),
+             published=False, kind="database"),
         published=False,
     )
 
@@ -112,6 +116,12 @@ Software Architecture
         root, parse_layout(nav + "\n".join(l for _, l in unlisted)))
     check("moving a listed line up into the outline adds the page",
           {"scs", "scs-new", "l-new"} <= _ids(readded) and still_unlisted == [])
+    check("an unpublished page with the same title doesn't make a title ambiguous",
+          new_root.children[1].children[0].id == "o-req"
+          and not any('"Requirements"' in n and "more than one" in n for n in notes))
+    check("...but published duplicates still do, listing only those",
+          any("more than one" in n and "Untitled" not in n and "Student Work Tracker" not in n
+              for n in notes))
     check("hidden page is gone, without a note",
           "l-draw" not in _ids(new_root) and not any("3-View" in n for n in notes))
     check("section labels aren't pages",
