@@ -34,6 +34,8 @@ class FakeNotionClient:
         self.block_children.setdefault(parent_id, []).append(
             {"id": child_id, "type": "child_page", "child_page": {"title": title}, "has_children": False}
         )
+        if child_id in self.pages:
+            self.pages[child_id]["parent"] = {"type": "page_id", "page_id": parent_id}
 
     def add_child_database_block(self, parent_id: str, db_id: str, title: str) -> None:
         self.block_children.setdefault(parent_id, []).append(
@@ -50,6 +52,9 @@ class FakeNotionClient:
                 "public_url": f"https://example.notion.site/{row_id}" if published else None,
             }
         )
+        self.pages[row_id] = {**self.data_source_rows[f"{db_id}-ds"][-1],
+                              "parent": {"type": "data_source_id", "data_source_id": f"{db_id}-ds",
+                                         "database_id": db_id}}
         self.block_children.setdefault(row_id, [])
         self.markdown[row_id] = markdown
 

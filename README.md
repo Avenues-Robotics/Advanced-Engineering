@@ -61,11 +61,44 @@ know:
   and the page is left off the site.
 - **URLs don't change** when you move or rename things in `nav.txt`; they're
   based on the Notion title.
-- Try changes locally with `python3 preview.py --serve`, then commit
-  `nav.txt` so the GitHub Action uses it too.
+- Try changes locally with `python3 preview.py --serve`, then put them live
+  with `python3 publish.py deploy` (see below).
 - Delete `nav.txt` to go back to Notion's own order, or run
   `python3 preview.py --write-nav` to create a fresh one from the current
   Notion order.
+
+## Updating the site from your computer: `publish.py`
+
+```
+python3 publish.py pull                    pull everything from Notion, update nav.txt, build a preview
+python3 publish.py pull <notion link>      re-pull just that page (and its sub-pages)
+python3 publish.py pull ... --deploy       ...and put it on the live site
+python3 publish.py deploy                  put your nav.txt edits live, without pulling Notion
+```
+
+Add `--serve` to any of them to check the preview at http://localhost:8000/
+first. They need `NOTION_TOKEN` and `ROOT_PAGE_ID` in `.env`, and deploying
+needs the GitHub CLI (`gh auth login` once).
+
+- **Pulls are saved in `snapshot/`**, which is committed to the repo. The
+  live site is built from `snapshot/` + `nav.txt`, so whatever is in them is
+  what goes live.
+- **A single-page pull** takes the page's share link (or any Notion URL or
+  ID). It's quicker than a full pull and leaves every other page as it was
+  last pulled. A page that's new since the last pull works too, as long as
+  its parent page is already in the snapshot.
+- **Every command starts with a `git pull`**, so edits made on GitHub (or
+  by the Action) aren't lost. If one clashes with an uncommitted local edit,
+  it stops and names the file to fix.
+- **`--deploy` and `deploy`** commit `nav.txt` and `snapshot/`, push, and
+  start the GitHub Action in **snapshot** mode: it builds from exactly what
+  you pushed, without pulling Notion, and the site updates in a minute or
+  two. Other uncommitted changes (code edits) aren't included; the command
+  lists them.
+- **The Run workflow button on GitHub** still works: choose source
+  `notion` to pull everything from Notion (the Action then commits the
+  refreshed `snapshot/` so your next local command picks it up), or
+  `snapshot` to rebuild from what's in the repo.
 
 ## Two ways to run this
 
