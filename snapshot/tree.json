@@ -450,6 +450,27 @@
       "public_url": null,
       "children": [
         {
+          "id": "416ec788-f840-817e-a360-df9031b8e303",
+          "title": "Energy and Power for FTC Robots",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Energy-and-Power-for-FTC-Robots-416ec788f840817ea360df9031b8e303",
+          "children": []
+        },
+        {
+          "id": "416ec788-f840-81a1-a0c6-df4ca5c838e7",
+          "title": "Measuring Electricity",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Measuring-Electricity-416ec788f84081a1a0c6df4ca5c838e7",
+          "children": []
+        },
+        {
+          "id": "416ec788-f840-81bb-a3d8-dfd30bcdaa9d",
+          "title": "Exploring Electrical Energy and Power",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Exploring-Electrical-Energy-and-Power-416ec788f84081bba3d8dfd30bcdaa9d",
+          "children": []
+        },
+        {
           "id": "416ec788-f840-81e8-a71c-cc13a54652a4",
           "title": "Logging and Graphing Robot Data with Panels",
           "kind": "database_row",
