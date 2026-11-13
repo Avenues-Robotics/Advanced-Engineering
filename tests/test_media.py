@@ -16,7 +16,7 @@ import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from media import copy_media, is_notion_hosted, localize  # noqa: E402
+from media import _filename, copy_media, display_name, is_notion_hosted, localize  # noqa: E402
 from notion_md import notion_markdown_to_html  # noqa: E402
 
 failures: list[str] = []
@@ -90,11 +90,23 @@ def main() -> int:
                        session=FakeSession({pdf: FakeResponse(b"%PDF", content_type="application/pdf")}),
                        log=lambda m: None)
         check("<file src> attachments are localized too", 'src="media/' in got and got.count(".pdf") == 1, got)
+        saved_pdf = next(f.name for f in media_dir.iterdir() if f.suffix == ".pdf")
+        check("saved files keep their uploaded name after the digest", saved_pdf.endswith("-report.pdf"), saved_pdf)
+        html_out = notion_markdown_to_html(f'<pdf src="media/{saved_pdf}"></pdf>', None, "/site")
+        check("a PDF is shown inline, with a download link under its real name",
+              f'<iframe src="/site/media/{saved_pdf}"' in html_out
+              and 'download="report.pdf">Download report.pdf</a>' in html_out, html_out)
+        old_url = "https://prod-files-secure.s3.us-west-2.amazonaws.com/ws/f2/chart.png?X-Amz-Signature=1"
+        old_style = media_dir / (_filename(old_url, None).split("-")[0] + ".png")
+        old_style.write_bytes(b"png")
+        check("files saved under the old digest-only name are still used",
+              localize(f"![]({old_url})", media_dir, session=FakeSession({}), log=lambda m: None)
+              == f"![](media/{old_style.name})" and display_name(old_style.name) == old_style.name)
 
         site = tmp / "site"
         site.mkdir()
         check("copy_media ships the folder with the site",
-              copy_media(media_dir, site) == 2 and (site / "media" / files[0].name).exists())
+              copy_media(media_dir, site) == 3 and (site / "media" / files[0].name).exists())
         check("copy_media with no media dir is a no-op", copy_media(tmp / "nope", site) == 0)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)

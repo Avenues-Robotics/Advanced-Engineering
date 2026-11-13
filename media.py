@@ -39,16 +39,27 @@ def _filename(url: str, content_type: str | None) -> str:
     parsed = urlparse(url)
     # The signature changes on every export, but host + path identify the upload.
     digest = hashlib.sha1((parsed.netloc + parsed.path).encode()).hexdigest()[:16]
-    ext = Path(unquote(parsed.path)).suffix.lower()
+    original = Path(unquote(parsed.path))
+    ext = original.suffix.lower()
     if ext not in _KNOWN_EXTS:
         ext = _EXT_BY_TYPE.get((content_type or "").split(";")[0].strip().lower(), ".bin")
-    return f"{digest}{ext}"
+    # Keep the uploaded name after the digest so downloads aren't just a hash.
+    stem = re.sub(r"[^\w.-]+", "_", original.stem).strip("._")[:80]
+    return f"{digest}-{stem}{ext}" if stem else f"{digest}{ext}"
+
+
+def display_name(filename: str) -> str:
+    """The uploaded name a saved file was given, without its digest prefix."""
+    m = re.fullmatch(r"[0-9a-f]{16}-(.+)", filename)
+    return m.group(1) if m else filename
 
 
 def _existing(media_dir: Path, url: str) -> Path | None:
     parsed = urlparse(url)
     digest = hashlib.sha1((parsed.netloc + parsed.path).encode()).hexdigest()[:16]
-    return next(iter(media_dir.glob(f"{digest}.*")), None) if media_dir.exists() else None
+    if not media_dir.exists():
+        return None
+    return next((p for p in media_dir.glob(f"{digest}*") if p.name[16:17] in (".", "-")), None)
 
 
 def localize(markdown: str, media_dir: Path, *, session: requests.Session | None = None,

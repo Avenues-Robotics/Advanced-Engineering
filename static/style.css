@@ -270,6 +270,8 @@ figure.media { margin: 1.25rem 0; }
 figure.media img, figure.media video { max-width: 100%; height: auto; border-radius: 6px; }
 figure.media audio { width: 100%; }
 figure.media figcaption { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.4rem; }
+figure.media.pdf iframe { display: block; width: 100%; height: 80vh; max-height: 1000px; border: 1px solid var(--line); border-radius: 6px; }
+figure.media.pdf .file-link { margin-top: 0.5rem; }
 .embed-16x9 { position: relative; aspect-ratio: 16 / 9; }
 .embed-16x9 iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 6px; }
 
