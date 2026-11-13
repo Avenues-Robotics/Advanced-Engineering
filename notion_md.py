@@ -19,7 +19,9 @@ import html
 import re
 import string
 from typing import Callable
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
+
+from media import display_name
 
 # notion page id (32 hex, no dashes, lowercase) -> (site href or None, title or None)
 PageResolver = Callable[[str], "tuple[str | None, str | None]"]
@@ -472,7 +474,16 @@ def _render_media(name: str, attrs: dict[str, str], caption_html: str, ctx: _Ctx
             '<figure class="media"><div class="embed-16x9"><iframe sandbox="allow-scripts" '
             f'src="{_esc(src)}" loading="lazy" title="Embedded content"></iframe></div>{cap}</figure>'
         )
-    label = caption_html or _esc(src.rsplit("/", 1)[-1].split("?")[0] or "Download")
+    filename = display_name(unquote(src.rsplit("/", 1)[-1].split("?")[0])) or "Download"
+    if name == "pdf":
+        # Shown inline like Notion's viewer; phones and iPads often only show
+        # the first page in a frame, so there's always a download link too.
+        return (
+            f'<figure class="media pdf"><iframe src="{_esc(src)}" loading="lazy" title="{_esc(filename)}">'
+            f'</iframe>{cap}<p class="file-link"><a href="{_esc(src)}" download="{_esc(filename)}">'
+            f"Download {_esc(filename)}</a></p></figure>"
+        )
+    label = caption_html or _esc(filename)
     return f'<p class="file-link"><a href="{_esc(src)}">{label}</a></p>'
 
 
