@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from notion_api import NotionClient
+from notion_api import NotionAPIError, NotionClient
 
 MAX_PAGES = 2000  # safety cap so a runaway recursion can't walk forever
 
@@ -67,7 +67,11 @@ class TreeWalker:
         self._count = 0
 
     def build(self, root_page_id: str) -> Node:
-        return self._build_page_node(root_page_id, fallback_title=None)
+        page = self.client.get_page(root_page_id)  # let a bad root page fail loudly
+        node = Node(id=root_page_id, title=_plain_title_from_page(page) or "Untitled",
+                    kind="page", public_url=page.get("public_url"))
+        node.children = self._collect_block_children(root_page_id)
+        return node
 
     # -- internals -----------------------------------------------------
 
@@ -81,8 +85,18 @@ class TreeWalker:
         self._count += 1
         return False
 
-    def _build_page_node(self, page_id: str, fallback_title: str | None) -> Node:
-        page = self.client.get_page(page_id)
+    def _build_page_node(self, page_id: str, fallback_title: str | None) -> Node | None:
+        """Returns None for a sub-page that's trashed or that Notion won't let us read."""
+        try:
+            page = self.client.get_page(page_id)
+        except NotionAPIError as e:
+            if e.status not in (403, 404):
+                raise
+            print(f"WARNING: skipping {fallback_title or page_id!r}: Notion returned {e.status} "
+                  f"(deleted, or not shared with the integration)")
+            return None
+        if page.get("in_trash") or page.get("archived"):
+            return None
         title = _plain_title_from_page(page) or fallback_title or "Untitled"
         node = Node(
             id=page_id,
@@ -95,7 +109,15 @@ class TreeWalker:
 
     def _collect_block_children(self, block_id: str) -> list[Node]:
         children: list[Node] = []
-        for block in self.client.iter_block_children(block_id):
+        try:
+            blocks = list(self.client.iter_block_children(block_id))
+        except NotionAPIError as e:
+            if e.status not in (403, 404):
+                raise
+            print(f"WARNING: couldn't read the contents of {block_id}: Notion returned {e.status} "
+                  f"(probably deleted during the pull); skipping it")
+            return children
+        for block in blocks:
             btype = block.get("type")
             block_id_inner = block["id"]
 
@@ -103,7 +125,9 @@ class TreeWalker:
                 if self._guard(block_id_inner):
                     continue
                 title = block.get("child_page", {}).get("title", "Untitled")
-                children.append(self._build_page_node(block_id_inner, fallback_title=title))
+                child = self._build_page_node(block_id_inner, fallback_title=title)
+                if child is not None:
+                    children.append(child)
 
             elif btype == "child_database":
                 if self._guard(block_id_inner):

@@ -41,6 +41,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        # Every `run:` step below happens inside the site builder's folder.
+        working-directory: course_site_builder
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -89,7 +93,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./site
+          path: ./course_site_builder/site
 
   deploy:
     needs: build
