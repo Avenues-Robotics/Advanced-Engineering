@@ -63,6 +63,8 @@ Projects
     Intro to Control Theory
     Tuning a PIDF Controller
     Logging and Graphing Robot Data with Panels
+    Control Hub vs. Custom PIDF Controllers
+    Rev Control Hub vs. Custom OpMode PIDF Comparison
   
 [Activities and Tutorials]
   [ME]

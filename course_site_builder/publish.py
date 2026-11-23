@@ -2,8 +2,10 @@
 """
 Update the site from this computer.
 
-    python3 publish.py pull                   pull everything from Notion into snapshot/,
+    python3 publish.py pull                   pull what changed in Notion into snapshot/,
                                               update nav.txt and build a local preview
+    python3 publish.py pull --full            same, but re-read every page, not just the ones
+                                              edited since the last pull
     python3 publish.py pull <notion link>     same, but only re-pull that page (and its
                                               sub-pages) - a share link, URL or ID works
     python3 publish.py pull ... --deploy      ...then put it on the live site
@@ -111,6 +113,8 @@ def main() -> None:
 
     pull = commands.add_parser("pull", help="Pull from Notion into snapshot/ and update nav.txt.")
     pull.add_argument("link", nargs="?", help="Only re-pull this page (a Notion share link, URL or ID).")
+    pull.add_argument("--full", action="store_true",
+                      help="Re-read every page, not just the ones edited since the last pull.")
     pull.add_argument("--deploy", action="store_true", help="Put the result on the live site.")
     pull.add_argument("--serve", action="store_true", help="Serve the local preview afterwards.")
 
@@ -137,7 +141,7 @@ def main() -> None:
             if len(refreshed) > 1:
                 message += f" (and {len(refreshed) - 1} published sub-page(s))"
         else:
-            pull_from_notion(SNAPSHOT_DIR)
+            pull_from_notion(SNAPSHOT_DIR, full=args.full)
             message = "Pull from Notion"
     else:
         message = "Update nav.txt"

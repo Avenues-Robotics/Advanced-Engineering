@@ -7,6 +7,7 @@ Only the handful of endpoints this project needs:
   - GET  /v1/blocks/{block_id}/children                -> child blocks (paginated)
   - GET  /v1/databases/{database_id}                   -> database object (lists data_sources)
   - POST /v1/data_sources/{data_source_id}/query        -> rows (as page objects, paginated)
+  - POST /v1/search                                     -> every page shared with the integration
 
 Docs: https://developers.notion.com/reference
 """
@@ -110,6 +111,23 @@ class NotionClient:
             if cursor:
                 body["start_cursor"] = cursor
             data = self._request("POST", f"/data_sources/{data_source_id}/query", json_body=body)
+            yield from data.get("results", [])
+            if not data.get("has_more"):
+                return
+            cursor = data.get("next_cursor")
+
+    # -- Search ------------------------------------------------------------
+
+    def iter_search_pages(self) -> Iterator[dict]:
+        """Every page (and database row) shared with the integration, as page
+        objects - 100 per request, so it's a quick way to get each page's
+        last_edited_time and public_url."""
+        cursor: str | None = None
+        while True:
+            body: dict[str, Any] = {"filter": {"property": "object", "value": "page"}, "page_size": 100}
+            if cursor:
+                body["start_cursor"] = cursor
+            data = self._request("POST", "/search", json_body=body)
             yield from data.get("results", [])
             if not data.get("has_more"):
                 return

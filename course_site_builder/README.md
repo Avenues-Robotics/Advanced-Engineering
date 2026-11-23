@@ -77,7 +77,8 @@ know:
 ## Updating the site from your computer: `publish.py`
 
 ```
-python3 publish.py pull                    pull everything from Notion, update nav.txt, build a preview
+python3 publish.py pull                    pull what changed in Notion, update nav.txt, build a preview
+python3 publish.py pull --full             pull everything, re-reading every page
 python3 publish.py pull <notion link>      re-pull just that page (and its sub-pages)
 python3 publish.py pull ... --deploy       ...and put it on the live site
 python3 publish.py deploy                  put your nav.txt edits live, without pulling Notion
@@ -90,6 +91,16 @@ needs the GitHub CLI (`gh auth login` once).
 - **Pulls are saved in `snapshot/`**, which is committed to the repo. The
   live site is built from `snapshot/` + `nav.txt`, so whatever is in them is
   what goes live.
+- **Pulls only re-read what changed.** A pull starts with one Notion search
+  that lists every page's last-edited time and publish status, then re-reads
+  only pages edited since the last pull (plus new ones). Unchanged pages keep
+  their saved markdown and images, so a pull with few edits takes well under
+  a minute. Publishing, unpublishing, renaming and trashing are always picked
+  up. Two things an edit time can miss: content shown on a page from
+  somewhere else (a synced block, or a mention of a page that was renamed),
+  and an edit made a few seconds before the pull, which Notion's search may
+  not have caught up with yet. `pull --full` (or a single-page pull of that
+  page) catches both, as does the next pull after that page is edited again.
 - **A single-page pull** takes the page's share link (or any Notion URL or
   ID). It's quicker than a full pull and leaves every other page as it was
   last pulled. A page that's new since the last pull works too, as long as
@@ -296,9 +307,10 @@ Before pushing, `python3 tests/test_notion_md.py`, `python3 tests/test_layout.py
 
 ## Notes / gotchas
 
-- **Rate limits.** Notion allows roughly 3 requests/second; the script paces
-  itself to stay under that, so a full rebuild of a workspace this size takes
-  well under a minute, but a much larger one will take longer.
+- **Rate limits.** Notion allows roughly 3 requests/second and the script
+  paces itself to stay under that, which is why a `--full` pull of a
+  workspace this size is slow. A normal pull only spends requests on the
+  search, the databases' row lists and the pages that changed.
 - **Very long pages.** Notion's markdown export truncates pages beyond
   roughly 20,000 blocks. The build log flags any page this happens to; none
   of your current content is anywhere near that size.

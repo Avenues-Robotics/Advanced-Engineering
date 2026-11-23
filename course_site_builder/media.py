@@ -89,6 +89,24 @@ def localize(markdown: str, media_dir: Path, *, session: requests.Session | None
     return _URL_IN_MARKDOWN.sub(replace, markdown)
 
 
+_LOCAL_REF = re.compile(r"\bmedia/([0-9a-f]{16}[\w.-]*)")
+
+
+def prune_media(media_dir: Path, markdowns) -> int:
+    """Delete files in `media_dir` that none of `markdowns` refer to any more
+    (an incremental pull keeps the media directory, so images removed from
+    Notion would otherwise pile up). Returns how many were deleted."""
+    if not media_dir.exists():
+        return 0
+    used = {name for markdown in markdowns for name in _LOCAL_REF.findall(markdown)}
+    removed = 0
+    for path in media_dir.iterdir():
+        if path.is_file() and path.name not in used:
+            path.unlink()
+            removed += 1
+    return removed
+
+
 def copy_media(media_dir: Path, output_dir: Path) -> int:
     """Copy the media directory into the built site. Returns the file count."""
     if not media_dir.exists():

@@ -7,6 +7,7 @@ Usage:
     python3 preview.py                # rebuild ./preview_site from snapshot/
     python3 preview.py --serve        # rebuild, then serve at http://localhost:8000/
     python3 preview.py --pull         # refresh snapshot/ from Notion first (needs NOTION_TOKEN)
+    python3 preview.py --pull --full  # ...re-reading every page, not just ones edited since the last pull
     python3 preview.py --pull-page <notion link>   # refresh just that page (and its sub-pages)
     python3 preview.py --write-nav    # create nav.txt from the snapshot's current Notion order
 
@@ -29,7 +30,7 @@ from datetime import date
 from pathlib import Path
 
 from layout import layout_from_tree, organize
-from media import copy_media, localize
+from media import copy_media, localize, prune_media
 from notion_api import strip_dashes
 from render import render_site
 from walker import Node
@@ -46,6 +47,7 @@ def _node_from_dict(d: dict) -> Node:
         title=d["title"],
         kind=d["kind"],
         public_url=d["public_url"],
+        last_edited=d.get("last_edited"),
         children=[_node_from_dict(c) for c in d["children"]],
     )
 
@@ -114,29 +116,64 @@ def _site_title(snapshot_dir: Path, root: Node) -> str:
     return root.title
 
 
-def pull_from_notion(snapshot_dir: Path, client=None) -> None:
+def pull_from_notion(snapshot_dir: Path, client=None, *, full: bool = False,
+                     root_page_id: str | None = None) -> None:
+    """Refresh the snapshot from Notion.
+
+    By default only pages edited since the last pull are re-read (see
+    walker.IncrementalWalker); everything else, including its saved markdown and
+    images, is kept from the snapshot. `full=True`, or a snapshot without edit
+    times, walks and re-downloads everything instead."""
     from build_site import iter_publishable
     from notion_api import extract_id_from_url
-    from walker import build_tree
+    from walker import IncrementalWalker, TreeWalker
 
     client = client or _notion_client()
-    root_page_raw = os.environ["ROOT_PAGE_ID"]
-
+    root_page_id = root_page_id or extract_id_from_url(os.environ["ROOT_PAGE_ID"])
     media_dir = snapshot_dir / "media"
-    shutil.rmtree(media_dir, ignore_errors=True)
 
-    print("Walking Notion tree ...")
-    root = build_tree(client, extract_id_from_url(root_page_raw))
-    to_fetch = list(iter_publishable(root)) + ([root] if root.is_published else [])
+    previous = previous_markdown = None
+    if not full and (snapshot_dir / "tree.json").exists():
+        previous, previous_markdown, _ = load_snapshot(snapshot_dir)
+        if strip_dashes(previous.id).lower() != strip_dashes(root_page_id).lower():
+            previous = None  # a different root page: nothing to reuse
+        elif previous.last_edited is None:
+            print("The snapshot has no edit times yet (it predates incremental pulls), so this "
+                  "pull reads everything; later ones only read what changed.")
+
+    if previous is None:
+        shutil.rmtree(media_dir, ignore_errors=True)
+        print("Walking the whole Notion tree ...")
+        walker = TreeWalker(client)
+    else:
+        print("Asking Notion which pages changed since the last pull ...")
+        pages = {strip_dashes(p["id"]).lower(): p for p in client.iter_search_pages()}
+        print(f"  {len(pages)} page(s) found; walking the tree, skipping unchanged pages ...")
+        walker = IncrementalWalker(client, previous, pages)
+    root = walker.build(root_page_id)
+
     markdown_by_id = {}
-    for node in to_fetch:
+    fetched = reused = 0
+    for node in iter_publishable(root):
+        old = walker.previous(node) if previous is not None else None
+        if old is not None and old.is_published and walker.is_unchanged(node):
+            if old.id in previous_markdown:
+                markdown_by_id[node.id] = previous_markdown[old.id]
+            reused += 1
+            continue
         print(f"  fetching {node.title}")
         markdown = localize(client.get_page_markdown(node.id).get("markdown", ""), media_dir)
         if markdown.strip():
             markdown_by_id[node.id] = markdown
+        fetched += 1
     site_title = _site_title(snapshot_dir, root)
     save_snapshot(root, markdown_by_id, site_title, snapshot_dir, source="Notion API")
-    print(f"Saved snapshot of {len(to_fetch)} published page(s) to {snapshot_dir}")
+    if previous is not None:
+        pruned = prune_media(media_dir, markdown_by_id.values())
+        print(f"Saved snapshot to {snapshot_dir}: {fetched} published page(s) fetched, {reused} unchanged"
+              + (f", {pruned} unused image/file(s) removed" if pruned else ""))
+    else:
+        print(f"Saved snapshot of {fetched} published page(s) to {snapshot_dir}")
 
 
 def _find_with_parent(node: Node, bare_id: str, parent: Node | None = None) -> tuple[Node | None, Node | None]:
@@ -247,7 +284,10 @@ def serve(directory: Path, port: int) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--pull", action="store_true", help="Refresh snapshot/ from Notion before building.")
+    parser.add_argument("--pull", action="store_true",
+                        help="Refresh snapshot/ from Notion (only pages edited since the last pull) before building.")
+    parser.add_argument("--full", action="store_true",
+                        help="With --pull: re-read every page instead of only the edited ones.")
     parser.add_argument("--pull-page", metavar="LINK",
                         help="Refresh one page (and its sub-pages) from Notion before building.")
     parser.add_argument("--serve", action="store_true", help="Serve the built site locally afterwards.")
@@ -265,7 +305,7 @@ def main() -> None:
         return
 
     if args.pull:
-        pull_from_notion(SNAPSHOT_DIR)
+        pull_from_notion(SNAPSHOT_DIR, full=args.full)
     elif args.pull_page:
         pull_page(SNAPSHOT_DIR, args.pull_page)
     build(SNAPSHOT_DIR, OUTPUT_DIR)

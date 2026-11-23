@@ -3,12 +3,14 @@
   "title": "Advanced Engineering Electives",
   "kind": "page",
   "public_url": "https://storm-cairnsmore-9bc.notion.site/Advanced-Engineering-Electives-384ec788f8408017aa6ee987a3e84299",
+  "last_edited": "2026-11-22T14:19:00.000Z",
   "children": [
     {
       "id": "3aaec788-f840-8090-9aa8-effbe2412984",
       "title": "Program Overview",
       "kind": "page",
       "public_url": "https://storm-cairnsmore-9bc.notion.site/Program-Overview-3aaec788f84080909aa8effbe2412984",
+      "last_edited": "2026-07-27T19:15:00.000Z",
       "children": []
     },
     {
@@ -16,12 +18,14 @@
       "title": "Reflections and Engineering Notebook",
       "kind": "page",
       "public_url": "https://storm-cairnsmore-9bc.notion.site/Reflections-and-Engineering-Notebook-3d7ec788f84080cd88c4d35dffddbc78",
+      "last_edited": "2026-09-10T19:35:00.000Z",
       "children": [
         {
           "id": "3d7ec788-f840-8034-be9f-f91d6e054ee9",
           "title": "Initial Reflection",
           "kind": "page",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Initial-Reflection-3d7ec788f8408034be9ff91d6e054ee9",
+          "last_edited": "2026-09-10T18:06:00.000Z",
           "children": []
         },
         {
@@ -29,6 +33,7 @@
           "title": "Bi-weekly Reflection",
           "kind": "page",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Bi-weekly-Reflection-3d7ec788f8408036a848d702de28664e",
+          "last_edited": "2026-09-10T18:56:00.000Z",
           "children": []
         }
       ]
@@ -38,12 +43,14 @@
       "title": "Outcomes",
       "kind": "database",
       "public_url": null,
+      "last_edited": null,
       "children": [
         {
           "id": "3d1ec788-f840-8145-8965-fc97ac9f917e",
           "title": "Conceptual Design",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Conceptual-Design-3d1ec788f84081458965fc97ac9f917e",
+          "last_edited": "2026-10-02T13:58:00.000Z",
           "children": []
         },
         {
@@ -51,6 +58,7 @@
           "title": "Documentation",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Documentation-3d1ec788f84081be85a4e43b730896f6",
+          "last_edited": "2026-09-26T18:47:00.000Z",
           "children": []
         },
         {
@@ -58,6 +66,7 @@
           "title": "Iteration",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Iteration-3d1ec788f84081cba7eae9643df0cd44",
+          "last_edited": "2026-11-04T19:19:00.000Z",
           "children": []
         },
         {
@@ -65,6 +74,7 @@
           "title": "Feedback Control",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Feedback-Control-3cfec788f840815db2f6c1ee71b63859",
+          "last_edited": "2026-11-12T16:12:00.000Z",
           "children": []
         },
         {
@@ -72,6 +82,7 @@
           "title": "Software Implementation",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Software-Implementation-3cfec788f840812abfa6ce5ad29e57fd",
+          "last_edited": "2026-10-10T15:43:00.000Z",
           "children": []
         },
         {
@@ -79,6 +90,7 @@
           "title": "Software Architecture",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Software-Architecture-3cfec788f84081708fdbdb05102776ff",
+          "last_edited": "2026-09-26T18:47:00.000Z",
           "children": []
         },
         {
@@ -86,6 +98,7 @@
           "title": "Electronics",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Electronics-3cfec788f84081b68492f7ee882d1b55",
+          "last_edited": "2026-09-26T18:47:00.000Z",
           "children": []
         },
         {
@@ -93,6 +106,7 @@
           "title": "Technical Communication",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Technical-Communication-375ec788f84080549a25ec6e0b4cbeab",
+          "last_edited": "2026-09-26T18:48:00.000Z",
           "children": []
         },
         {
@@ -100,6 +114,7 @@
           "title": "Testing",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Testing-375ec788f84080c1909fe9ca04951656",
+          "last_edited": "2026-09-26T18:48:00.000Z",
           "children": []
         },
         {
@@ -107,6 +122,7 @@
           "title": "Mechanics",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Mechanics-375ec788f84080e7a299d4153f1f68b1",
+          "last_edited": "2026-09-26T18:48:00.000Z",
           "children": []
         },
         {
@@ -114,6 +130,7 @@
           "title": "Fabrication",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Fabrication-375ec788f84080589985f184965deb65",
+          "last_edited": "2026-09-26T18:47:00.000Z",
           "children": []
         },
         {
@@ -121,6 +138,7 @@
           "title": "Detailed Design",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Detailed-Design-375ec788f840803a9851debb82a8b256",
+          "last_edited": "2026-11-18T18:50:00.000Z",
           "children": []
         },
         {
@@ -128,6 +146,7 @@
           "title": "Requirements",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Requirements-375ec788f840807d9257cc9e3f3a72aa",
+          "last_edited": "2026-09-26T18:48:00.000Z",
           "children": []
         }
       ]
@@ -137,12 +156,14 @@
       "title": "Projects",
       "kind": "database",
       "public_url": null,
+      "last_edited": null,
       "children": [
         {
           "id": "416ec788-f840-81ab-9f43-f70296f02f0c",
           "title": "Project 5: Feedback-based Control",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-5-Feedback-based-Control-416ec788f84081ab9f43f70296f02f0c",
+          "last_edited": "2026-11-22T14:56:00.000Z",
           "children": []
         },
         {
@@ -150,6 +171,7 @@
           "title": "Project 4: Subsystem Testing and Iteration",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-4-Subsystem-Testing-and-Iteration-414ec788f8408196b520c7922c6deef2",
+          "last_edited": "2026-11-10T20:19:00.000Z",
           "children": []
         },
         {
@@ -157,6 +179,7 @@
           "title": "Project 7: Engineering Physics",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-7-Engineering-Physics-410ec788f84081ceb3eed1770edd020b",
+          "last_edited": "2026-11-12T15:58:00.000Z",
           "children": []
         },
         {
@@ -164,6 +187,7 @@
           "title": "Project 6: Engineering Experiment",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-6-Engineering-Experiment-405ec788f8408159b553efc590483a71",
+          "last_edited": "2026-11-12T13:23:00.000Z",
           "children": []
         },
         {
@@ -171,6 +195,7 @@
           "title": "Project 4: Subsystem Software Implementation",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-4-Subsystem-Software-Implementation-3cfec788f84080a4a718ee0816c02e08",
+          "last_edited": "2026-10-27T01:32:00.000Z",
           "children": []
         },
         {
@@ -178,6 +203,7 @@
           "title": "Project 3: Intro to FTC Java",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-3-Intro-to-FTC-Java-3cfec788f84080cf9062efdbb053ef87",
+          "last_edited": "2026-10-27T01:31:00.000Z",
           "children": []
         },
         {
@@ -185,6 +211,7 @@
           "title": "Project 2: System Architecture",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-2-System-Architecture-3cfec788f84080d1ad21d3a7389651c5",
+          "last_edited": "2026-10-27T01:30:00.000Z",
           "children": []
         },
         {
@@ -192,6 +219,7 @@
           "title": "Project 2: Subsystem Conceptual Design",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-2-Subsystem-Conceptual-Design-37dec788f8408094bd89cb0ab29131b8",
+          "last_edited": "2026-10-27T01:29:00.000Z",
           "children": []
         },
         {
@@ -199,6 +227,7 @@
           "title": "Project 3: Subsystem Detailed Design",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-3-Subsystem-Detailed-Design-37dec788f84080cd929dc6951104f8a4",
+          "last_edited": "2026-11-18T18:50:00.000Z",
           "children": []
         },
         {
@@ -206,12 +235,14 @@
           "title": "Project 1: Engineering Requirements",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-1-Engineering-Requirements-375ec788f84080098d02f2fa90e6b025",
+          "last_edited": "2026-10-27T01:28:00.000Z",
           "children": [
             {
               "id": "3dcec788-f840-80bb-97cb-e4d45702a727",
               "title": "Exemplar Requirements Documents",
               "kind": "database",
               "public_url": null,
+              "last_edited": null,
               "children": []
             }
           ]
@@ -223,12 +254,14 @@
       "title": "Activities",
       "kind": "database",
       "public_url": null,
+      "last_edited": null,
       "children": [
         {
           "id": "3ffec788-f840-802a-9835-e7c545930e51",
           "title": "OnShape Tutorial 10 - Part Studio in Context",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-10-Part-Studio-in-Context-3ffec788f840802a9835e7c545930e51",
+          "last_edited": "2026-10-20T19:17:00.000Z",
           "children": []
         },
         {
@@ -236,6 +269,7 @@
           "title": "OnShape Tutorial 9 - Mounting 3D Printed Parts with Screw Holes",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-9-Mounting-3D-Printed-Parts-with-Screw-Holes-3ffec788f840803b8b35d1b9f851a1b0",
+          "last_edited": "2026-10-20T19:12:00.000Z",
           "children": []
         },
         {
@@ -243,6 +277,7 @@
           "title": "PID 3 - PID Based Rotation",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/PID-3-PID-Based-Rotation-3f7ec788f84081789095e18f85f4f665",
+          "last_edited": "2026-10-12T20:16:00.000Z",
           "children": []
         },
         {
@@ -250,6 +285,7 @@
           "title": "PID 1 - Write a PIDF Class",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/PID-1-Write-a-PIDF-Class-3f7ec788f84081a49d5fd27a55fd1924",
+          "last_edited": "2026-11-12T14:19:00.000Z",
           "children": []
         },
         {
@@ -257,6 +293,7 @@
           "title": "PID 2 - Distance Sensor PID Controller",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/PID-2-Distance-Sensor-PID-Controller-3f7ec788f84081faab16e877666e71df",
+          "last_edited": "2026-10-12T20:16:00.000Z",
           "children": []
         },
         {
@@ -264,6 +301,7 @@
           "title": "FTC Java 14 - Commit and Push Your Project to GitHub",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-14-Commit-and-Push-Your-Project-to-GitHub-3f6ec788f840814c880eeffd215a3bde",
+          "last_edited": "2026-10-11T19:09:00.000Z",
           "children": []
         },
         {
@@ -271,6 +309,7 @@
           "title": "FTC Java 17 - Leave and Park Autonomous OpMode",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-17-Leave-and-Park-Autonomous-OpMode-3e8ec788f840805599ffd3877ba78428",
+          "last_edited": "2026-10-11T18:56:00.000Z",
           "children": []
         },
         {
@@ -278,6 +317,7 @@
           "title": "FTC Java 13 - Connect Android Studio to a Robot",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-13-Connect-Android-Studio-to-a-Robot-3e8ec788f84081399dc1f7606f6040f7",
+          "last_edited": "2026-10-17T16:43:00.000Z",
           "children": []
         },
         {
@@ -285,6 +325,7 @@
           "title": "FTC Java 16 - Create a Drive Class to ABSTRACT Drive Functionality",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-16-Create-a-Drive-Class-to-ABSTRACT-Drive-Functionality-3e8ec788f840816ab007f144b15f5ad5",
+          "last_edited": "2026-10-11T18:56:00.000Z",
           "children": []
         },
         {
@@ -292,6 +333,7 @@
           "title": "FTC Java 12 - Set-up Android Studio",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-12-Set-up-Android-Studio-3e8ec788f8408186a69fc23ff76868d7",
+          "last_edited": "2026-10-30T18:23:00.000Z",
           "children": []
         },
         {
@@ -299,6 +341,7 @@
           "title": "FTC Java 9 - FTCSIM Sensors 7 - Distance Sense",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-9-FTCSIM-Sensors-7-Distance-Sense-3e8ec788f84081b38e90c27cc2e5866d",
+          "last_edited": "2026-09-27T13:21:00.000Z",
           "children": []
         },
         {
@@ -306,6 +349,7 @@
           "title": "FTC Java 15 - Your First Java OpMode - Drive Train Testing",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-15-Your-First-Java-OpMode-Drive-Train-Testing-3e8ec788f84081bfb04fc5fa0e9c07fe",
+          "last_edited": "2026-10-11T18:56:00.000Z",
           "children": []
         },
         {
@@ -313,6 +357,7 @@
           "title": "FTC Java 10 - FTCSIM Sensors 10 - Multisense",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-10-FTCSIM-Sensors-10-Multisense-3e8ec788f84081ddb1c7c299928934bd",
+          "last_edited": "2026-09-27T13:21:00.000Z",
           "children": []
         },
         {
@@ -320,6 +365,7 @@
           "title": "FTC Java 11 - Configure a Test Bot",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-11-Configure-a-Test-Bot-3e8ec788f84081f79729d311098c89ac",
+          "last_edited": "2026-09-27T13:16:00.000Z",
           "children": []
         },
         {
@@ -327,6 +373,7 @@
           "title": "FTC Java 5 - FTCSIM Movement 5 - L",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-5-FTCSIM-Movement-5-L-3e8ec788f840812ebbe4e261eb7fc853",
+          "last_edited": "2026-09-27T13:20:00.000Z",
           "children": []
         },
         {
@@ -334,6 +381,7 @@
           "title": "FTC Java 1 - FTCSIM Movement 1 - Line",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-1-FTCSIM-Movement-1-Line-3e8ec788f8408135befaef3887177c29",
+          "last_edited": "2026-09-27T13:19:00.000Z",
           "children": []
         },
         {
@@ -341,6 +389,7 @@
           "title": "FTC Java 4 - FTCSIM Movement 4 - Arch",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-4-FTCSIM-Movement-4-Arch-3e8ec788f84081529a91c6dd0093f1de",
+          "last_edited": "2026-09-27T13:20:00.000Z",
           "children": []
         },
         {
@@ -348,6 +397,7 @@
           "title": "FTC Java 7 - FTCSIM Sensors 1 - Color Sense",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-7-FTCSIM-Sensors-1-Color-Sense-3e8ec788f840817291dff6dac05c5f63",
+          "last_edited": "2026-09-27T13:21:00.000Z",
           "children": []
         },
         {
@@ -355,6 +405,7 @@
           "title": "FTC Java 6 - Optional: Complete FTCSIM Movement",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-6-Optional-Complete-FTCSIM-Movement-3e8ec788f8408173960cee8eb026cfad",
+          "last_edited": "2026-09-27T13:20:00.000Z",
           "children": []
         },
         {
@@ -362,6 +413,7 @@
           "title": "FTC Java 2 - FTCSIM Movement 2 - Rearward",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-2-FTCSIM-Movement-2-Rearward-3e8ec788f8408183b265ee679ae2462a",
+          "last_edited": "2026-09-27T13:20:00.000Z",
           "children": []
         },
         {
@@ -369,6 +421,7 @@
           "title": "FTC Java 3 - FTCSIM Movement 3 - Half Moon",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-3-FTCSIM-Movement-3-Half-Moon-3e8ec788f840819a9006c46c674f7447",
+          "last_edited": "2026-09-27T13:20:00.000Z",
           "children": []
         },
         {
@@ -376,6 +429,7 @@
           "title": "FTC Java 8 - FTCSIM Sensors 4 - Pattern",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-8-FTCSIM-Sensors-4-Pattern-3e8ec788f84081a780f9d1acb990de03",
+          "last_edited": "2026-09-27T13:21:00.000Z",
           "children": []
         },
         {
@@ -383,6 +437,7 @@
           "title": "OnShape Exercise 9 - Putting it all together",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Exercise-9-Putting-it-all-together-37dec788f840804fb98bd1e7c6eff66a",
+          "last_edited": "2026-06-12T12:10:00.000Z",
           "children": []
         },
         {
@@ -390,6 +445,7 @@
           "title": "OnShape Tutorial 5 - Using Revolve",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-5-Using-Revolve-37dec788f84080018e77e9619cffe06d",
+          "last_edited": "2026-06-12T12:13:00.000Z",
           "children": []
         },
         {
@@ -397,6 +453,7 @@
           "title": "OnShape Tutorial 7 - Stirling Engine",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-7-Stirling-Engine-37dec788f8408085825ad2fe501a0d1d",
+          "last_edited": "2026-06-12T12:13:00.000Z",
           "children": []
         },
         {
@@ -404,6 +461,7 @@
           "title": "OnShape Tutorial 6 - Assembling Multiple Parts",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-6-Assembling-Multiple-Parts-37dec788f84080d9a2d3f1c2dcc5b2ac",
+          "last_edited": "2026-06-12T12:13:00.000Z",
           "children": []
         },
         {
@@ -411,6 +469,7 @@
           "title": "OnShape Tutorial 8 - Creating an Assembly with the FRC Design App",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-8-Creating-an-Assembly-with-the-FRC-Design-App-37dec788f840809fa840cc5fdba93249",
+          "last_edited": "2026-10-01T19:20:00.000Z",
           "children": []
         },
         {
@@ -418,6 +477,7 @@
           "title": "OnShape Tutorial 4 with 3D Printer Export - Hollow Box",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-4-with-3D-Printer-Export-Hollow-Box-37dec788f84080ad87d8db85a47e9a6b",
+          "last_edited": "2026-09-22T18:24:00.000Z",
           "children": []
         },
         {
@@ -425,6 +485,7 @@
           "title": "OnShape Tutorial 1 - 24-01-01 TIER 1 PART",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-1-24-01-01-TIER-1-PART-375ec788f840818b8c69e9075d261be8",
+          "last_edited": "2026-09-22T18:48:00.000Z",
           "children": []
         },
         {
@@ -432,6 +493,7 @@
           "title": "Onshape Tutorial 3 - 25-01-02 Phone Stand",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Onshape-Tutorial-3-25-01-02-Phone-Stand-375ec788f84081c29709d94e10b47f7f",
+          "last_edited": "2026-06-12T12:11:00.000Z",
           "children": []
         },
         {
@@ -439,6 +501,7 @@
           "title": "OnShape Tutorial 2 - 25-01-01 T42",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-Tutorial-2-25-01-01-T42-375ec788f84081d98765e52eb45e2074",
+          "last_edited": "2026-06-12T12:11:00.000Z",
           "children": []
         }
       ]
@@ -448,12 +511,30 @@
       "title": "Content Library",
       "kind": "database",
       "public_url": null,
+      "last_edited": null,
       "children": [
+        {
+          "id": "41aec788-f840-81ff-aad2-e9ecccd431bb",
+          "title": "Control Hub vs. Custom PIDF Controllers",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Control-Hub-vs-Custom-PIDF-Controllers-41aec788f84081ffaad2e9ecccd431bb",
+          "last_edited": "2026-11-16T19:48:00.000Z",
+          "children": []
+        },
+        {
+          "id": "41aec788-f840-807a-8c2f-c58e43ad647a",
+          "title": "Rev Control Hub vs. Custom OpMode PIDF Comparison",
+          "kind": "database_row",
+          "public_url": "https://storm-cairnsmore-9bc.notion.site/Rev-Control-Hub-vs-Custom-OpMode-PIDF-Comparison-41aec788f840807a8c2fc58e43ad647a",
+          "last_edited": "2026-11-22T14:55:00.000Z",
+          "children": []
+        },
         {
           "id": "416ec788-f840-817e-a360-df9031b8e303",
           "title": "Energy and Power for FTC Robots",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Energy-and-Power-for-FTC-Robots-416ec788f840817ea360df9031b8e303",
+          "last_edited": "2026-11-12T19:36:00.000Z",
           "children": []
         },
         {
@@ -461,6 +542,7 @@
           "title": "Measuring Electricity",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Measuring-Electricity-416ec788f84081a1a0c6df4ca5c838e7",
+          "last_edited": "2026-11-12T19:05:00.000Z",
           "children": []
         },
         {
@@ -468,6 +550,7 @@
           "title": "Exploring Electrical Energy and Power",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Exploring-Electrical-Energy-and-Power-416ec788f84081bba3d8dfd30bcdaa9d",
+          "last_edited": "2026-11-12T19:01:00.000Z",
           "children": []
         },
         {
@@ -475,6 +558,7 @@
           "title": "Logging and Graphing Robot Data with Panels",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Logging-and-Graphing-Robot-Data-with-Panels-416ec788f84081e8a71ccc13a54652a4",
+          "last_edited": "2026-11-12T15:31:00.000Z",
           "children": []
         },
         {
@@ -482,6 +566,7 @@
           "title": "Shooter Physics",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Shooter-Physics-413ec788f840804c9908ef5319c27734",
+          "last_edited": "2026-11-12T18:47:00.000Z",
           "children": []
         },
         {
@@ -489,6 +574,7 @@
           "title": "Tuning a PIDF Controller",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Tuning-a-PIDF-Controller-401ec788f84081e38054deaae6f6d54c",
+          "last_edited": "2026-11-16T18:00:00.000Z",
           "children": []
         },
         {
@@ -496,6 +582,7 @@
           "title": "Intro to Control Theory",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Intro-to-Control-Theory-3f7ec788f84081d0a468e7be52d79e62",
+          "last_edited": "2026-11-16T17:46:00.000Z",
           "children": []
         },
         {
@@ -503,6 +590,7 @@
           "title": "Exemplar RFP: Automatic Pet Feeder",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Exemplar-RFP-Automatic-Pet-Feeder-3f3ec788f840813bb42dfccb7fa8975d",
+          "last_edited": "2026-10-08T15:06:00.000Z",
           "children": []
         },
         {
@@ -510,6 +598,7 @@
           "title": "Writing a Request for Proposal (RFP)",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Writing-a-Request-for-Proposal-RFP-3f3ec788f840818b87a0c0784989daea",
+          "last_edited": "2026-10-27T01:24:00.000Z",
           "children": []
         },
         {
@@ -517,6 +606,7 @@
           "title": "FTC Java - FTCSIM",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-FTCSIM-3edec788f84081179511d1ba37e08b63",
+          "last_edited": "2026-10-11T18:36:00.000Z",
           "children": []
         },
         {
@@ -524,6 +614,7 @@
           "title": "FTC Java - Getting Started on a Robot",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/FTC-Java-Getting-Started-on-a-Robot-3edec788f840819d960deb588e736e0a",
+          "last_edited": "2026-10-11T18:56:00.000Z",
           "children": []
         },
         {
@@ -531,6 +622,7 @@
           "title": "Software Architecture",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Software-Architecture-3e5ec788f84081649622dde7cda294aa",
+          "last_edited": "2026-10-27T01:24:00.000Z",
           "children": []
         },
         {
@@ -538,6 +630,7 @@
           "title": "Sample SCS Project 2: System Architecture Design Plan [Advanced]",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-SCS-Project-2-System-Architecture-Design-Plan-Advanced-3e5ec788f84081778d6af99e94b314a6",
+          "last_edited": "2026-10-19T13:34:00.000Z",
           "children": []
         },
         {
@@ -545,6 +638,7 @@
           "title": "Sample SCS Project 2: System Architecture Design Plan [Proficient]",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-SCS-Project-2-System-Architecture-Design-Plan-Proficient-3e5ec788f840817fbab7d8ea2379d5fd",
+          "last_edited": "2026-09-24T17:01:00.000Z",
           "children": []
         },
         {
@@ -552,6 +646,7 @@
           "title": "Project Management for FTC",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Project-Management-for-FTC-3e5ec788f84081ef9a5bed063280ff6b",
+          "last_edited": "2026-10-27T01:27:00.000Z",
           "children": []
         },
         {
@@ -559,6 +654,7 @@
           "title": "Sample Project 1: Sub-system Requirements Document (Part 2) [Advanced] for Autonomous Navigation",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-Advanced-for-Autonomous-Navigation-3dcec788f840814b9e18dadd1884ecd6",
+          "last_edited": "2026-09-15T16:18:00.000Z",
           "children": []
         },
         {
@@ -566,6 +662,7 @@
           "title": "Sample Project 1: Sub-system Requirements Document (Part 2) for Software",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-for-Software-3dcec788f8408116b1dddcc4e45d56d3",
+          "last_edited": "2026-09-15T15:11:00.000Z",
           "children": []
         },
         {
@@ -573,6 +670,7 @@
           "title": "Sample Project 1: Sub-system Requirements Document (Part 2) for Autonomous Navigation",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-for-Autonomous-Navigation-3dcec788f84081909237f17165e79cd5",
+          "last_edited": "2026-09-15T15:27:00.000Z",
           "children": []
         },
         {
@@ -580,6 +678,7 @@
           "title": "Sample 3-View Drawing ",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-3-View-Drawing-3abec788f840806982aadf99106b9420",
+          "last_edited": "2026-09-24T19:31:00.000Z",
           "children": []
         },
         {
@@ -587,6 +686,7 @@
           "title": "OnShape CAD Tutorials",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/OnShape-CAD-Tutorials-3abec788f84080f9b90de05f7e00f336",
+          "last_edited": "2026-10-20T19:21:00.000Z",
           "children": []
         },
         {
@@ -594,6 +694,7 @@
           "title": "Comparing Design Concepts: Pugh Matrix",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Comparing-Design-Concepts-Pugh-Matrix-385ec788f8408087b8cbdd5494b8a000",
+          "last_edited": "2026-10-27T01:23:00.000Z",
           "children": []
         },
         {
@@ -601,6 +702,7 @@
           "title": "Prior Art Research Notes Template",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Prior-Art-Research-Notes-Template-385ec788f84080c4adf9c3e8d5376c3a",
+          "last_edited": "2026-06-20T14:16:00.000Z",
           "children": []
         },
         {
@@ -608,6 +710,7 @@
           "title": "Engineering Requirements",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Engineering-Requirements-37aec788f840803c93b6cafe71b1cac5",
+          "last_edited": "2026-10-27T01:23:00.000Z",
           "children": []
         },
         {
@@ -615,6 +718,7 @@
           "title": "Sample Project 1: Sub-system Requirements Document (Part 2) [Advanced]",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-Advanced-379ec788f8408033a79edfe5894f23c2",
+          "last_edited": "2026-09-04T20:35:00.000Z",
           "children": []
         },
         {
@@ -622,6 +726,7 @@
           "title": "Sample Project 1: Sub-system Requirements Document (Part 2) [Proficient]",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Sub-system-Requirements-Document-Part-2-Proficient-379ec788f840802aaee3d8244886ca5b",
+          "last_edited": "2026-09-04T20:34:00.000Z",
           "children": []
         },
         {
@@ -629,6 +734,7 @@
           "title": "Sample Project 1: Team Requirements Document (Part 1)",
           "kind": "database_row",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Sample-Project-1-Team-Requirements-Document-Part-1-379ec788f84080668f3dede8894975ae",
+          "last_edited": "2026-09-04T20:33:00.000Z",
           "children": []
         }
       ]
@@ -638,18 +744,21 @@
       "title": "Courses",
       "kind": "page",
       "public_url": null,
+      "last_edited": "2026-09-26T20:16:00.000Z",
       "children": [
         {
           "id": "375ec788-f840-8028-899e-c637746a7d05",
           "title": "Mechanical Engineering 1",
           "kind": "page",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Mechanical-Engineering-1-375ec788f8408028899ec637746a7d05",
+          "last_edited": "2026-11-03T14:01:00.000Z",
           "children": [
             {
               "id": "3d0ec788-f840-802e-83ae-cff0a9138bad",
               "title": "ME1 Course Outcomes",
               "kind": "page",
               "public_url": "https://storm-cairnsmore-9bc.notion.site/ME1-Course-Outcomes-3d0ec788f840802e83aecff0a9138bad",
+              "last_edited": "2026-10-26T18:56:00.000Z",
               "children": []
             },
             {
@@ -657,6 +766,7 @@
               "title": "Unit 1 - Requirements",
               "kind": "page",
               "public_url": null,
+              "last_edited": "2026-09-26T19:58:00.000Z",
               "children": []
             }
           ]
@@ -666,12 +776,14 @@
           "title": "Software and Control Systems 1",
           "kind": "page",
           "public_url": "https://storm-cairnsmore-9bc.notion.site/Software-and-Control-Systems-1-3d0ec788f840809cbdb5fb9d32e0d49b",
+          "last_edited": "2026-11-03T14:05:00.000Z",
           "children": [
             {
               "id": "3d0ec788-f840-80ff-83d4-c617cf7b6d1c",
               "title": "SCS Course Outcomes",
               "kind": "page",
               "public_url": "https://storm-cairnsmore-9bc.notion.site/SCS-Course-Outcomes-3d0ec788f84080ff83d4c617cf7b6d1c",
+              "last_edited": "2026-10-26T18:56:00.000Z",
               "children": []
             }
           ]
@@ -683,12 +795,14 @@
       "title": "Assessment",
       "kind": "database",
       "public_url": null,
+      "last_edited": null,
       "children": [
         {
           "id": "3e5ec788-f840-811c-99f6-caf585461fa3",
           "title": "Requirements Unit: Advanced Level Vocabulary Quiz",
           "kind": "database_row",
           "public_url": null,
+          "last_edited": "2026-09-24T18:15:00.000Z",
           "children": []
         },
         {
@@ -696,6 +810,7 @@
           "title": "Requirements Unit: Vocabulary Quiz Answer Key",
           "kind": "database_row",
           "public_url": null,
+          "last_edited": "2026-09-24T18:15:00.000Z",
           "children": []
         },
         {
@@ -703,6 +818,7 @@
           "title": "Requirements Unit: Proficient Level Vocabulary Quiz",
           "kind": "database_row",
           "public_url": null,
+          "last_edited": "2026-09-24T19:42:00.000Z",
           "children": []
         }
       ]
@@ -712,40 +828,38 @@
       "title": "Teacher Notes",
       "kind": "page",
       "public_url": null,
+      "last_edited": "2026-11-05T15:56:00.000Z",
       "children": [
         {
           "id": "40fec788-f840-8043-b297-d734865ec2e0",
           "title": "Shooter Physics Guided Problem Set",
           "kind": "page",
           "public_url": null,
+          "last_edited": "2026-11-06T21:03:00.000Z",
           "children": []
         }
       ]
-    },
-    {
-      "id": "410ec788-f840-8079-bd12-c9230e5eda10",
-      "title": "Random Note",
-      "kind": "page",
-      "public_url": null,
-      "children": []
     },
     {
       "id": "415ec788-f840-8108-8440-d1de00c3787d",
       "title": "Student Work Tracker",
       "kind": "page",
       "public_url": null,
+      "last_edited": "2026-11-22T13:48:00.000Z",
       "children": [
         {
           "id": "415ec788-f840-8105-bd7c-da97d425fd3b",
           "title": "Untitled",
           "kind": "database",
           "public_url": null,
+          "last_edited": null,
           "children": [
             {
               "id": "415ec788-f840-8100-80d1-d80fb4debc6a",
               "title": "Android Studio Installation",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -753,6 +867,7 @@
               "title": "Optional: Complete FTCSIM Movement",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -760,6 +875,7 @@
               "title": "FTCSIM Movement 1 - Line",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -767,6 +883,7 @@
               "title": "Project 6 - Testing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -774,6 +891,7 @@
               "title": "Project 6 - Testing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -781,6 +899,7 @@
               "title": "Project 2: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -788,6 +907,7 @@
               "title": "Optional: Complete FTCSIM Movement",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -795,6 +915,7 @@
               "title": "Project 2: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -802,6 +923,7 @@
               "title": "Project 6 - Testing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -809,6 +931,7 @@
               "title": "Control Theory Reading",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -816,6 +939,7 @@
               "title": "Install Pedro Pathing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -823,6 +947,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -830,6 +955,7 @@
               "title": "Bi-weekly Reflection 3 [10/12-10/25]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -837,6 +963,7 @@
               "title": "Create a Drive Class to ABSTRACT Drive Functionality",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -844,6 +971,7 @@
               "title": "Optional: Complete FTCSIM Movement",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -851,6 +979,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -858,6 +987,7 @@
               "title": "PID Implementation",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -865,6 +995,7 @@
               "title": "Project 6 - Testing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -872,6 +1003,7 @@
               "title": "Software Implementation Check for ZoneChecker Class #2",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -879,6 +1011,7 @@
               "title": "FTCSIM Sensors 7 - Distance Sense",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -886,6 +1019,7 @@
               "title": "FTCSIM Sensors 4 - Pattern",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -893,6 +1027,7 @@
               "title": "Control Theory Reading",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -900,6 +1035,7 @@
               "title": "Bi-weekly Reflection 4 [10/26-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -907,6 +1043,7 @@
               "title": "Connect Android Studio to a Robot",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -914,6 +1051,7 @@
               "title": "Your First Java OpMode - Drive Train Testing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -921,6 +1059,7 @@
               "title": "Control Theory Reading",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -928,6 +1067,7 @@
               "title": "Set-up Android Studio",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -935,6 +1075,7 @@
               "title": "Connect Android Studio to a Robot",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -942,6 +1083,7 @@
               "title": "Bi-weekly Reflection 3 [10/12-10/25]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -949,6 +1091,7 @@
               "title": "Control Theory Reading",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -956,6 +1099,7 @@
               "title": "Bi-weekly Reflection 5 [11/10-11/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -963,6 +1107,7 @@
               "title": "Bi-weekly Reflection 5 [11/10-11/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -970,6 +1115,7 @@
               "title": "Optional: Complete FTCSIM Movement",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -977,6 +1123,7 @@
               "title": "Software Review (Class structure, intake class, teleop)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -984,6 +1131,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -991,6 +1139,7 @@
               "title": "Bi-weekly Reflection 5 [11/10-11/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -998,6 +1147,7 @@
               "title": "FTCSIM Movement 2 - Rearward",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1005,6 +1155,7 @@
               "title": "Bi-weekly Reflection 3 [10/12-10/25]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1012,6 +1163,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1019,6 +1171,7 @@
               "title": "Project 6 - Testing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1026,6 +1179,7 @@
               "title": "Bi-weekly Reflection 4 [10/26-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1033,6 +1187,7 @@
               "title": "Optional: Complete FTCSIM Movement",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1040,6 +1195,7 @@
               "title": "Control Theory Reading",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1047,6 +1203,7 @@
               "title": "Run Some Code on a Robot",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1054,6 +1211,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1061,6 +1219,7 @@
               "title": "Project 2: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1068,6 +1227,7 @@
               "title": "Software Review (Zone Checker Class)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1075,6 +1235,7 @@
               "title": "Connect Android Studio to a Robot",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1082,6 +1243,7 @@
               "title": "Bi-weekly Reflection 4 [10/26-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1089,6 +1251,7 @@
               "title": "Bi-weekly Reflection 3 [10/12-10/25]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1096,6 +1259,7 @@
               "title": "Project 4 - Part 1: Planning",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1103,6 +1267,7 @@
               "title": "Connect Android Studio to a Robot",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1110,6 +1275,7 @@
               "title": "FTCSIM Sensors 10 - Multisense",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1117,6 +1283,7 @@
               "title": "Tuning a PID Controller",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1124,6 +1291,7 @@
               "title": "Bi-weekly Reflection 5 [11/10-11/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1131,6 +1299,7 @@
               "title": "Project 7 - Engineering Physics",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1138,6 +1307,7 @@
               "title": "Connect Android Studio to a Robot",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1145,6 +1315,7 @@
               "title": "FTCSIM Movement 5 - L",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1152,6 +1323,7 @@
               "title": "Control Theory Reading",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1159,6 +1331,7 @@
               "title": "Bi-weekly Reflection 4 [10/26-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1166,6 +1339,7 @@
               "title": "Project 4 - Part 2: Implement and Debug",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1173,6 +1347,7 @@
               "title": "Software Implementation Check for ZoneChecker Class",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1180,6 +1355,7 @@
               "title": "Tune Pedro Pathing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1187,6 +1363,7 @@
               "title": "Project 4: Part 3 (First Draft of working code)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1194,6 +1371,7 @@
               "title": "Project 2: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1201,6 +1379,7 @@
               "title": "Project 6 - Testing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1208,6 +1387,7 @@
               "title": "Project 2: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1215,6 +1395,7 @@
               "title": "Bi-weekly Reflection 4 [10/26-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1222,6 +1403,7 @@
               "title": "Bi-weekly Reflection 5 [11/10-11/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1229,6 +1411,7 @@
               "title": "FTCSIM Movement 3 - Half Moon",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1236,6 +1419,7 @@
               "title": "Run Basic PedroPath Autonomous",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1243,6 +1427,7 @@
               "title": "Configure a Test Bot",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1250,6 +1435,7 @@
               "title": "Project 2: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1257,6 +1443,7 @@
               "title": "Optional: Complete FTCSIM Movement",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1264,6 +1451,7 @@
               "title": "Project 4 - Part 2: Implement and Debug",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1271,6 +1459,7 @@
               "title": "Bi-weekly Reflection 4 [10/26-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1278,6 +1467,7 @@
               "title": "Bi-weekly Reflection 3 [10/12-10/25]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1285,6 +1475,7 @@
               "title": "Bi-weekly Reflection 3 [10/12-10/25]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1292,6 +1483,7 @@
               "title": "Connect Android Studio to a Robot",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1299,6 +1491,7 @@
               "title": "Bi-weekly Reflection 5 [11/10-11/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1306,6 +1499,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1313,6 +1507,7 @@
               "title": "FTCSIM Sensors 1 - Color Sense",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1320,6 +1515,7 @@
               "title": "FTCSIM Movement 4 - Arch",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1327,6 +1523,7 @@
               "title": "Project 4 - Part 2: Implement and Debug",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1334,6 +1531,7 @@
               "title": "Shoot on the Move Physics",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1341,6 +1539,7 @@
               "title": "Project 4 - Part 2: Implement and Debug",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:50:00.000Z",
               "children": []
             },
             {
@@ -1348,6 +1547,7 @@
               "title": "Project 4: Software Implementation",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1355,6 +1555,7 @@
               "title": "OnShape Tutorial 5 - Using Revolve (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1362,6 +1563,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1369,6 +1571,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1376,6 +1579,7 @@
               "title": "Setup Git",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1383,6 +1587,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1390,6 +1595,7 @@
               "title": "OnShape Tutorial 7 - Stirling Engine Tutorial (90 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1397,6 +1603,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1404,6 +1611,7 @@
               "title": "OnShape Tutorial 5 - Using Revolve (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1411,6 +1619,7 @@
               "title": "Game Release Video and Game Manual (released Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1418,6 +1627,7 @@
               "title": "Reading: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1425,6 +1635,7 @@
               "title": "OnShape Tutorial 4 with 3D Printer Export - Hollow Box (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1432,6 +1643,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1439,6 +1651,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1446,6 +1659,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1453,6 +1667,7 @@
               "title": "Game Release Video and Game Manual (released Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1460,6 +1675,7 @@
               "title": "Project 7 - Engineering Physics",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1467,6 +1683,7 @@
               "title": "Onshape Tutorial 3 - 25-01-02 Phone Stand (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1474,6 +1691,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1481,6 +1699,7 @@
               "title": "Reading: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1488,6 +1707,7 @@
               "title": "Setup Git",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1495,6 +1715,7 @@
               "title": "OnShape Tutorial 5 - Using Revolve (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1502,6 +1723,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1509,6 +1731,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1516,6 +1739,7 @@
               "title": "OnShape Tutorial 8 - Creating an Assembly with the FRCDesignApp",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1523,6 +1747,7 @@
               "title": "Reading: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1530,6 +1755,7 @@
               "title": "Game Release Video and Game Manual (released Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1537,6 +1763,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1544,6 +1771,7 @@
               "title": "Setup Git",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1551,6 +1779,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1558,6 +1787,7 @@
               "title": "Project 4 - Part 1: Planning",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1565,6 +1795,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1572,6 +1803,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1579,6 +1811,7 @@
               "title": "OnShape Tutorial 4 with 3D Printer Export - Hollow Box (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1586,6 +1819,7 @@
               "title": "Project 7 - Engineering Physics",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1593,6 +1827,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1600,6 +1835,7 @@
               "title": "Project 4 - Part 1: Planning",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1607,6 +1843,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1614,6 +1851,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1621,6 +1859,7 @@
               "title": "Project 7 - Engineering Physics",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1628,6 +1867,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1635,6 +1875,7 @@
               "title": "Project 4 - Part 1: Planning",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1642,6 +1883,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1649,6 +1891,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1656,6 +1899,7 @@
               "title": "OnShape Tutorial 7 - Stirling Engine Tutorial (90 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1663,6 +1907,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1670,6 +1915,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1677,6 +1923,7 @@
               "title": "OnShape Tutorial 6 - Assembling Multiple Parts (45 minutes)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1684,6 +1931,7 @@
               "title": "Project 4: Software Implementation",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1691,6 +1939,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1698,6 +1947,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1705,6 +1955,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1712,6 +1963,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1719,6 +1971,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1726,6 +1979,7 @@
               "title": "Game Release Video and Game Manual (released Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1733,6 +1987,7 @@
               "title": "OnShape Tutorial 8 - Creating an Assembly with the FRCDesignApp",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1740,6 +1995,7 @@
               "title": "Reading: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1747,6 +2003,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1754,6 +2011,7 @@
               "title": "Game Release Video and Game Manual (released Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1761,6 +2019,7 @@
               "title": "OnShape Tutorial 7 - Stirling Engine Tutorial (90 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1768,6 +2027,7 @@
               "title": "OnShape Tutorial 4 with 3D Printer Export - Hollow Box (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1775,6 +2035,7 @@
               "title": "OnShape Tutorial 4 with 3D Printer Export - Hollow Box (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1782,6 +2043,7 @@
               "title": "Game Release Video and Game Manual (released Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1789,6 +2051,7 @@
               "title": "OnShape Tutorial 7 - Stirling Engine Tutorial (90 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1796,6 +2059,7 @@
               "title": "OnShape Tutorial 6 - Assembling Multiple Parts (45 minutes)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1803,6 +2067,7 @@
               "title": "Project 4: Software Implementation",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1810,6 +2075,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1817,6 +2083,7 @@
               "title": "OnShape Tutorial 5 - Using Revolve (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1824,6 +2091,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1831,6 +2099,7 @@
               "title": "OnShape Tutorial 6 - Assembling Multiple Parts (45 minutes)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1838,6 +2107,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1845,6 +2115,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1852,6 +2123,7 @@
               "title": "Project 4: Software Implementation",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1859,6 +2131,7 @@
               "title": "Reading: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1866,6 +2139,7 @@
               "title": "Setup Git",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1873,6 +2147,7 @@
               "title": "Setup Git",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1880,6 +2155,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1887,6 +2163,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1894,6 +2171,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1901,6 +2179,7 @@
               "title": "Reading: System Architecture",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1908,6 +2187,7 @@
               "title": "OnShape Tutorial 8 - Creating an Assembly with the FRCDesignApp",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1915,6 +2195,7 @@
               "title": "Project 7 - Engineering Physics",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1922,6 +2203,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1929,6 +2211,7 @@
               "title": "Setup Git",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1936,6 +2219,7 @@
               "title": "OnShape Tutorial 6 - Assembling Multiple Parts (45 minutes)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1943,6 +2227,7 @@
               "title": "OnShape Tutorial 8 - Creating an Assembly with the FRCDesignApp",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:48:00.000Z",
               "children": []
             },
             {
@@ -1950,6 +2235,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -1957,6 +2243,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -1964,6 +2251,7 @@
               "title": "Systematic Testing Part 1 and 2",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -1971,6 +2259,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -1978,6 +2267,7 @@
               "title": "Project 2 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -1985,6 +2275,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -1992,6 +2283,7 @@
               "title": "OnShape Tutorial 2 - 25-01-01 T42 (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -1999,6 +2291,7 @@
               "title": "Reading: Comparing Design Concepts: Pugh Matrix",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2006,6 +2299,7 @@
               "title": "Reading: Comparing Design Concepts: Pugh Matrix",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2013,6 +2307,7 @@
               "title": "Project 3: Detailed Subsystem Design",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2020,6 +2315,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2027,6 +2323,7 @@
               "title": "Reading: Comparing Design Concepts: Pugh Matrix",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2034,6 +2331,7 @@
               "title": "Project 2: Subsystem Conceptual Design",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2041,6 +2339,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2048,6 +2347,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2055,6 +2355,7 @@
               "title": "Project 4 - Subsystem Testing and Iteration",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2062,6 +2363,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2069,6 +2371,7 @@
               "title": "Shooter Compression Physics Problem",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-22T13:47:00.000Z",
               "children": []
             },
             {
@@ -2076,6 +2379,7 @@
               "title": "CAD Done for Shooter (Allison)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-22T13:50:00.000Z",
               "children": []
             },
             {
@@ -2083,6 +2387,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2090,6 +2395,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2097,6 +2403,7 @@
               "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2104,6 +2411,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2111,6 +2419,7 @@
               "title": "Project 2 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2118,6 +2427,7 @@
               "title": "Bi-weekly Reflection 1 [9/14-9/30]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2125,6 +2435,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2132,6 +2443,7 @@
               "title": "Shooter Physics Problem Set [Leland]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-22T13:47:00.000Z",
               "children": []
             },
             {
@@ -2139,6 +2451,7 @@
               "title": "Bi-weekly Reflection 3/4 [10/13-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2146,6 +2459,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2153,6 +2467,7 @@
               "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2160,6 +2475,7 @@
               "title": "One Test of Shooter System Against MOPs (Allison)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-22T13:50:00.000Z",
               "children": []
             },
             {
@@ -2167,6 +2483,7 @@
               "title": "Bi-weekly Reflection 3/4 [11/10-11/21]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2174,6 +2491,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2181,6 +2499,7 @@
               "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2188,6 +2507,7 @@
               "title": "Project 4 - Subsystem Testing and Iteration",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2195,6 +2515,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2202,6 +2523,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2209,6 +2531,7 @@
               "title": "Bi-weekly Reflection 3/4 [11/10-11/21]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2216,6 +2539,7 @@
               "title": "Project 6: Systematic Testing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2223,6 +2547,7 @@
               "title": "Bi-weekly Reflection 3/4 [10/13-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2230,6 +2555,7 @@
               "title": "OnShape Tutorial 1 - 24-01-01 TIER 1 PART (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2237,6 +2563,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2244,6 +2571,7 @@
               "title": "Project 4 - Subsystem Testing and Iteration",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2251,6 +2579,7 @@
               "title": "Finish CAD Tutorials",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2258,6 +2587,7 @@
               "title": "OnShape Tutorial 1 - 24-01-01 TIER 1 PART (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2265,6 +2595,7 @@
               "title": "OnShape Tutorial 2 - 25-01-01 T42 (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2272,6 +2603,7 @@
               "title": "Project 2: Subsystem Conceptual Design",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2279,6 +2611,7 @@
               "title": "Intro to Momentum and Energy Problems",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2286,6 +2619,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2293,6 +2627,7 @@
               "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2300,6 +2635,7 @@
               "title": "Project 3: Detailed Subsystem Design",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-22T13:50:00.000Z",
               "children": []
             },
             {
@@ -2307,6 +2643,7 @@
               "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2314,6 +2651,7 @@
               "title": "OnShape Tutorial 1 - 24-01-01 TIER 1 PART (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2321,6 +2659,7 @@
               "title": "Onshape Tutorial 3 - 25-01-02 Phone Stand (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2328,6 +2667,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-22T13:49:00.000Z",
               "children": []
             },
             {
@@ -2335,6 +2675,7 @@
               "title": "OnShape Tutorial 2 - 25-01-01 T42 (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2342,6 +2683,7 @@
               "title": "Engineering Requirements Assessment",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2349,6 +2691,7 @@
               "title": "Reading: Engineering Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2356,6 +2699,7 @@
               "title": "Bi-weekly Reflection 2 [9/28-10/12]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2363,6 +2707,7 @@
               "title": "Project 1 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2370,6 +2715,7 @@
               "title": "Onshape Tutorial 3 - 25-01-02 Phone Stand (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2377,6 +2723,7 @@
               "title": "Feedback on Project 3 part 1",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2384,6 +2731,7 @@
               "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2391,6 +2739,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2398,6 +2747,7 @@
               "title": "Project 2 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-22T13:49:00.000Z",
               "children": []
             },
             {
@@ -2405,6 +2755,7 @@
               "title": "Bi-weekly Reflection 3/4 [10/13-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2412,6 +2763,7 @@
               "title": "Project 3: Detailed Subsystem Design",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2419,6 +2771,7 @@
               "title": "Onshape Tutorial 3 - 25-01-02 Phone Stand (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2426,6 +2779,7 @@
               "title": "Project 6: Systematic Testing",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2433,6 +2787,7 @@
               "title": "Project 1: System Requirements",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2440,6 +2795,7 @@
               "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2447,6 +2803,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2454,6 +2811,7 @@
               "title": "Bi-weekly Reflection 3/4 [10/13-11/9]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2461,6 +2819,7 @@
               "title": "Initial Reflection",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2468,6 +2827,7 @@
               "title": "Project 2: Subsystem Conceptual Design",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2475,6 +2835,7 @@
               "title": "Systematic Testing Part 1 and 2",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2482,6 +2843,7 @@
               "title": "Bi-weekly Reflection 3/4 [11/10-11/21]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2489,6 +2851,7 @@
               "title": "Project 4 - Subsystem Testing and Iteration",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2496,6 +2859,7 @@
               "title": "Reading: Comparing Design Concepts: Pugh Matrix",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2503,6 +2867,7 @@
               "title": "Bi-weekly Reflection 3/4 [11/10-11/21]",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2510,6 +2875,7 @@
               "title": "Project 2 Part 1 Submit for Feedback",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2517,6 +2883,7 @@
               "title": "Project 3: Detailed Subsystem Design",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2524,6 +2891,7 @@
               "title": "OnShape Tutorial 1 - 24-01-01 TIER 1 PART (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2531,6 +2899,7 @@
               "title": "OnShape Tutorial 2 - 25-01-01 T42 (20 min.)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2538,6 +2907,7 @@
               "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             },
             {
@@ -2545,6 +2915,7 @@
               "title": "Project 2: Subsystem Conceptual Design",
               "kind": "database_row",
               "public_url": null,
+              "last_edited": "2026-11-11T19:47:00.000Z",
               "children": []
             }
           ]
@@ -2554,18 +2925,21 @@
           "title": "Teacher View",
           "kind": "page",
           "public_url": null,
+          "last_edited": "2026-11-11T19:36:00.000Z",
           "children": [
             {
               "id": "415ec788-f840-81d4-9eb2-e7e016978509",
               "title": "Untitled",
               "kind": "database",
               "public_url": null,
+              "last_edited": null,
               "children": [
                 {
                   "id": "415ec788-f840-8101-a0c6-ebf8c2ba3a81",
                   "title": "FTCSIM Movement 4 - Arch",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2573,6 +2947,7 @@
                   "title": "Project 2: Subsystem Conceptual Design",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2580,6 +2955,7 @@
                   "title": "Optional: Complete FTCSIM Movement",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2587,6 +2963,7 @@
                   "title": "PID Implementation",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2594,6 +2971,7 @@
                   "title": "FTCSIM Sensors 10 - Multisense",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2601,6 +2979,7 @@
                   "title": "Bi-weekly Reflection 3/4 [11/10-11/21]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2608,6 +2987,7 @@
                   "title": "Project 1: System Requirements",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2615,6 +2995,7 @@
                   "title": "Bi-weekly Reflection 3 [10/12-10/25]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2622,6 +3003,7 @@
                   "title": "One Test of Shooter System Against MOPs (Allison)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2629,6 +3011,7 @@
                   "title": "Project 7 - Engineering Physics",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2636,6 +3019,7 @@
                   "title": "Project 2 Part 1 Submit for Feedback",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2643,6 +3027,7 @@
                   "title": "FTCSIM Movement 3 - Half Moon",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2650,6 +3035,7 @@
                   "title": "OnShape Tutorial 1 - 24-01-01 TIER 1 PART (20 min.)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2657,6 +3043,7 @@
                   "title": "Bi-weekly Reflection 5 [11/10-11/30]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2664,6 +3051,7 @@
                   "title": "Finish CAD Tutorials",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2671,6 +3059,7 @@
                   "title": "Bi-weekly Reflection 1 [9/14-9/30]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2678,6 +3067,7 @@
                   "title": "Systematic Testing Part 1 and 2",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2685,6 +3075,7 @@
                   "title": "Project 4: Part 3 (First Draft of working code)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2692,6 +3083,7 @@
                   "title": "OnShape Tutorial 7 - Stirling Engine Tutorial (90 min.)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2699,6 +3091,7 @@
                   "title": "Onshape Tutorial 3 - 25-01-02 Phone Stand (20 min.)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2706,6 +3099,7 @@
                   "title": "Run Basic PedroPath Autonomous",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2713,6 +3107,7 @@
                   "title": "Software Review (Zone Checker Class)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2720,6 +3115,7 @@
                   "title": "Engineering Requirements Assessment",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2727,6 +3123,7 @@
                   "title": "Android Studio Installation",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2734,6 +3131,7 @@
                   "title": "OnShape Tutorial 4 with 3D Printer Export - Hollow Box (20 min.)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2741,6 +3139,7 @@
                   "title": "OnShape Tutorial 2 - 25-01-01 T42 (20 min.)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2748,6 +3147,7 @@
                   "title": "OnShape Tutorial 5 - Using Revolve (20 min.)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2755,6 +3155,7 @@
                   "title": "Shooter Physics Problem Set [Leland]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2762,6 +3163,7 @@
                   "title": "Systematic Testing Part 1 and 2",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2769,6 +3171,7 @@
                   "title": "Initial Reflection",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2776,6 +3179,7 @@
                   "title": "Reading: System Architecture",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2783,6 +3187,7 @@
                   "title": "Software Implementation Check for ZoneChecker Class #2",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2790,6 +3195,7 @@
                   "title": "Bi-weekly Reflection 2 [9/28-10/12]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2797,6 +3203,7 @@
                   "title": "Project 4 - Subsystem Testing and Iteration",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2804,6 +3211,7 @@
                   "title": "FTCSIM Movement 5 - L",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2811,6 +3219,7 @@
                   "title": "FTCSIM Movement 1 - Line",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2818,6 +3227,7 @@
                   "title": "Reading: Engineering Requirements",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2825,6 +3235,7 @@
                   "title": "Tune Pedro Pathing",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2832,6 +3243,7 @@
                   "title": "OnShape Tutorial 6 - Assembling Multiple Parts (45 minutes)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2839,6 +3251,7 @@
                   "title": "Feedback on Project 3 part 1",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2846,6 +3259,7 @@
                   "title": "Bi-weekly Reflection 4 [10/26-11/9]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2853,6 +3267,7 @@
                   "title": "Project 6 - Testing",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2860,6 +3275,7 @@
                   "title": "Project 7 - Engineering Physics",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2867,6 +3283,7 @@
                   "title": "Reading: Comparing Design Concepts: Pugh Matrix",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2874,6 +3291,7 @@
                   "title": "Project 3: Detailed Subsystem Design",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2881,6 +3299,7 @@
                   "title": "Setup Git",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2888,6 +3307,7 @@
                   "title": "FTCSIM Sensors 7 - Distance Sense",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2895,6 +3315,7 @@
                   "title": "Your First Java OpMode - Drive Train Testing",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2902,6 +3323,7 @@
                   "title": "Intro to Momentum and Energy Problems",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2909,6 +3331,7 @@
                   "title": "Tuning a PID Controller",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2916,6 +3339,7 @@
                   "title": "Create a Drive Class to ABSTRACT Drive Functionality",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2923,6 +3347,7 @@
                   "title": "Project 6: Systematic Testing",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2930,6 +3355,7 @@
                   "title": "Project 1 Part 1 Submit for Feedback",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2937,6 +3363,7 @@
                   "title": "CAD Done for Shooter (Allison)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2944,6 +3371,7 @@
                   "title": "Reading: Engineering Requirements",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2951,6 +3379,7 @@
                   "title": "Connect Android Studio to a Robot",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2958,6 +3387,7 @@
                   "title": "FTCSIM Sensors 4 - Pattern",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2965,6 +3395,7 @@
                   "title": "Project 4 - Part 1: Planning",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2972,6 +3403,7 @@
                   "title": "Shooter Compression Physics Problem",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2979,6 +3411,7 @@
                   "title": "FTCSIM Sensors 1 - Color Sense",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2986,6 +3419,7 @@
                   "title": "Bi-weekly Reflection 3/4 [10/13-11/9]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -2993,6 +3427,7 @@
                   "title": "Project 6: Systematic Testing",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3000,6 +3435,7 @@
                   "title": "Shoot on the Move Physics",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3007,6 +3443,7 @@
                   "title": "FTCSIM Movement 2 - Rearward",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3014,6 +3451,7 @@
                   "title": "Bi-weekly Reflection 1 [9/14-9/30]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3021,6 +3459,7 @@
                   "title": "Bi-weekly Reflection 2 [9/28-10/12]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3028,6 +3467,7 @@
                   "title": "Software Review (Class structure, intake class, teleop)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3035,6 +3475,7 @@
                   "title": "Project 1 Part 1 Submit for Feedback",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3042,6 +3483,7 @@
                   "title": "Project 4: Software Implementation",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3049,6 +3491,7 @@
                   "title": "Project 4 - Part 2: Implement and Debug",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3056,6 +3499,7 @@
                   "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3063,6 +3507,7 @@
                   "title": "Set-up Android Studio",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3070,6 +3515,7 @@
                   "title": "Game Release Video and Game Manual (released Saturday 9/12)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3077,6 +3523,7 @@
                   "title": "Run Some Code on a Robot",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3084,6 +3531,7 @@
                   "title": "Install Pedro Pathing",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3091,6 +3539,7 @@
                   "title": "Game Release Video and Game Manual (realeased on Saturday 9/12)",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3098,6 +3547,7 @@
                   "title": "Software Implementation Check for ZoneChecker Class",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3105,6 +3555,7 @@
                   "title": "Project 2: System Architecture",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3112,6 +3563,7 @@
                   "title": "Engineering Requirements Assessment",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3119,6 +3571,7 @@
                   "title": "Control Theory Reading",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3126,6 +3579,7 @@
                   "title": "Project 1: System Requirements",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3133,6 +3587,7 @@
                   "title": "Initial Reflection",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3140,6 +3595,7 @@
                   "title": "Configure a Test Bot",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 },
                 {
@@ -3147,6 +3603,7 @@
                   "title": "OnShape Tutorial 8 - Creating an Assembly with the FRCDesignApp",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:46:00.000Z",
                   "children": []
                 }
               ]
@@ -3156,6 +3613,7 @@
               "title": "Untitled",
               "kind": "database",
               "public_url": null,
+              "last_edited": null,
               "children": []
             }
           ]
@@ -3165,18 +3623,21 @@
           "title": "Tracker Databases",
           "kind": "page",
           "public_url": null,
+          "last_edited": "2026-11-11T17:56:00.000Z",
           "children": [
             {
               "id": "fdfa13b3-6c78-4110-aa69-f9f3cd543464",
               "title": "Students",
               "kind": "database",
               "public_url": null,
+              "last_edited": null,
               "children": [
                 {
                   "id": "415ec788-f840-8112-ac4c-fcebfc151119",
                   "title": "Allison",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3184,6 +3645,7 @@
                   "title": "Anna",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3191,6 +3653,7 @@
                   "title": "Ryder",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3198,6 +3661,7 @@
                   "title": "Fuyuan",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3205,6 +3669,7 @@
                   "title": "Leland",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3212,6 +3677,7 @@
                   "title": "Rowan",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3219,6 +3685,7 @@
                   "title": "Noah",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3226,6 +3693,7 @@
                   "title": "Ezra",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3233,6 +3701,7 @@
                   "title": "Marwa",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3240,6 +3709,7 @@
                   "title": "Milo",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 }
               ]
@@ -3249,6 +3719,7 @@
               "title": "Assignments",
               "kind": "database",
               "public_url": null,
+              "last_edited": null,
               "children": []
             },
             {
@@ -3256,6 +3727,7 @@
               "title": "Student Work",
               "kind": "database",
               "public_url": null,
+              "last_edited": null,
               "children": []
             },
             {
@@ -3263,12 +3735,14 @@
               "title": "Canvas Modules",
               "kind": "database",
               "public_url": null,
+              "last_edited": null,
               "children": [
                 {
                   "id": "415ec788-f840-8100-bef0-c432dae205f5",
                   "title": "Project 1: Engineering Requirements [9/14-9/24]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3276,6 +3750,7 @@
                   "title": "Project 5 - There is no project 5",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3283,6 +3758,7 @@
                   "title": "Project 7 - Robot Physics",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3290,6 +3766,7 @@
                   "title": "Project 4: Testing and Iteration",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3297,6 +3774,7 @@
                   "title": "Course Overview & Information",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3304,6 +3782,7 @@
                   "title": "Project 4: Software Implementation",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3311,6 +3790,7 @@
                   "title": "Course Overview & Information",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3318,6 +3798,7 @@
                   "title": "Reflections",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3325,6 +3806,7 @@
                   "title": "Project 7 - Robot Physics",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3332,6 +3814,7 @@
                   "title": "Project 2: System Architecture [9/25-10/9]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3339,6 +3822,7 @@
                   "title": "Unit 1: Engineering Requirements [9/14-9/24]",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3346,6 +3830,7 @@
                   "title": "Project 5: Control Theory",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3353,6 +3838,7 @@
                   "title": "Project 3: Learn Java for Robotics",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3360,6 +3846,7 @@
                   "title": "CAD with Onshape",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3367,6 +3854,7 @@
                   "title": "Project 6: Testing",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3374,6 +3862,7 @@
                   "title": "Unit 3: Detailed Design",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3381,6 +3870,7 @@
                   "title": "Reflections",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3388,6 +3878,7 @@
                   "title": "Unit 2: Conceptual Design",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 },
                 {
@@ -3395,11 +3886,339 @@
                   "title": "Project 6: Systematic Testing",
                   "kind": "database_row",
                   "public_url": null,
+                  "last_edited": "2026-11-11T19:43:00.000Z",
                   "children": []
                 }
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "420ec788-f840-81ca-94e1-e06cf3a65069",
+      "title": "Fabrication Skills Tracker",
+      "kind": "page",
+      "public_url": null,
+      "last_edited": "2026-11-22T14:19:00.000Z",
+      "children": [
+        {
+          "id": "420ec788-f840-8108-a2eb-e9243364b6ee",
+          "title": "Untitled",
+          "kind": "database",
+          "public_url": null,
+          "last_edited": null,
+          "children": [
+            {
+              "id": "420ec788-f840-80be-9b20-f878c07902a9",
+              "title": "420ec788-f840-80be-9b20-f878c07902a9",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:25:00.000Z",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "420ec788-f840-8121-a3d9-e25a9ff96e16",
+          "title": "Untitled",
+          "kind": "database",
+          "public_url": null,
+          "last_edited": null,
+          "children": []
+        },
+        {
+          "id": "420ec788-f840-810f-b469-d404a4982831",
+          "title": "Untitled",
+          "kind": "database",
+          "public_url": null,
+          "last_edited": null,
+          "children": [
+            {
+              "id": "420ec788-f840-810b-8e37-f0d7c1581cd7",
+              "title": "Design for fabrication",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-810b-b174-f3e2ad1b555c",
+              "title": "Safety: Dremel",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-8113-a8c2-d2d500b9e8d9",
+              "title": "Safety: Band saw",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-812b-b1f6-ee20cb354f64",
+              "title": "Safety: Drill press",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-813e-b426-e29932c1bc77",
+              "title": "3D printer: slicer setup",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-8142-a618-c6408ef6622e",
+              "title": "Band saw: cut to a line",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-814f-b1cf-dce1fb295a41",
+              "title": "Dremel: controlled cuts",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-815c-887c-cc266d0dce18",
+              "title": "Tool selection",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-8164-a610-f7454ee657c0",
+              "title": "Measure parts against CAD",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-8179-9ede-def0df1ccc1d",
+              "title": "Rework, remake, or accept decisions",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-818d-a5d5-db4612134106",
+              "title": "CNC part with teacher feedback",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-8195-b3eb-c2d99263303f",
+              "title": "Laser cutter: setup and settings",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-8196-963c-c74d72dd5f14",
+              "title": "Safety: CNC router",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-81a1-ba9c-e4e43d606898",
+              "title": "Drill press: locate and drill holes",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-81b3-a576-d786b2ac9211",
+              "title": "Independent CNC job",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-81b4-b0b3-e9990d1a487b",
+              "title": "Tolerance stack-up in an assembly",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-81be-a570-f9a6a1a3bf54",
+              "title": "Assembly fit and function",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-81d7-80ea-c83c14a3ff28",
+              "title": "Fastener selection justified by load",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-81dd-98ad-c3733c8196df",
+              "title": "Safety: Laser cutter",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-81f2-8663-d0da3e71318d",
+              "title": "Hand tools and fasteners",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-81ff-b792-e8a408b0e66c",
+              "title": "Safety: 3D printer",
+              "kind": "database_row",
+              "public_url": null,
+              "last_edited": "2026-11-22T13:21:00.000Z",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "420ec788-f840-8182-ade5-d5cb5f126f1d",
+          "title": "Fabrication Skills: Allison",
+          "kind": "page",
+          "public_url": null,
+          "last_edited": "2026-11-22T13:22:00.000Z",
+          "children": [
+            {
+              "id": "420ec788-f840-8167-8ee4-e655af138976",
+              "title": "Untitled",
+              "kind": "database",
+              "public_url": null,
+              "last_edited": null,
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-810c-8f95-cb04cd85cc7e",
+              "title": "Untitled",
+              "kind": "database",
+              "public_url": null,
+              "last_edited": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "420ec788-f840-811a-8d3b-c8420cf6862b",
+          "title": "Fabrication Skills: Anna",
+          "kind": "page",
+          "public_url": null,
+          "last_edited": "2026-11-22T13:22:00.000Z",
+          "children": [
+            {
+              "id": "420ec788-f840-8137-bddf-fa85c21cde29",
+              "title": "Untitled",
+              "kind": "database",
+              "public_url": null,
+              "last_edited": null,
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-8116-a46d-fa7f0ac253de",
+              "title": "Untitled",
+              "kind": "database",
+              "public_url": null,
+              "last_edited": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "420ec788-f840-81b3-b0b4-df4ec635bab7",
+          "title": "Fabrication Skills: Leland",
+          "kind": "page",
+          "public_url": null,
+          "last_edited": "2026-11-22T13:22:00.000Z",
+          "children": [
+            {
+              "id": "420ec788-f840-81bd-8bbd-c22e4e62f2d3",
+              "title": "Untitled",
+              "kind": "database",
+              "public_url": null,
+              "last_edited": null,
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-81f2-8c37-e9a2fd11f4ed",
+              "title": "Untitled",
+              "kind": "database",
+              "public_url": null,
+              "last_edited": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "420ec788-f840-8178-8e45-ee695481c0f0",
+          "title": "Fabrication Skills: Milo",
+          "kind": "page",
+          "public_url": null,
+          "last_edited": "2026-11-22T13:22:00.000Z",
+          "children": [
+            {
+              "id": "420ec788-f840-8185-9fa9-d13f3a9fc3af",
+              "title": "Untitled",
+              "kind": "database",
+              "public_url": null,
+              "last_edited": null,
+              "children": []
+            },
+            {
+              "id": "420ec788-f840-8182-813f-fa0c85da3311",
+              "title": "Untitled",
+              "kind": "database",
+              "public_url": null,
+              "last_edited": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "420ec788-f840-814e-ac79-ebcd81885952",
+          "title": "Fabrication Skills",
+          "kind": "database",
+          "public_url": null,
+          "last_edited": null,
+          "children": []
+        },
+        {
+          "id": "420ec788-f840-81be-a439-d911ce7ceee4",
+          "title": "Fabrication Observations",
+          "kind": "database",
+          "public_url": null,
+          "last_edited": null,
+          "children": []
         }
       ]
     }

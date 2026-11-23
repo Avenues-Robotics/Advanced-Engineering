@@ -7,6 +7,9 @@ logic can be exercised without a live Notion token.
 from __future__ import annotations
 
 
+EDITED = "2026-01-01T00:00:00.000Z"
+
+
 def _title_prop(text: str) -> dict:
     return {"title": {"type": "title", "title": [{"plain_text": text}]}}
 
@@ -26,6 +29,7 @@ class FakeNotionClient:
             "id": page_id,
             "properties": _title_prop(title),
             "public_url": f"https://example.notion.site/{page_id}" if published else None,
+            "last_edited_time": EDITED,
         }
         self.block_children.setdefault(page_id, [])
         self.markdown[page_id] = markdown
@@ -50,6 +54,7 @@ class FakeNotionClient:
                 "id": row_id,
                 "properties": _title_prop(title),
                 "public_url": f"https://example.notion.site/{row_id}" if published else None,
+                "last_edited_time": EDITED,
             }
         )
         self.pages[row_id] = {**self.data_source_rows[f"{db_id}-ds"][-1],
@@ -57,6 +62,22 @@ class FakeNotionClient:
                                          "database_id": db_id}}
         self.block_children.setdefault(row_id, [])
         self.markdown[row_id] = markdown
+
+    def _copies(self, page_id: str) -> list[dict]:
+        """The page object, plus its database-query copy if it's a row."""
+        rows = [r for rs in self.data_source_rows.values() for r in rs if r["id"] == page_id]
+        return [self.pages[page_id], *rows]
+
+    def edit(self, page_id: str, when: str = "2026-02-01T00:00:00.000Z", **fields) -> None:
+        """Bump a page's last_edited_time (as any edit in Notion does), and set `fields`."""
+        for obj in self._copies(page_id):
+            obj["last_edited_time"] = when
+            obj.update(fields)
+
+    def set_fields(self, page_id: str, **fields) -> None:
+        """Change a page without bumping last_edited_time."""
+        for obj in self._copies(page_id):
+            obj.update(fields)
 
     # -- NotionClient-compatible interface --------------------------------
 
@@ -71,6 +92,9 @@ class FakeNotionClient:
 
     def iter_data_source_rows(self, data_source_id: str):
         yield from self.data_source_rows.get(data_source_id, [])
+
+    def iter_search_pages(self):
+        yield from self.pages.values()
 
     def get_page_markdown(self, page_id: str) -> dict:
         return {"object": "page_markdown", "id": page_id, "markdown": self.markdown.get(page_id, ""),
