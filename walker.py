@@ -24,6 +24,7 @@ class Node:
     children: list["Node"] = field(default_factory=list)
     nav_title: str | None = None  # sidebar-only name, set from nav.txt
     in_nav: bool = True  # False for nav.txt's [Linked Only] pages: built, but not in the sidebar
+    is_alias: bool = False  # a repeat listing in nav.txt: another sidebar link to an already-placed page
     last_edited: str | None = None  # Notion's last_edited_time, for incremental pulls
 
     @property

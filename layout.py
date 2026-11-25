@@ -17,6 +17,7 @@ nav.txt syntax (one entry per line, indent to nest):
                                       ...shown in the sidebar as "Writing Requirements"
     Content Library > Software Architecture
                                       "Parent > Title" when two pages share a title
+    (a page listed more than once gets a sidebar link in each place)
     [Hidden]                          anything under this is left off the site
       Sample 3-View Drawing
     [Linked Only]                     built and linkable, but not in the sidebar
@@ -50,6 +51,7 @@ HEADER = """\
 #   [Section Name]              a plain label that isn't a Notion page
 #   Page Title | Sidebar Name   show a page under a different name
 #   Parent > Page Title         when two pages share a title
+#                               (list a page twice to link it from both places)
 #   [Hidden]                    anything indented under this is left off the site
 #   [Linked Only]               pages under this are on the site (so links to them
 #                               work) but not in the sidebar
@@ -201,18 +203,21 @@ def apply_layout(root: Node, entries: list[Entry]) -> tuple[Node, list[str], lis
                 notes.append(f'nav.txt line {entry.lineno}: "{entry.text}" skipped - {reason}.')
                 # Keep whatever was nested under it rather than losing it too.
                 return [n for c in entry.children for n in build(c, in_hidden)]
-            if original.id in placed or original.id in hidden:
-                notes.append(f'nav.txt line {entry.lineno}: "{entry.text}" is listed twice; '
-                             "only the first one is used.")
+            if original.id in hidden or (in_hidden and original.id in placed):
+                notes.append(f'nav.txt line {entry.lineno}: "{entry.text}" is listed in [Hidden] '
+                             "and somewhere else; only the first one is used.")
                 return []
             if in_hidden:
                 hidden.add(original.id)
                 for child in entry.children:
                     build(child, in_hidden=True)
                 return []
+            # Listing a page again (e.g. under both [ME] and [SCS]) adds another
+            # sidebar link to the same page; it's still built once, at one URL.
             node = Node(id=original.id, title=original.title, kind=original.kind,
-                        public_url=original.public_url, nav_title=entry.display)
-            placed[original.id] = node
+                        public_url=original.public_url, nav_title=entry.display,
+                        is_alias=original.id in placed)
+            placed.setdefault(original.id, node)
 
         node.children = [n for c in entry.children for n in build(c, in_hidden)]
         return [node]

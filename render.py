@@ -281,7 +281,9 @@ def render_site(*, root: Node, markdown_by_id: dict[str, str], output_dir: Path,
             log.append(f"  (skip, unpublished, no published descendants) {node.title}")
             return
 
-        if node.kind in ("page", "database_row") and node.is_published:
+        if node.is_alias:
+            log.append(f"  (another sidebar link to /{slugs[node.id]}/) {node.title}")
+        elif node.kind in ("page", "database_row") and node.is_published:
             page_dir = output_dir / slugs[node.id]
             page_dir.mkdir(parents=True, exist_ok=True)
             body_html = _page_body_html(markdown_by_id.get(node.id, ""), node.title, resolver, base_path)

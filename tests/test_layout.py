@@ -127,6 +127,17 @@ Software Architecture
     check("section labels aren't pages",
           new_root.children[0].kind == "section" and not new_root.children[0].is_published)
 
+    repeated, notes, _ = apply_layout(root, parse_layout(
+        "[ME]\n  Requirements\n  Program Overview\n[SCS]\n  Requirements | Reqs\n"))
+    me, scs = repeated.children
+    check("a page listed twice gets a sidebar entry in both places",
+          me.children[0].id == scs.children[0].id == "o-req"
+          and not me.children[0].is_alias and scs.children[0].is_alias
+          and scs.children[0].sidebar_title == "Reqs"
+          and not any("listed" in n for n in notes))
+    slugs = assign_slugs(repeated)
+    check("...and both entries share one URL", list(slugs).count("o-req") == 1)
+
     linked, notes, still_unlisted = apply_layout(root, parse_layout(nav + "[Linked Only]\n  Brand New Reading\n"))
     linked_page = next(c for c in linked.children if c.id == "l-new")
     check("[Linked Only] pages are built but kept out of the sidebar",
