@@ -5,6 +5,7 @@
 #   [Section Name]              a plain label that isn't a Notion page
 #   Page Title | Sidebar Name   show a page under a different name
 #   Parent > Page Title         when two pages share a title
+#                               (list a page twice to link it from both places)
 #   [Hidden]                    anything indented under this is left off the site
 #   [Linked Only]               pages under this are on the site (so links to them
 #                               work) but not in the sidebar
@@ -19,38 +20,44 @@ Program Overview
   Software and Control Systems 1
   Mechanical Engineering 1
     
-
 Outcomes
-  [Joint]
-    Requirements
-    Testing
-    Iteration
-    Documentation
-    Technical Communication
   [ME]
+    Requirements
     Conceptual Design
     Detailed Design
+    Testing
     Fabrication
+    Iteration
     Mechanics
+    Documentation
+    Technical Communication
   [SCS]
-    Electronics
+    Requirements
     Outcomes > Software Architecture
     Software Implementation
+    Iteration
     Feedback Control
+    Testing
+    Electronics
+    Documentation
+    Technical Communication
 
 Projects
-  Project 1: Engineering Requirements
-  Project 6: Engineering Experiment
-  Project 7: Engineering Physics
   [ME]
+    Project 1: Engineering Requirements
     Project 2: Subsystem Conceptual Design
     Project 3: Subsystem Detailed Design
     Project 4: Subsystem Testing and Iteration
+    Project 6: Engineering Experiment
+    Project 7: Engineering Physics
   [SCS]
+    Project 1: Engineering Requirements
     Project 2: System Architecture
     Project 3: Intro to FTC Java
     Project 4: Subsystem Software Implementation
     Project 5: Feedback-based Control
+    Project 6: Engineering Experiment
+    Project 7: Engineering Physics
 
 [Readings]
   Engineering Requirements
